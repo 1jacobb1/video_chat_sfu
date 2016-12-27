@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/*-----------------------------------*/
+/* modal window common style
+/*-----------------------------------*/
+#modal_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.modal_window{
+	padding: 30px;
+	border-radius: 10px;
+	background: #fff;
+}
+.modal_window .close_modal{
+	position: absolute;
+	top: -18px;
+	right: -18px;;
+	display: block;
+	width: 46px;
+	height: 46px;
+	background: url('../images/icon/modal_close.png') no-repeat 0 0;
+	cursor: pointer
+}
+
+/*-----------------------------------*/
+/* modal dialog common style
+/*-----------------------------------*/
+.modal_window.dialog h3{
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+}
+.modal_window.dialog p{
+	line-height: 1.5;
+}
+.modal_window.dialog p.center{
+	text-align: center !important;
+}
+.modal_window.dialog p.left{
+	text-align: left !important;
+}
+.modal_window.dialog p.right{
+	text-align: right !important;
+}
+.modal_window.dialog .btn_wrap{
+	width: 400px;
+	margin: 20px auto 0;
+}
+.modal_window.dialog .btn_wrap li a{
+	display: block;
+	text-decoration: none;
+}
+.modal_window.dialog .btn_wrap ul.btn_half li{
+	float: right;
+}
+.modal_window.dialog .btn_wrap ul.btn_half li:first-child{
+	float: left;
+}
+.modal_window.dialog .btn_wrap ul.btn_center li{
+	margin: 0 auto;
+}
+.modal_window.dialog .btn_wrap .btn{
+	display: block;
+	color: #555555;
+	text-decoration: none;
+	min-width: 180px;
+	height: 40px;
+	line-height: 40px;
+	background:  #ccc;
+	background: -moz-linear-gradient(top, #ffffff, #d7d7d7);
+	background: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#d7d7d7));
+	border: 1px solid #d1cfd0;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0px 0 rgba(0, 0, 0, 0.2);
+	font-size: 18px;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+.modal_window.dialog .btn_wrap .btn.cancel{
+	color: #555555;
+}
+.modal_window.dialog .btn_wrap .btn.ok{
+	color: #16a9b2;
+}
+
+/*-----------------------------------*/
+/* diaolog individual styles
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/* #dialog_message_search
+/*-----------------------------------*/
+#dialog_message_search .dialog_search_inner input[type='text']{
+	display: inline;
+}
+#dialog_message_search .dialog_search_inner{
+	margin-bottom: 30px;
+}
+#dialog_message_search .dialog_search_inner .keyword{
+	margin-bottom: 20px;
+}
+#dialog_message_search .dialog_search_inner .sort{
+	margin-bottom: 20px;
+}
+#dialog_message_search .dialog_search_inner .sort label{
+	margin-right: 15px;
+}
+#dialog_message_search .dialog_order_inner .order{
+	width: 300px;
+	margin: 0 auto;
+}
+#dialog_message_search .dialog_order_inner .order select{
+	width: auto;
+}
+
+/*-----------------------------------*/
+/* #dialog_message_search_personal
+/*-----------------------------------*/
+#dialog_message_search_personal .dialog_search_inner input[type='text']{
+	display: inline;
+}
+#dialog_message_search_personal .dialog_search_inner{
+	margin-bottom: 30px;
+}
+#dialog_message_search_personal .dialog_search_inner .keyword{
+	margin-bottom: 20px;
+}
+#dialog_message_search_personal .dialog_search_inner .sort{
+	margin-bottom: 20px;
+}
+#dialog_message_search_personal .dialog_search_inner .sort label{
+	margin-right: 15px;
+}
+#dialog_message_search_personal .dialog_order_inner .order{
+	width: 300px;
+	margin: 0 auto;
+}
+#dialog_message_search_personal .dialog_order_inner .order select{
+	width: auto;
+}

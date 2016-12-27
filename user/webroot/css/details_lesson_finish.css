@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.lesson_finish_wrap .container{
+	padding: 30px;
+}
+.lesson_finish_wrap .desc{
+	line-height: 1.5;
+}
+
+/* lesson data */
+.lesson_finish_wrap .lesson_data{
+	text-align: center;
+}
+.lesson_finish_wrap .lesson_data .thumb{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 0;
+}
+.lesson_finish_wrap .lesson_data .thumb img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.lesson_finish_wrap .lesson_data .name em{
+	font-weight: bold;
+	color: #555;
+}
+.lesson_finish_wrap .lesson_data table{
+	width: auto;
+	min-width: 300px;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+.lesson_finish_wrap .lesson_data table th{
+	min-width: 90px;
+	text-align: center;
+	white-space: nowrap;
+	background: #eee;
+	border: #fff solid 1px;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+.lesson_finish_wrap .lesson_data table tr:first-child th{
+	border-top: #eee solid 1px;
+}
+.lesson_finish_wrap .lesson_data table tr:last-child th{
+	border-bottom: #eee solid 1px;
+}
+.lesson_finish_wrap .lesson_data table td{
+	text-align: left;
+	border: #eee solid 1px;
+	padding: 5px 10px;
+}
+
+/*---------------------------------------*/
+/* falure reason
+/*---------------------------------------*/
+.lesson_finish_wrap .failure_reason{
+	max-width: 600px;
+	margin: 0 auto;
+	border: solid 5px #f84f63;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 15px;
+}
+.lesson_finish_wrap .failure_reason p{
+	line-height: 1.5;
+	color: #f84f63;
+}
+.lesson_finish_wrap .failure_reason p:before{
+	content: '・';
+}
+.lesson_finish_wrap .failure_reason p + p{
+	margin-top: 10px;
+}

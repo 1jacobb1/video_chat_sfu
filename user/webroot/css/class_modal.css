@@ -1,0 +1,1058 @@
+@charset "utf-8";
+
+/*-----------------------------------*/
+/* modal window common style
+/*-----------------------------------*/
+#modal_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.modal_window{
+	padding: 30px;
+	background: #fff;
+	border: solid 4px #555;
+	border-radius: 10px;
+	max-width: 960px;
+	/width: 960px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.modal_window--flex{
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin: auto !important;
+	box-sizing: border-box;
+}
+.modal_window .btn_close{
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	background: url('../images/icon/modal_close.png') no-repeat 0 0;
+	cursor: pointer
+}
+.modal_window .btn_close--inner{
+	top: 4px;
+	right: 4px;
+}
+.modal_window .btn_close--inner_2{
+	top: -1px;
+	right: -2px;
+}
+/* disable overlay click */
+.modal_window.static_overlay:after{
+	display: block;
+	content: '';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: transparent;
+	z-index: -1;
+}
+
+/*-----------------------------------*/
+/* modal dialog common style
+/*-----------------------------------*/
+.modal_window.dialog h3{
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+	line-height: 1.5;
+}
+.modal_window.dialog p{
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+.modal_window.dialog input[type='text'],
+.modal_window.dialog input[type='password'],
+.modal_window.dialog select{
+	background: #fff;
+}
+.modal_window.dialog .dialog_inner{
+	margin-bottom: 20px;
+	border-bottom: #f4f4f4 solid 1px;
+}
+.modal_window.dialog .dialog_inner > div{
+	padding: 10px 30px;
+	margin: 0 -30px;
+}
+.modal_window.dialog .dialog_inner > div:nth-child(odd){
+	background: #f4f4f4;
+}
+.modal_window.dialog .dialog_inner > div:nth-child(even){
+	background: #fff;
+}
+.modal_window.dialog .dialog_inner .t_item{
+	min-width: 85px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	float: left;
+	line-height: 38px;
+	text-align: right;
+	margin-right: 10px;
+}
+.modal_window.dialog .dialog_inner > div.half > div{
+	width: 50%;
+	float: right;
+}
+.modal_window.dialog .dialog_inner > div.half > div:first-child{
+	float: left;
+}
+.modal_window.dialog .dialog_inner .radios li,
+.modal_window.dialog .dialog_inner .checkboxs li{
+	float: left;
+	margin-right: 10px;
+	line-height: 38px;
+}
+
+.modal_window.dialog .btn_wrap{
+	margin-top: 20px;
+}
+
+/* lesson data */
+.modal_window.dialog .lesson_data{
+	text-align: center;
+}
+.modal_window.dialog .lesson_data .thumb{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 0;
+}
+.modal_window.dialog .lesson_data .thumb img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.modal_window.dialog .lesson_data table{
+	width: 100%;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+.modal_window.dialog .lesson_data table th,
+.modal_window.dialog .lesson_data table td{
+	width: 50%;
+}
+.modal_window.dialog .lesson_data table th{
+	text-align: right;
+	padding: 2px 5px 2px 0;
+	font-weight: bold;
+}
+.modal_window.dialog .lesson_data table td{
+	text-align: left;
+	padding: 2px 0 2px 5px;
+}
+.modal_window.dialog .lesson_data table th span:after{
+	content: ':';
+	margin-left: 10px;
+}
+
+/*-----------------------------------*/
+/* diaolog individual styles
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/* #dialog_message_search
+/*-----------------------------------*/
+#dialog_message_search .dialog_search_inner input[type='text']{
+	display: inline;
+	width: 550px;
+}
+#dialog_message_search .dialog_search_inner{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f6f6f6;
+}
+#dialog_message_search .dialog_search_inner .keyword{
+	text-align: center;
+}
+#dialog_message_search .dialog_search_inner .filter{
+	margin: 10px auto 10px;
+}
+#dialog_message_search .dialog_order_inner .order{
+	text-align: center;
+}
+#dialog_message_search .dialog_order_inner .order select{
+	width: auto;
+	background: #fff;
+}
+
+/*-----------------------------------*/
+/* #dialog_message_search_personal
+/*-----------------------------------*/
+#dialog_message_search_personal .dialog_search_inner input[type='text']{
+	display: inline;
+	width: 550px;
+}
+#dialog_message_search_personal .dialog_search_inner{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f6f6f6;
+}
+#dialog_message_search_personal .dialog_search_inner .keyword{
+	text-align: center;
+}
+#dialog_message_search_personal .dialog_search_inner .filter{
+	width: 480px;
+	margin: 10px auto 10px;
+}
+#dialog_message_search_personal .dialog_order_inner .order{
+	text-align: center;
+}
+#dialog_message_search .dialog_order_inner .order select{
+	width: auto;
+	background: #fff;
+}
+
+/*-----------------------------------*/
+/* #dialog_schedule_reserve
+/*-----------------------------------*/
+#dialog_schedule_reserve .reserve_content{
+	margin-top: 20px;
+}
+#dialog_schedule_reserve .reserve_content .time{
+	font-weight: bold;
+}
+#dialog_schedule_reserve .reserve_content .name{
+	color: #888;
+}
+/*-----------------------------------*/
+/* #dialog_schedule_reserve_cancel
+/*-----------------------------------*/
+#dialog_schedule_cancel .reserve_content{
+	margin-top: 20px;
+}
+#dialog_schedule_cancel .reserve_content .time{
+	font-weight: bold;
+}
+#dialog_schedule_cancel .reserve_content .name{
+	color: #888;
+}
+/*-----------------------------------*/
+/* #dialog_schedule_reserve_cancel
+/*-----------------------------------*/
+#dialog_inquiry_search .esb-displayer{
+	width: 400px;
+}
+/*-----------------------------------*/
+/* #modal_user_profile
+/*-----------------------------------*/
+#modal_user_profile{
+	padding: 0;
+}
+#modal_user_profile .ttl{
+	padding: 15px;
+	background: #555;
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+#modal_user_profile .profile_data{
+	font-size: 14px;
+	font-size: 1.4rem;
+	text-align: left;
+	/* fix 20141022 >>> */
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	/* <<< */
+}
+#modal_user_profile .profile_data tr:first-child{
+	border-top: none;
+}
+#modal_user_profile .profile_data tr{
+	border-top: #ddd 1px solid;
+}
+#modal_user_profile .profile_data th,
+#modal_user_profile .profile_data td{
+	padding: 15px;
+}
+#modal_user_profile .profile_data th{
+	font-weight: bold;
+	color: #aaa;
+	width: 220px;
+}
+#modal_user_profile .profile_data td{
+	width: 260px;
+	padding-left: 0;
+	line-height: 1.5;
+}
+#modal_user_profile .profile_data td li{
+	line-height: 1.5;
+	margin-top: 5px;
+}
+#modal_user_profile .profile_data td li:first-child{
+	margin-top: 0;
+}
+#modal_user_profile .user_memo_wrap{
+	padding: 15px;
+}
+#modal_user_profile .user_memo_wrap .d_table .d_cell:first-child{
+	width: 430px;
+}
+#modal_user_profile .user_memo_wrap .d_table .d_cell:last-child{
+	width: ;
+}
+#modal_user_profile .user_memo_wrap .d_table .d_cell:last-child button{
+	float: right;
+	min-width: 70px;
+	margin-left: 10px;
+}
+
+/*-----------------------------------*/
+/* #dialog_select_text_lesson
+/*-----------------------------------*/
+#dialog_select_text_lesson .modal_window .btn_close--inner_2{
+	top: 4px;
+	right: 25px;
+}
+#dialog_select_text_lesson{
+	width: 680px;
+	height:80%;
+	/*min-height: 690px;  fix 20141017*/
+	padding: 0 0 25px;
+	margin:auto auto !important;
+	top:0 !important;
+	bottom:0 !important;
+	left:0 !important;
+	right:0 !important;
+}
+#dialog_select_text_lesson h3{
+	padding: 15px;
+	background: #555;
+	color: #fff;
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0;
+}
+#dialog_select_text_lesson .lesson_level_list_wrap{
+	padding: 15px 50px 40px;
+	box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.1) inset;
+}
+#dialog_select_text_lesson .lesson_level_list_wrap p{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#dialog_select_text_lesson .lesson_level_list ul{
+	margin-right: -100px;
+}
+#dialog_select_text_lesson .lesson_level_list li{
+	position: relative;
+	display: block;
+	min-width: 123px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	border-radius: 4px;
+	background: #e3e3e3;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #555;
+	float: left;
+	margin-right: 30px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_select_text_lesson .lesson_level_list li:before,
+#dialog_select_text_lesson .lesson_level_list li:after{
+	display: none;
+	bottom: -45px;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+	transition: all 0.2s ease;
+}
+/*
+#dialog_select_text_lesson .lesson_level_list li:before{
+	border-color: rgba(85, 85, 85, 0);
+	border-bottom-color: #555;
+	border-width: 26px;
+	margin-left: -26px;
+}
+#dialog_select_text_lesson .lesson_level_list li:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+#dialog_select_text_lesson .lesson_level_list li.on:before,
+#dialog_select_text_lesson .lesson_level_list li.on:after{
+	display: block;
+}
+*/
+#dialog_select_text_lesson .lesson_level_list li.on{
+	background: #ff194a;
+	color: #fff;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap{
+	position: absolute;
+	border-top: solid 5px #555;
+	padding: 30px 30px 0;
+	box-sizing:border-box;
+	width:100%;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:before,
+#dialog_select_text_lesson .lesson_text_list_wrap:after{
+	left: 21%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:before{
+	top: -52px;
+	border-color: rgba(85, 85, 85, 0);
+	border-bottom-color: #555;
+	border-width: 26px;
+	margin-left: -26px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:after{
+	top: -40px;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+#dialog_select_text_lesson .lesson_text_list{
+	position: relative;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	min-height: 352px;
+}
+#dialog_select_text_lesson .lesson_text_list ul{
+	border: solid 1px #555;
+}
+#dialog_select_text_lesson .lesson_text_list li{
+	position: relative;
+	padding: 10px;
+	border-top: solid 1px #555;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_select_text_lesson .lesson_text_list li .ic_clear{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 136px;
+	height: 36px;
+	background: url('../images/icon/ribbon_clear.png') no-repeat 0 0;
+	z-index: 1;
+}
+#dialog_select_text_lesson .lesson_text_list li:hover{
+	background: #ffe5eb;
+}
+#dialog_select_text_lesson .lesson_text_list li:first-child{
+	border-top: none;
+}
+#dialog_select_text_lesson .lesson_text_list li .lesson_name{
+	font-weight: bold;
+}
+#dialog_select_text_lesson .lesson_text_list li .lesson_name:after{
+	content: '：';
+	margin: 0 0.5em;
+}
+#dialog_select_text_lesson .lesson_text_list li.finished{
+	background: #fdfae3;
+	color: #bbb;
+}
+#dialog_select_text_lesson .lesson_text_list li.on{
+	background: #ff194a;
+	color: #fff;
+	font-weight: bold;
+}
+#dialog_select_text_lesson .lesson_text_list i{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	font-size: 28px;
+	font-size: 2.8rem;
+	width: 1em;
+	height: 1em;
+	margin: auto;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #333;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager a{
+	color: inherit;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .disable{
+	color: #ccc !important;
+	cursor: default;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .prev{
+	float: left;
+	display: inline-block;
+	position: relative;
+	color: #555;
+	background: #fff;
+	border: #BEBEBE solid 2px;
+	padding: 5px 10px 2px;
+	border-radius: 4px;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 16px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	margin-left: 10px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .prev:before{
+	content: '＜';
+	margin-right: 0.2em;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .next{
+	float: right;
+	display: inline-block;
+	position: relative;
+	color: #555;
+	background: #fff;
+	border: #BEBEBE solid 2px;
+	padding: 5px 10px 2px;
+	border-radius: 4px;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 16px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	margin-left: 10px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .next:after{
+	content: '＞';
+	margin-left: 0.2em;
+}
+/*-----------------------------------*/
+/* #dialog_select_text_lesson
+/*-----------------------------------*/
+#dialog_rating .rating_data{
+	margin: 0 0 15px;
+	padding-top: 15px;
+}
+#dialog_rating .rating_data dl{
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin: 0 0 15px;
+}
+#dialog_rating .rating_data dt{
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+}
+#dialog_rating .rating_data dt:after{
+	content: ':';
+	margin-left: 5px;
+}
+#dialog_rating .rating_data dd{
+	float: clear;
+}
+#dialog_rating .rating_data dd .date .time{
+	margin-left: 10px;
+}
+#dialog_rating .rating_data textarea{
+	width: 656px;
+	height: 150px;
+	font: inherit;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+#dialog_rating .rating_notice{
+	width: 656px;
+}
+#dialog_rating .rating_notice li{
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding-left: 1em;
+	text-indent: -1em;
+	color: #999;
+}
+#dialog_rating .rating_notice li:before{
+	content: '※';
+}
+#dialog_rating .rating_notice li:first-child{
+	margin-top: 0;
+}
+#dialog_rating .rating_status_area{
+	margin: -52px 0 22px;
+}
+#dialog_rating .rating_status{
+	display: inline-block;
+	letter-spacing: normal;
+	padding: 8px;
+	width: 100px;
+	min-width: 100px;
+	background: #ccc;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 0 0 rgba(0,0,0,0.2);
+}
+#dialog_rating .rating_status:before{
+	margin: auto;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #fff;
+	line-height: 1;
+	margin-right: 0.3em;
+}
+#dialog_rating .rating_status--good{
+	background: #7AC774;
+	box-shadow: 2px 2px 0 0 #609B5C;
+}
+#dialog_rating .rating_status--bad{
+	background: #8280A9;
+	box-shadow: 2px 2px 0 0 #676583;
+}
+#dialog_rating .rating_status--good:before{
+	content: '\f164';
+}
+#dialog_rating .rating_status--bad:before{
+	content: '\f165';
+}
+
+/*-----------------------------------*/
+/* modal_blackboard_style
+/*-----------------------------------*/
+.modal_blackboard_style{
+	min-width: 600px;
+	min-height: 120px;
+	padding: 60px 30px 60px;
+	background: #173119;
+	border-color: #452C17;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0 0 rgba(0,0,0,0.5) inset, 0 -1px 0 0 rgba(255,255,255,0.2) inset, 0 0 10px 0 rgba(0,0,0,0.2);
+	color: #fff;
+}
+.modal_blackboard_style:before{
+	position: absolute;
+	bottom: 1px;
+	left: 60px;
+	content: '';
+	width: 80px;
+	height: 26px;
+	background: url('../images/chat/fig_blackboard.png');
+}
+/*-----------------------------------*/
+/* #dialog_lesson_student_intro
+/*-----------------------------------*/
+#dialog_lesson_student_intro .btn_exit{
+	font-size: 13px;
+	font-size: 1.3rem;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: rgba(174, 74, 74, 0.8);
+	padding: 10px;
+	border-radius: 4px;
+	color: #FFF;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_lesson_student_intro .btn_exit:before{
+	content: '×';
+	display: inline-block;
+	margin-right: 2px;
+}
+#dialog_lesson_student_intro .btn_exit:hover{
+	background: rgba(207, 119, 119, 0.8);
+}
+#dialog_lesson_student_intro .lesson_exit_wrap{
+	width: 100%;
+	box-sizing: border-box;
+	height: 63px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#dialog_lesson_student_intro .lesson_exit_notice{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 220px;
+	width: 500px;
+	height: 114px;
+	margin: auto;
+	padding: 15px;
+	color: #000;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+}
+#dialog_lesson_student_intro .lesson_exit_notice li{
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#dialog_lesson_student_intro .lesson_exit_notice li:first-child{
+	margin-top: 0;
+}
+#dialog_lesson_student_intro .lesson_exit_notice:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 8px;
+	margin-top: -8px;
+}
+
+/*-----------------------------------*/
+/* #dialog_lesson_instructor_ready
+/*-----------------------------------*/
+#dialog_lesson_instructor_ready .btn_wrap{
+	margin: 30px 0 15px;
+}
+/*-----------------------------------*/
+/* #dialog_lesson_student_ready
+/*-----------------------------------*/
+#dialog_lesson_student_ready .btn_wrap{
+	margin: 30px 0 15px;
+}
+
+/*-----------------------------------*/
+/* #dialog_sms_auth_required
+/*-----------------------------------*/
+#dialog_sms_auth_required{
+	width: 700px;
+}
+
+/*-----------------------------------*/
+/* .dialog_credit_auth
+/*-----------------------------------*/
+.dialog_credit_auth{
+	min-width: 820px;
+	text-align: center;
+	border: solid 4px #16A9B1;
+}
+.dialog_credit_auth p.p_1{
+	display: inline-block;
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+	color: #fff;
+	background: #16a9b1;
+	padding: 4px 40px;
+	margin: 5px auto 20px;
+	text-align: center;
+}
+.dialog_credit_auth h3{
+	font-size: 46px !important;
+	font-size: 4.6rem !important;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000;
+	margin-bottom: 5px;
+}
+.dialog_credit_auth p.p_2{
+	color: #16A9B1;
+	font-weight: bold;
+	font-size: 19px;
+	font-size: 1.9rem;
+}
+.dialog_credit_auth .btn_half{
+	width: 690px;
+}
+.dialog_credit_auth .notice{
+	border-top: 1px solid #d3d3d3;
+	padding: 28px 30px 0;
+}
+.dialog_credit_auth .notice li{
+	text-align: left;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	padding-left: 1em;
+	text-indent: -1.2em;
+	margin-top: 5px;
+}
+.dialog_credit_auth .notice li:first-child{
+	margin-top: 0;
+}
+.dialog_credit_auth .notice li:before{
+	content: '※';
+	margin-right: 0.2em;
+}
+
+/*-----------------------------------*/
+/* #dialog_credit_auth_required
+/*-----------------------------------*/
+#dialog_credit_auth_required h3{
+	font-size: 30px !important;
+	font-size: 3.0rem !important;
+	text-align: center;
+}
+#dialog_credit_auth_required .p_3{
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #555;
+}
+
+/*-----------------------------------*/
+/* #dialog_lesson_start_fail_offline
+/*-----------------------------------*/
+#dialog_lesson_start_fail_offline .notice_list li{
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-top: 10px;
+	line-height: 1.5;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#dialog_lesson_start_fail_offline .notice_list li:first-child{
+	margin-top: 0;
+}
+
+/*-----------------------------------*/
+/* #dialog_chat_exit
+/*-----------------------------------*/
+#dialog_chat_exit{
+	width: 100% !important;
+	/*max-width: 100% !important;*/
+	min-width: 530px;
+	max-height: 530px;
+	width: 960px;
+	max-width: 840px;
+	/*height: 98%;*/
+	/*height: 600px\9;*/
+	padding: 30px 0 0;
+}
+#dialog_chat_exit .flex_table{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#dialog_chat_exit .flex_tr_1{
+	height: 30px;
+}
+#dialog_chat_exit .flex_td_1_1{
+	padding: 0px 30px 15px;
+}
+#dialog_chat_exit .flex_tr_2{
+	height: 100%;
+	vertical-align: top; /* for chrome ver50 */
+}
+#dialog_chat_exit .flex_td_2_1{
+	height: 100%;  /* for chrome ver50 */
+}
+#dialog_chat_exit .feedback_box_wrap{
+	width:100%;
+	height:100%;
+	height:350px\9;
+	/*min-height: 350px;*/
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#dialog_chat_exit .feedback_box{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position:relative;
+}
+#dialog_chat_exit .feedback_box .required{
+	color: #f84f63;
+}
+#dialog_chat_exit .feedback_table{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_table tr + tr{
+	border-top: 1px dotted #eee;
+}
+#dialog_chat_exit .feedback_table th{
+	width: 500px;
+	line-height: 1.5;
+	font-size: 15px;
+	font-size: 1.5rem;
+	text-align:left;
+	vertical-align: middle;
+	padding: 10px 0 10px;
+}
+#dialog_chat_exit .feedback_table th span{
+	display:block;
+}
+#dialog_chat_exit .feedback_table td{
+	height: 40px;
+	text-align: right;
+	vertical-align: middle;
+	padding: 10px 0 10px;
+	white-space: nowrap;
+}
+#dialog_chat_exit .feedback_table td textarea{
+	min-height:80px;
+}
+#dialog_chat_exit .feedback_box_inner{
+	height: 100%;
+	margin: 20px 4%;
+	box-sizing: border-box;
+	position:absolute;
+	position:relative\9;
+	top:0;
+	bottom:0;
+}
+#dialog_chat_exit .feedback_box h4{
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_chat_exit .feedback_box .btn_rating_wrap li{
+	margin-right: 50px;
+}
+#dialog_chat_exit .feedback_free_area textarea{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_select_area ul{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_select_area li{
+	display: inline-block;
+	text-align: left;
+}
+#dialog_chat_exit .feedback_select_area li + li{
+	margin-left: 60px;
+}
+#dialog_chat_exit .feedback_select_area li label{
+	font-size: 16px;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+#dialog_chat_exit .feedback_select_area li label input[type='radio']{
+	margin: 0 5px 0 0;
+}
+#dialog_chat_exit .notice_list li{
+	margin-top: 10px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+#dialog_chat_exit .notice_list li:first-child{
+	margin-top: 0;
+}
+
+/*-----------------------------------*/
+/* #dialog_connected
+/*-----------------------------------*/
+#dialog_connected .textbook_confirm_area{
+	border: #ccc solid 3px;
+	border-radius: 6px;
+	padding: 5px;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_connected .textbook_confirm_area table{
+	margin: 0 auto;
+}
+#dialog_connected .textbook_confirm_area table td:before{
+	content: ':';
+	margin-right: 10px;
+}
+#dialog_connected .textbook_confirm_area table th,
+#dialog_connected .textbook_confirm_area table td{
+	padding: 10px 5px;
+}
+/*-----------------------------------*/
+/* #dialog_textbook_preview
+/*-----------------------------------*/
+#dialog_textbook_preview .textbook_preview_area{
+	display: table;
+	height: 400px;
+}
+#dialog_textbook_preview .textbook_preview_area .col_preview,
+#dialog_textbook_preview .textbook_preview_area .col_selector{
+	display: table-cell;
+	vertical-align: top;
+	height: 100%;
+}
+#dialog_textbook_preview .textbook_preview_area .col_preview iframe{
+	width: 400px;
+	height: 100%;
+}
+#dialog_textbook_preview .textbook_preview_area .col_selector{
+	width: 450px;
+	padding-left: 15px;
+}
+/*-----------------------------------*/
+/* #dialog_error_connect_fail
+/*-----------------------------------*/
+#dialog_error_connect_fail .error_cases{
+	max-width: 800px;
+	margin: 0 auto;
+}
+#dialog_error_connect_fail .error_cases .error_cases_inner{
+	padding: 15px;
+	font-size: 13px;
+	font-size: 1.3rem;
+	background: #eee;
+	border-radius: 6px;
+}
+#dialog_error_connect_fail .error_cases ul{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+#dialog_error_connect_fail .error_cases li{
+	display: table-cell;
+	text-align: left;
+	padding: 5px;
+}
+#dialog_error_connect_fail .error_cases li:before{
+	content: '・';
+}
+/*-----------------------------------*/
+/* #dialog_error_connect_fail_others
+/*-----------------------------------*/
+#dialog_error_connect_fail_others{
+	min-width: 500px;
+}
+/*-----------------------------------*/
+/* #dialog_lesson_finish
+/*-----------------------------------*/
+#dialog_lesson_finish{
+	min-width: 500px;
+}

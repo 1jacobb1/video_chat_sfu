@@ -1,0 +1,328 @@
+
+/*-------------------------------------------------------*/
+/* lesson_log page
+/*-------------------------------------------------------*/
+.lesson_log_wrap .ttl_bar .ttl_bar_ui{
+	width: 340px;
+}
+.lesson_log_wrap .ttl_bar .ttl_bar_ui .select{
+	float: left;
+}
+.lesson_log_wrap .ttl_bar .ttl_bar_ui .btn_s{
+	display: inline-block;
+	/display: inline;
+	float: right;
+}
+.lesson_log_wrap .container{
+	padding: 20px;
+	/width: 920px;
+}
+.lesson_log_wrap .container > .t_1{
+	margin-bottom: 15px;
+}
+
+/*----------------------------------------------*/
+/* pager
+/*----------------------------------------------*/
+.lesson_log_wrap .pager{
+	text-align: center;
+}
+.lesson_log_wrap .pager_monthly a:hover{
+	color: #62cdd4;
+}
+
+/*----------------------------------------------*/
+/* lesson log list
+/*----------------------------------------------*/
+.lesson_log_wrap .lesson_log_list table{
+	position: relative;
+	width: 100%;
+	border: 5px solid #62cdd4;
+	background: #fff;
+	border-collapse: separate;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.2);
+	margin-top: 20px;
+	/table-layout: fixed;
+}
+.lesson_log_wrap .lesson_log_list table:first-child{
+	margin-top: none;
+}
+.lesson_log_wrap .lesson_log_list tr{
+	height: 58px;
+}
+.lesson_log_wrap .lesson_log_list th{
+	padding: 5px 10px;
+	border-left: #ccc solid 1px;
+	background: #e8e8e8;
+	text-align: center;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.lesson_log_wrap .lesson_log_list th:first-child{
+	border-left: none;
+}
+.lesson_log_wrap .lesson_log_list th.col_1{
+	width: 100px;
+}
+.lesson_log_wrap .lesson_log_list th.col_2{
+	width: 142px;
+}
+.lesson_log_wrap .lesson_log_list th.col_3{
+	width: auto;
+}
+/* 進行度表示カラム なしに変更
+.lesson_log_wrap .lesson_log_list th.col_4{
+	width: 80px;
+}
+*/
+.lesson_log_wrap .lesson_log_list td{
+	padding: 10px;
+	border-top: #ccc solid 1px;
+	border-left: #ccc solid 1px;
+	text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+.lesson_log_wrap .lesson_log_list td:first-child{
+	border-left: none;
+}
+.lesson_log_wrap .lesson_log_list .thumb{
+	margin-bottom: 10px;
+}
+.lesson_log_wrap .lesson_log_list .thumb img{
+	display: block;
+	margin:  0 auto;
+	border: #ccc 1px solid;
+}
+.lesson_log_wrap .lesson_log_list .name{
+	width: 142px;
+	margin: 0 auto 5px;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #333;
+	line-height: 1;
+}
+.lesson_log_wrap .lesson_log_list .kana{
+	width: 142px;
+	margin: 0 auto;
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	line-height: 1;
+	color: #999;
+}
+.lesson_log_wrap .lesson_log_list .btn_save_memo{
+	margin-top: 10px;
+}
+
+.lesson_log_wrap .lesson_log_list .accordion{
+	height: 150px;
+	overflow: hidden;
+}
+.lesson_log_wrap .lesson_log_list .accordion_wrap .trigger{
+	cursor: pointer;
+}
+.lesson_log_wrap .lesson_log_list .accordion_wrap .trigger:before{
+	content: '▼';
+	display: inline;
+}
+.lesson_log_wrap .lesson_log_list .accordion_wrap .trigger.on:before{
+	content: '▲';
+	display: inline;
+}
+.lesson_log_wrap .lesson_log_list .lesson_memo_area{
+	/width: 700px;
+}
+
+.lesson_log_wrap .lesson_log_list .lesson_ttl{
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+.lesson_log_wrap .lesson_log_list .lesson_ttl a{
+	color: #333;
+}
+
+/*----------------------------------------------*/
+/* lesson log calendar
+/*----------------------------------------------*/
+.lesson_log_wrap .total_hours{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 120px;
+	text-align: center;
+	padding: 5px 10px;
+	background: #fff;
+	border: 5px solid #62cdd4;
+	color: #555;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.lesson_log_wrap .lesson_log_calendar_wrap small{
+	display: block;
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 8px;
+}
+.lesson_log_wrap .lesson_log_calendar table{
+	width: 100%;
+	border: 5px solid #62cdd4;
+	background: #fff;
+	border-collapse: separate;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.2);
+}
+.lesson_log_wrap .lesson_log_calendar table:first-child{
+	margin-top: none;
+}
+.lesson_log_wrap .lesson_log_calendar tr{
+	height: 58px;
+}
+.lesson_log_wrap .lesson_log_calendar th{
+	padding: 5px 10px;
+	border-left: #ccc solid 1px;
+	text-align: center;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.lesson_log_wrap .lesson_log_calendar th:first-child{
+	border-left: none;
+}
+.lesson_log_wrap .lesson_log_calendar th.col_1{
+	color: #F70004;
+}
+.lesson_log_wrap .lesson_log_calendar th.col_7{
+	color: #4166dd;
+}
+.lesson_log_wrap .lesson_log_calendar .col_1{
+	background: #fff7f7;
+}
+.lesson_log_wrap .lesson_log_calendar .col_7{
+	background: #f7fbff
+}
+.lesson_log_wrap .lesson_log_calendar td{
+	padding: 5px 0 0;
+	border-top: #ccc solid 1px;
+	border-left: #ccc solid 1px;
+	text-align: center;
+	font-size: 13px;
+	font-size: 1.3rem;
+	vertical-align: top;
+}
+.lesson_log_wrap .lesson_log_calendar tr:first-child td{
+	border-top: none;
+}
+.lesson_log_wrap .lesson_log_calendar td .day{
+	display: block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 5px 7px;
+	text-align: left;
+}
+.lesson_log_wrap .lesson_log_calendar td.off{
+}
+.lesson_log_wrap .lesson_log_calendar td.off .day{
+	color: #ccc;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li{
+	padding: 10px 0 10px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li:hover{
+	background: #fffcee;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .thumb{
+	margin-bottom: 7px;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .thumb img{
+	display: block;
+	width: 70px;
+	margin:  0 auto;
+	border: #ccc 1px solid;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .thumb a:hover img{
+	opacity: 1;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .name{
+	width: 110px;
+	margin: 0 auto 5px;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .kana{
+	width: 110px;
+	margin: 0 auto 5px;
+	color: #999;
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+.lesson_log_wrap .lesson_log_calendar .lessons li .hours{
+	width: 110px;
+	margin: 0 auto;
+	color: #999;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+/*----------------------------------------------*/
+/* lesson memo list
+/*----------------------------------------------*/
+.lesson_log_wrap .lesson_memo_list th.col_3{
+	width: auto;
+}
+.lesson_log_wrap .lesson_memo_list .btn_save_memo{
+	display: inline-block;
+	/display: inline;
+	margin-top: 0;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+
+/*----------------------------------------------*/
+/* lesson log detail
+/*----------------------------------------------*/
+.lesson_log_detail_wrap .page_links{
+	float: right;
+	width: auto;
+}
+.lesson_log_detail_wrap .container_2{
+	margin-bottom: 20px;
+}
+/* textbook */
+.lesson_log_detail_wrap .lesson_log_list{
+	margin-bottom: 20px;
+}
+.lesson_log_detail_wrap .textbook_wrap{
+	width: 100%;
+	background: #f4f4f4;
+	border: #ccc solid 1px;
+	margin-bottom: 10px;
+}
+.lesson_log_detail_wrap .textbook_wrap .textbook_inner{
+	position: relative;
+	width: auto;
+	height: 300px;
+	min-height: 1000px;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow: hidden;
+	border: #ccc solid 1px;
+	margin: 5px;
+}
+.lesson_log_detail_wrap .textbook_wrap .textbook_inner img{
+	cursor: move;
+}
+.lesson_log_detail_wrap .textbook_wrap .textbook_inner iframe{
+	width: 100%;
+	height: 100%;
+}

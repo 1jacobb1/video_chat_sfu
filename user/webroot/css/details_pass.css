@@ -1,0 +1,70 @@
+
+/*-------------------------------------------------------*/
+/* pass page style
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------*/
+/* pass resend パスワード再送
+/*-------------------------------------------*/
+.pass_resend_wrap .btn_wrap p{
+	margin-top: 30px;
+}
+
+/*-------------------------------------------*/
+/* pass resend パスワード再登録
+/*-------------------------------------------*/
+.pass_reset_wrap .current_pass{
+	font-size: 15px;
+	font-size: 1.5rem;
+	letter-spacing: 0.2em;
+}
+
+/*-------------------------------------------*/
+/* pass change パスワード変更
+/*-------------------------------------------*/
+.pass_change_wrap .container{
+	padding: 30px 30px;
+	/width: 900px;
+}
+.pass_change_wrap .container .sec_wrap{
+	margin-bottom: 15px;
+}
+.pass_change_wrap .page_top_area_wrap{
+	margin-bottom: 15px;
+}
+.pass_change_wrap .sec_wrap{
+	width: 100%;
+	border-bottom: 2px solid #f5f5f5;
+	margin-bottom: 15px;
+}
+.pass_change_wrap .cur_password{
+	display: block;
+	min-height: 29px;
+	line-height: 29px;
+}
+.pass_change_wrap .t_notice{
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+}
+.pass_change_wrap .btn_wrap .check{
+	display: block;
+	margin-top: 15px;
+}
+.pass_change_wrap .links{
+	margin-top: 10px;
+}
+.pass_change_wrap .links li{
+	margin-bottom: 10px;
+}
+
+/*-------------------------------------------*/
+/* pass change complete パスワード変更完了
+/*-------------------------------------------*/
+.pass_change_wrap.complete_wrap .complete_msg_style_2{
+	margin-bottom: 30px;
+}
+.pass_change_wrap.complete_wrap .pass_change_data{
+	margin-bottom: 20px;
+}

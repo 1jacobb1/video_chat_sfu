@@ -1,0 +1,100 @@
+
+@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');}
+
+#icon{
+	list-style:none;
+	text-align:right;
+	margin:0;
+	display:inline-block;
+	
+}
+
+#icon ul.icons
+		{
+			cursor: default;
+			margin:0;
+			display:inline-block;
+		}	
+		
+			#icon ul.icons li
+			{
+				display: inline-block;
+				padding:0px 0 0 5px;
+				margin:0 auto;
+			}
+			
+				#icon ul.icons a
+				{
+					display: inline-block;
+					margin:0 auto;
+					padding:0 1px;
+					line-height:100%;
+					-moz-transition: background-color 0.25s ease-in-out;
+					-webkit-transition: background-color 0.25s ease-in-out;
+					-o-transition: background-color 0.25s ease-in-out;
+					-ms-transition: background-color 0.25s ease-in-out;
+					transition: background-color 0.25s ease-in-out;
+					text-align: center;
+					color:#fff;
+					border-radius:100%;
+				}
+
+					ul.icons a:hover
+					{
+						border-radius:100%;
+					}
+
+.fa
+	{
+		text-decoration: none;
+		display:inline-block;
+	}
+
+		.fa.solo
+		{
+		}
+		
+			.fa.solo span
+			{
+				display:none;
+			}
+			
+		.fa:before
+		{
+			display:inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1.2rem;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+
+
+		.fa-twitter:before{
+				content:"\f099"; 
+				background:#00acee;
+				border-radius:100%;
+				margin:0 auto;
+				padding:5px;
+				line-height:100%;
+				width:1.5rem;
+				height:1.5rem;
+				display:inline-block;
+				line-height:1.5rem;
+		}
+		.fa-facebook:before{
+				content:"\f09a"; 
+				background:#4965b5;
+				border-radius:100%;
+				margin:0 auto;
+				padding:5px;
+				line-height:100%;
+				width:1.5rem;
+				height:1.5rem;
+				display:inline-block;
+				line-height:1.5rem;
+		}
+

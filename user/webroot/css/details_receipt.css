@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color:#fff;
+}
+
+.page_wrap--receipt2{
+	background-color:#fff;
+}
+
+.page_wrap--receipt2 h1{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+.page_wrap--receipt2 .receipt_name{
+	margin-bottom:20px;
+	font-size:22px;
+}
+.page_wrap--receipt2 .receipt_name .destination_comp{
+	display:none;
+}
+.page_wrap--receipt2 .receipt_name .destination_comp p:after{
+	content:"様";
+	margin-left:10px;
+}
+
+.page_wrap--receipt2 .receipt_name input{
+	margin-right:10px;
+	width:320px;
+}
+
+.page_wrap--receipt2 .btn_style .btn_orange{
+	float:right;
+
+}
+
+.page_wrap--receipt2 .container_inner{
+	padding:30px 90px;
+	width: 750px;
+	margin:0 auto;
+}
+
+.page_wrap--receipt2 .receipt_header{
+	margin-bottom:30px;
+}
+
+
+.page_wrap--receipt2 .receipt_header address{
+	float:left;
+	font-size:18px;
+	line-height:2.5rem;
+}
+
+.page_wrap--receipt2 .receipt_header span{
+	float:right;
+}
+
+.page_wrap--receipt2 .receipt_header span img{
+	width:200px;
+	height:auto;
+}
+
+
+
+.page_wrap--receipt2 .details table{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:40px;
+}
+.page_wrap--receipt2 .details table th{
+	text-align:center;
+	padding:10px 0;
+	background-color:#eee !important;
+	border:#d6d6d6 solid 2px;
+	font-size:15px;
+}
+
+.page_wrap--receipt2 .details table td{
+	text-align:center;
+	padding:20px 0;
+	border:#d6d6d6 solid 2px;	
+	font-size:15px;
+}
+
+
+.page_wrap--receipt2 .receipt_footer p{
+	float:left;
+	font-size:18px;
+}
+
+.page_wrap--receipt2 .receipt_footer span{
+	float:right;
+}
+
+.page_wrap--receipt2 .btn_style{
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+}
+
+@media print{
+	.page_wrap--receipt2 .noprint{
+		display:none;
+	}
+	
+	.page_wrap--receipt2 .receipt_name input{
+		border:none;
+		background:none;
+		font-size:25px;
+	}
+
+	.page_wrap--receipt2 .receipt_name .destination_comp{
+		display:block;
+	}
+
+	@page { margin: 0; }
+}

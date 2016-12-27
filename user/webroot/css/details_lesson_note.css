@@ -1,0 +1,941 @@
+
+/*-------------------------------------------------------*/
+/* lesson note page
+/*-------------------------------------------------------*/
+.lesson_note_wrap .container{
+	padding: 30px 30px;
+	/width: 900px;
+}
+
+/*-------------------------------------------------------*/
+/* lesson note list page
+/*-------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/* total lessons
+/*----------------------------------------*/
+
+.lesson_note_wrap .total_lessons{
+	text-align:right;
+	margin-bottom:20px;
+}
+
+.lesson_note_wrap .lesson_note_word_wrap p{
+	display:inline-block;
+	font-weight:bold;
+}
+.lesson_note_wrap .lesson_note_word_wrap p+p{
+	margin-left:20px;
+}
+
+.lesson_note_wrap .lesson_note_word_wrap p span{
+	font-weight:normal;
+	margin-left:10px;
+}
+
+/*----------------------------------------*/
+/* lesson times
+/*----------------------------------------*/
+.lesson_note_wrap .lesson_times{
+	margin: 15px 0 22px;
+	position: absolute;
+	top: 136px;
+	left: 50px;
+	z-index: 3;
+}
+/*----------------------------------------*/
+/* sort lesson note
+/*----------------------------------------*/
+.lesson_note_wrap .sort_date{
+	/*text-align:right;
+	margin-bottom:10px;*/
+	position: absolute;
+	top: 132px;
+	right: 50px;
+	z-index:3;
+}
+
+.lesson_note_wrap .sort_date.lesson_message{
+	top:100px;
+}
+
+.lesson_note_wrap .sort_date select{
+	background:#fff;
+}
+
+
+
+/*----------------------------------------*/
+/* lesson log table
+/*----------------------------------------*/
+.lesson_note_wrap .tab_contents{
+	padding: 70px 20px 20px;
+}
+
+.lesson_log_table table{
+	width: 100%;
+	table-layout: fixed;
+	text-align: center;
+	background: #fff;
+}
+.lesson_log_table table .col_datetime{
+	width: 30%;
+}
+.lesson_log_table table .col_lesson_time{
+	width: 15%;
+}
+.lesson_log_table table .col_instructor_name{
+	width: auto;
+}
+.lesson_log_table table .col_instructor_name a{
+	color: #555;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.lesson_log_table table .col_instructor_name a:hover{
+	color: #16a9b2;
+}
+.lesson_log_table table thead{
+	border: #555 solid 1px;
+}
+.lesson_log_table table thead tr th{
+	background: #555;
+	color: #fff;
+	padding: 10px;
+	border-left: #686868 solid 1px;
+}
+.lesson_log_table table tbody tr td{
+	padding: 15px 10px;
+	border: #ccc solid 1px;
+}
+.lesson_log_table table .datetime .time{
+	margin-left: 5px;
+}
+
+/*----------------------------------------*/
+/* lesson note list
+/*----------------------------------------*/
+.lesson_note_list .lesson_note_list_item{
+	position: relative;
+	padding: 20px 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+	margin-top: 20px;
+}
+.lesson_note_list .lesson_message{
+	padding: 10px 10px;
+	margin-top: 10px;
+}
+.lesson_note_list .lesson_note_list_item:first-child{
+	margin-top: 0;
+}
+.lesson_note_list .lesson_note_list_item .col_wrap{
+	display: table;
+	width: 100%;
+}
+.lesson_note_list .lesson_note_list_item .col_left,
+.lesson_note_list .lesson_note_list_item .col_right{
+	display: table-cell;
+	vertical-align: top;
+}
+.lesson_note_list .lesson_note_list_item .col_left{
+	width: 180px;
+}
+.lesson_note_list .lesson_note_list_item .col_left .lesson_status{
+	margin-bottom: 15px;
+}
+.lesson_note_list .lesson_note_list_item .user_data .thumb img,
+.lesson_note_list .lesson_note_list_item .instructor_data .thumb img{
+	display: block;
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+	margin: 0 auto;
+}
+.lesson_note_list .lesson_message .instructor_data .thumb img{
+	width:50px;
+	height:50px;
+	border-radius: 50px;
+}
+.lesson_note_list .lesson_note_list_item .user_data .thumb,
+.lesson_note_list .lesson_note_list_item .instructor_data .thumb{
+	margin-bottom: 10px;
+}
+.lesson_note_list .lesson_note_list_item .user_data p,
+.lesson_note_list .lesson_note_list_item .instructor_data p{
+	width: 180px;
+}
+.lesson_note_list .lesson_note_list_item .user_data .name,
+.lesson_note_list .lesson_note_list_item .instructor_data .name{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.lesson_note_list .lesson_note_list_item .user_data .kana,
+.lesson_note_list .lesson_note_list_item .instructor_data .kana{
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #999;
+	text-align: center;
+}
+.lesson_note_list .lesson_note_list_item .col_right{
+	padding-left: 30px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data dl{
+	margin-bottom: 10px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data dt{
+	display: inline-block;
+	background: #F9F6EE;
+	padding: 10px;
+	border-radius: 4px;
+	float: left;
+	min-width: 100px;
+	text-align: center;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data dd{
+	float: left;
+	line-height: 40px;
+	margin-left: 20px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data .dd_datetime .time{
+	margin-left: 15px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data .dd_reserved_time .time{
+	margin-left: 15px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data .dd_canceled_time .time{
+	margin-left: 15px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data .dt_comment{
+	text-align: center;
+	float: none;
+	margin-bottom: 10px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .lesson_data .dd_comment{
+	float: none;
+	line-height: 1.5;
+	margin-left: 0;
+	word-break:break-all;
+}
+.lesson_note_list .lesson_note_list_item .col_right .func{
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 40px;
+}
+.lesson_note_list .lesson_note_list_item .col_right .link_detail{
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+/*----------------------------------------*/
+/* lesson list 1
+/*----------------------------------------*/
+.lesson_list_1 .lesson_list_item{
+	position: relative;
+	padding: 20px 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+}
+.lesson_list_1 .lesson_list_item + .lesson_list_item{
+	margin-top: 20px;
+}
+.lesson_list_1 .lesson_list_item .col_wrap{
+	display: table;
+	width: 100%;
+}
+.lesson_list_1 .lesson_list_item .col_left,
+.lesson_list_1 .lesson_list_item .col_right{
+	display: table-cell;
+	vertical-align: top;
+}
+.lesson_list_1 .lesson_list_item .col_left{
+	width: 180px;
+}
+.lesson_list_1 .lesson_list_item .teacher_data .thumb img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+	margin: 0 auto;
+}
+.lesson_list_1 .lesson_list_item .teacher_data .thumb{
+	margin-bottom: 10px;
+}
+.lesson_list_1 .lesson_list_item .teacher_data p{
+	width: 180px;
+}
+.lesson_list_1 .lesson_list_item .teacher_data .name{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.lesson_list_1 .lesson_list_item .teacher_data .kana{
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #999;
+	text-align: center;
+}
+.lesson_list_1 .lesson_list_item .col_right{
+	padding-left: 30px;
+}
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dl{
+	display: table;
+}
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dt,
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dd{
+	display: table-cell;
+	vertical-align: top;
+}
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dt{
+	width: 130px;
+	padding-bottom: 10px;
+}
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dt .data_ttl{
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #F9F6EE;
+	padding: 10px;
+	border-radius: 4px;
+	text-align: center;
+}
+.lesson_list_1 .lesson_list_item .col_right .lesson_data dd{
+	padding: 10px;
+	line-height: 1.5;
+}
+
+/*-------------------------------------------------------*/
+/* lesson note detail page
+/*-------------------------------------------------------*/
+.lesson_note_detail_wrap textarea{
+	font: inherit;
+	line-height: 1.5;
+	box-shadow: 2px 2px 0 0 rgba(0,0,0,0.1) inset;
+}
+.lesson_note_detail_wrap input[type='text']{
+	border-color: #D7D4CC;
+	box-shadow: 2px 2px 0 0 rgba(0,0,0,0.2) inset;
+	font: inherit;
+	line-height: 34px;
+	padding: 5px 15px 2px;
+}
+.lesson_note_detail_wrap .container .top_area{
+	padding: 10px 0 20px;
+	border-bottom: #f4f4f4 2px solid;
+}
+.lesson_note_detail_wrap .container .top_area .date{
+	text-align: center;
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+	/*color: #6FACBA;*/
+	color: #16979F;
+}
+.lesson_note_detail_wrap .container .top_area .date:before{
+	display: inline-block;
+	content: '';
+	width: 29px;
+	height: 26px;
+	background: url('../images/icon/pencil_green.png') no-repeat center center;
+	margin-right: 10px;
+}
+.lesson_note_detail_wrap .container .top_area .date .time{
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.lesson_note_detail_wrap .container .section{
+	padding: 20px 0;
+	border-bottom: #f4f4f4 2px solid;
+}
+.lesson_note_detail_wrap .container .section .sec_ttl{
+	margin-bottom: 15px;
+	color: #16979F;
+}
+.lesson_note_detail_wrap .container .section .sec_ttl.rating_eva{
+	width: 180px;
+}
+.lesson_note_detail_wrap .container .rating_area td:first-child{
+	width: 200px;
+}
+.lesson_note_detail_wrap .container .rating_area td{
+	vertical-align: top;
+	padding-right: 30px;
+}
+.lesson_note_detail_wrap .container .rating_area td .instructor_msg_desc{
+	line-height: 2.4rem;
+	padding-bottom: 20px;
+}
+
+/* btn func */
+.lesson_note_detail_wrap .btn_func{
+	font: inherit;
+	font-weight: bold;
+	color: #444;
+	text-shadow: 1px 1px 0 #fff;
+	min-width: 65px;
+	padding: 10px 10px;
+	border-radius: 4px;
+}
+
+/*----------------------------------------*/
+/* instructor msg area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .instructor_msg_area{
+}
+.lesson_note_detail_wrap .instructor_msg_area dl{
+	width: 100%;
+	border:solid 1px;
+	margin-top:10px;
+	display:table;
+	border-collapse: separate;
+	border-radius:4px;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl:first-child{
+	margin-top:0;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl dt{
+	display:table-cell;
+	text-align:center;
+	color:#fff;
+	width:20%;
+	padding:5px 0;
+	vertical-align:middle;
+	line-height:1.3;
+}
+.lesson_note_detail_wrap .instructor_msg_area dd{
+	display:table-cell;
+	width:80%;
+	  vertical-align: middle;
+}
+.lesson_note_detail_wrap .instructor_msg_area dd ul{
+}
+.lesson_note_detail_wrap .instructor_msg_area dd ul li{
+	display:table;
+	width:100%;
+	border-top:solid 1px;
+}
+.lesson_note_detail_wrap .instructor_msg_area dd ul li:first-child{
+	border-top:none;
+}
+.lesson_note_detail_wrap .instructor_msg_area dd ul li span{
+	display:table-cell;
+	width:5%;
+	text-align:center;
+	border-right:solid 1px;
+	vertical-align:middle;
+}
+.lesson_note_detail_wrap .instructor_msg_area dd ul li p{
+	display:table-cell;
+	word-break: break-word;
+	width:90%;
+	padding:2% 0 2% 2%;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_content{
+	width:100%;
+	border-color:#FF8376;
+}
+
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_content dt{
+	background-color:#FF8376;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_content dd ul li span{
+	color:#FF8376;
+	border-color:#FF8376;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_able{
+	border:solid 1px #669BD7;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_able dt{
+	background-color:#669BD7;
+	font-size:1.3rem;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_able dd li{
+	border-color:#669BD7;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_able dd li span{
+	color:#669BD7;
+	border-color:#669BD7;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_review{
+	border:solid 1px #7DBD67;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_review dt{
+	background-color:#7DBD67;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_review dd li{
+	border-color:#7DBD67;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_review dd li span{
+	color:#7DBD67;
+	border-color:#7DBD67;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_others{
+	border:solid 1px #e3e3e3;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_others dt{
+background-color: #e3e3e3;
+  color: #555;}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_others dd li{
+	border-color:#DEE410;
+}
+.lesson_note_detail_wrap .instructor_msg_area dl.lesson_others dd li span{
+	color:#DEE410;
+	border-color:#DEE410;
+}
+
+.lesson_note_detail_wrap .instructor_msg_area table{
+	width: 100%;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor{
+	width: 180px;
+	vertical-align:top;
+	padding-right:30px;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor .thumb img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: 0 auto;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor .thumb{
+	margin-bottom: 10px;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor p{
+	width: 180px;
+	text-align: center;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor .name{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: 5px;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_instructor .kana{
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #999;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg{
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.7;
+	padding: 0 15px 5px 15px;
+	border-radius: 6px;
+}
+.lesson_note_detail_wrap .instructor_msg dl {
+	margin-bottom: 10px;
+}
+.lesson_note_detail_wrap .instructor_msg dl:last-child {
+	margin-bottom: 0;
+}
+.lesson_note_detail_wrap .instructor_msg dt {
+	display: inline-block;
+	/*background: #F9F6EE;*/
+	background: #BEB8B4;
+	background: #999;
+	color: #fff;
+	padding: 8px;
+	border-radius: 4px;
+	float: left;
+	min-width: 120px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.lesson_note_detail_wrap .instructor_msg dd {
+	float: left;
+	line-height: 30px;
+	margin-left: 15px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.lesson_note_detail_wrap .instructor_msg .dd_datetime span {
+	font-weight: bold;
+}
+
+.lesson_note_detail_wrap .instructor_msg .dt_comment {
+	text-align: center;
+	float: none;
+	margin-bottom: 10px;
+}
+.lesson_note_detail_wrap .instructor_msg .dd_comment {
+	clear: both;
+	float: none;
+	line-height: 1.5;
+	margin-left: 0;
+	word-wrap: break-word;
+}
+.lesson_note_detail_wrap .instructor_msg .dd_lesson_memo,  .instructor_msg .dd_message {
+	clear: both;
+	display: block;
+	width: 100%;
+	line-height: 1.5;
+	margin: 10px 0 5px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.lesson_note_detail_wrap .instructor_msg table {
+	width: 100%;
+	line-height:1.5;
+}
+.lesson_note_detail_wrap .instructor_msg th {
+	width: 136px;
+	text-align: center;
+	border: solid 1px #bbb;
+	color: #555;
+	font-weight: normal;
+	background: #eee;
+	height: 50px;
+}
+.lesson_note_detail_wrap .instructor_msg tr+tr th {
+	border-bottom:solid 1px #ccc;
+}
+.lesson_note_detail_wrap .instructor_msg td {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.lesson_note_detail_wrap .instructor_msg td .lesson_page{
+	font-size: 1.4rem;
+	color: #999;
+	border-top: 1px dotted #bbb;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.lesson_note_detail_wrap .instructor_msg td .lesson_content{
+	font-weight: bold;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg table td{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	vertical-align:middle;
+	box-sizing:border-box;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg table td .col_msg_wrap{
+	display:table;
+	width:100%;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg table td .col_msg_wrap span{
+	display: table-cell;
+	width: 5%;
+	text-align: center;
+	border-right: solid 1px #ccc;
+	vertical-align: middle;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg table td p{
+	padding: 2% 0 2% 2%;
+	word-break: break-word;
+}
+.lesson_note_detail_wrap .instructor_msg_area table .col_msg .instructor_msg table td .col_msg_wrap p{
+	display: table-cell;
+	width: 90%;
+}
+
+/*----------------------------------------*/
+/* rating area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .desc_area{
+	padding: 15px 25px;
+	line-height: 1.7;
+	border-radius: 4px;
+	background: #F9F6EE;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 20px;
+}
+.lesson_note_detail_wrap .desc_area > .ttl{
+	margin-bottom: 10px;
+}
+.lesson_note_detail_wrap .desc_area > .ttl .t_note{
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin-left: 10px;
+	color: #f00;
+}
+.lesson_note_detail_wrap .monitor .thanks{
+	text-align:center;
+	line-height:1.5;
+}
+.lesson_note_detail_wrap .monitor strong{
+	display:block;
+}
+
+/*----------------------------------------*/
+/* rating area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .rating_area .rating_comment{
+	margin-top: 15px;
+}
+.lesson_note_detail_wrap .rating_area .rating_comment p{
+	line-height: 1.5;
+	background: #F9F6EE;
+	padding: 15px;
+	border-radius: 6px;
+}
+
+/*----------------------------------------*/
+/* used textbook area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li:nth-child(odd){
+	background: #F9F6EE;
+}
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li a{
+	display: block;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 60px;
+	color: inherit;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li a:hover{
+	background: #fffcee;
+}
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li .level{
+	font-weight: bold;
+}
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li .lesson_name,
+.lesson_note_detail_wrap .used_textbook_area .used_textbook_list li .lesson_desc{
+	margin-left: 15px;
+}
+
+/*----------------------------------------*/
+/* used sentence area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table{
+	width: 100%;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table tr:nth-child(odd){
+	background: #F9F6EE;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td{
+	padding: 8px 5px;
+	height: 44px;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_idx{
+	text-align: center;
+	width: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_idx{
+	text-align: center;
+	width: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_sentence{
+	text-align: left;
+	margin-right: 5px;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_sentence p{
+	line-height: 1.5;
+	margin: 1rem 0;
+	/*width: 680px;*/
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_sentence input[type='text']{
+	width: 620px;
+	margin-right: 5px;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_func{
+	letter-spacing: -0.4em;
+	min-width: 132px;
+	text-align: right;
+	padding-right: 12px;
+	white-space: nowrap;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_func .btn_func{
+	letter-spacing: normal;
+	margin-left: 5px;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table td.col_func .btn_func:first-child{
+	margin-left: 0;
+}
+.lesson_note_detail_wrap .used_sentence_area .used_sentence_list table tr.row_add td.col_func{
+	text-align: left;
+}
+
+/*----------------------------------------*/
+/* used words area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .used_words_area .used_words_list table{
+	width: 100%;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table tr:nth-child(odd){
+	background: #F9F6EE;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td{
+	padding: 8px 5px;
+	height: 44px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_idx{
+	text-align: center;
+	width: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_word{
+	text-align: left;
+	width: 200px;
+	margin-right: 5px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_word p{
+	line-height: 1.5;
+	margin: 1rem 0;
+	width: 238px;
+	word-wrap: break-word;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_word input[type='text']{
+	width: 200px;
+	margin-right: 5px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_memo{
+	width: 414px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_memo input[type='text']{
+	width: 380px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_func{
+	padding-right: 10px;
+	letter-spacing: -0.4em;
+	white-space: nowrap;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_func .btn_func{
+	letter-spacing: normal;
+	margin-left: 5px;
+}
+.lesson_note_detail_wrap .used_words_area .used_words_list table td.col_func .btn_func:first-child{
+	margin-left: 0;
+}
+
+/*----------------------------------------*/
+/* lesson memo area
+/*----------------------------------------*/
+.lesson_note_detail_wrap .lesson_memo_area{
+	margin-bottom: 20px;
+}
+.lesson_note_detail_wrap .lesson_memo_area p{
+	line-height: 1.5;
+	/*background: #F9F6EE;*/
+	padding: 15px;
+	border-radius: 6px;
+}
+.lesson_note_detail_wrap .lesson_memo_area .lesson_memo{
+	height:320px;
+}
+/*----------------------------------------*/
+/* save button
+/*----------------------------------------*/
+.lesson_note_detail_wrap .container .btn_wrap_bottom{
+	margin: 25px auto 15px;
+}
+
+/*----------------------------------------*/
+/* vocabulary list
+/*----------------------------------------*/
+.vocabulary_wrap .page_top_area_wrap{
+	margin-bottom: 20px;
+}
+.vocabulary_wrap .contents_load_area{
+	position: relative;
+	min-height: 300px;
+}
+.vocabulary_wrap .contents_load_area .loader{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.vocabulary_wrap .contents_load_area .loader i{
+	font-size: 30px;
+	font-size: 3.0rem;
+	color: #CCCCCC;
+	text-align: center;
+	margin-top: -50px; /* adjust position */
+}
+.vocabulary_wrap .used_words_index{
+	margin-bottom: 30px;
+}
+.vocabulary_wrap .used_words_index ul{
+	margin-right: -50px;
+}
+.vocabulary_wrap .used_words_index li{
+	float: left;
+	text-align: center;
+	width: 33px;
+	width: 33.8px;
+}
+.vocabulary_wrap .used_words_index li a{
+	display: block;
+	padding: 10px 0;
+	border: solid 1px #ccc;
+	border-left: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 rgba(255,255,255,1);
+	color: #999;
+	background: #f5f5f5;
+	background: -webkit-linear-gradient(#fefefe, #d7d7d7);
+	background: -o-linear-gradient(#fefefe, #d7d7d7);
+	background: -moz-linear-gradient(#fefefe, #d7d7d7);
+	background: linear-gradient(#fefefe, #d7d7d7);
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.vocabulary_wrap .used_words_index li:first-child a{
+	border-left: solid 1px #ccc;
+	border-radius: 4px 0 0 4px;
+}
+.vocabulary_wrap .used_words_index li:last-child a{
+	border-radius: 0 4px 4px 0;
+}
+.vocabulary_wrap .used_words_index li a:active,
+.vocabulary_wrap .used_words_index li a.on{
+	background: #16a9b2;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1) inset;
+}
+/* used_wrods_add */
+.vocabulary_wrap .used_words_add{
+	background: #F9F6EE;
+	border-radius: 8px;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+.vocabulary_wrap .used_words_add table tr{
+	background: none !important;
+}

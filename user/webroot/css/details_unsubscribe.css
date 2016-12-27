@@ -1,0 +1,133 @@
+
+/*-------------------------------------------------------*/
+/* cs_unsubscribe page style
+/*-------------------------------------------------------*/
+.unsubscribe_wrap .page_top_area_wrap{
+	margin-bottom: 15px;
+}
+.unsubscribe_wrap .container{
+	padding: 30px 30px;
+	/width: 900px;
+}
+.unsubscribe_wrap .container .sec_wrap{
+	width: 100%;
+	border-bottom: 2px solid #f5f5f5;
+	margin-bottom: 15px;
+}
+.unsubscribe_wrap .container .sec_wrap .t_1 small{
+	font-size: 1.4rem;
+}
+.unsubscribe_wrap .agree_wrap{
+	margin-bottom: 20px;
+}
+.unsubscribe_wrap .agree_wrap ul{
+	padding-left: 0.7em;
+}
+.unsubscribe_wrap .agree_wrap li{
+	margin-bottom: 10px;
+	text-indent: -2.5em;
+}
+.unsubscribe_wrap .agree_wrap li label{
+	cursor: pointer;
+}
+.unsubscribe_wrap .btn_style.disable{
+	color: #999 !important;
+}
+
+.unsubscribe_wrap .reason_wrap{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.unsubscribe_wrap .reason_wrap .ttl_sub{
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #777;
+	margin-bottom: 10px;
+}
+.unsubscribe_wrap .reason_wrap .select_status{
+	padding: 20px 30px 20px;
+}
+.unsubscribe_wrap .reason_wrap .select_status label{
+	display: inline-block;
+	margin-right: 60px;
+}
+.unsubscribe_wrap .box_gray{
+	padding: 20px;
+	background: #fcfcfc;
+	border-radius: 8px;
+}
+.unsubscribe_wrap .form_item + .form_item{
+	margin-top: 15px;
+}
+.unsubscribe_wrap .form_sub_item + .form_sub_item{
+	margin-top: 15px;
+}
+.unsubscribe_wrap .reason_cat_ttl{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.unsubscribe_wrap .reason_cat_ttl:before{
+	content: '・';
+}
+.unsubscribe_wrap .reason_wrap ul{
+	padding: 15px 0 15px 25px;
+	margin-right: -25px;
+}
+.unsubscribe_wrap .reason_wrap ul li{
+	line-height: 2;
+	width: 49%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.unsubscribe_wrap .reason_wrap ul li label{
+	font-size: 14px;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.unsubscribe_wrap .reason_wrap ul li input[type='radio']{
+	margin:3px 0.5em 5px 5px;
+}
+.unsubscribe_wrap .reason_wrap textarea{
+	width: 100%;
+	height: 200px;
+	box-sizing: border-box;
+	font: inherit;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.7;
+}
+
+
+/*-------------------------------------------*/
+/* cs_unsubscribe confirm
+/*-------------------------------------------*/
+.unsubscribe_wrap.confirm_wrap .msg_wrap{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.unsubscribe_wrap.confirm_wrap .msg_wrap p{
+	line-height: 2;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.unsubscribe_wrap.confirm_wrap .btn_wrap{
+	margin-bottom: 20px;
+}
+
+/*-------------------------------------------*/
+/* cs_unsubscribe complete
+/*-------------------------------------------*/
+.unsubscribe_wrap.complete_wrap .msg_wrap{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.unsubscribe_wrap.complete_wrap .msg_wrap p{
+	line-height: 2;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.unsubscribe_wrap.complete_wrap .btn_wrap{
+	margin-bottom: 20px;
+}

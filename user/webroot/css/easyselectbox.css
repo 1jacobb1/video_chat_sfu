@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* easy select box */
+
+.easy-select-box{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: left;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #555;
+	outline : none;
+	/display: inline;
+	/vertical-align: middle;
+	/zoom: 1;
+}
+.easy-select-box.on{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.easy-select-box .esb-displayer{
+	color: #555;
+	cursor: default;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 6px;
+	text-indent: 5px;
+	width: 183px;
+	cursor: pointer;
+}
+.easy-select-box .esb-displayer:after{
+	content: '▼';
+	display: inline-block;
+	float: right;
+}
+.easy-select-box.on .esb-displayer.on:after{
+	content: '▲';
+	display: inline-block;
+	float: right;
+}
+.easy-select-box .esb-displayer:hover{
+	filter: alpha(opacity=80);
+	-ms-filter: 'alpha(opacity=80)';
+	opacity: 0.8;
+}
+.easy-select-box:hover .esb-displayer{
+	text-decoration: none;
+}
+.easy-select-box.disabled .esb-displayer,
+.easy-select-box:hover.disabled .esb-displayer{
+	background-position: 0 -36px;
+}
+.easy-select-box .esb-dropdown{
+	position: absolute;
+	width: 183px;
+	max-height: 183px;
+	background: #fff;
+	display: none;
+	overflow: auto;
+	z-index: 999;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-left: -1px;
+}
+.easy-select-box .esb-item{
+	padding: 10px 10px;
+	background: #fff;
+	color: #555;
+	border-top: 1px solid #ccc;
+	transition: all 0.2s linear 0;
+	cursor: pointer;
+}
+.easy-select-box .esb-item:hover{
+	background: #555;
+	color: #fff;
+	text-decoration: none;
+}
+.easy-select-box .esb-item:last-child{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

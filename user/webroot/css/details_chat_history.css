@@ -1,0 +1,198 @@
+.chat_history_wrap .ch_teacher_content {
+  border-radius: 3px !important;
+  padding: 5px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container {
+  width: 30%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_more {
+  padding-top: 5px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_more .btn_blue {
+  margin: auto auto;
+  width: 88% !important;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic {
+  max-height:550px !important;
+  overflow-y: auto;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 10px 3px 10px 3px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node:first-child {
+  margin-top: 0px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node:last-child {
+  margin-bottom: 0px;
+  border-bottom: 2px solid #ddd;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node .ch_teacher_node_image {
+  width: 30%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node .ch_teacher_node_image .ch_node_image {
+  background: #ccc;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  margin: auto auto;
+  border: 2px solid #ccc;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node .ch_teacher_node_desc {
+  padding-right: 5px;
+  width: 67%;
+  height: auto;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node .ch_teacher_node_desc .name {
+  font-weight: bold;
+  font-size: 15px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node .ch_teacher_node_desc .desc {
+  font-size: 13px;
+  padding-top: 5px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_dynamic .ch_teacher_node_selected {
+  background-color: #F9F6DA;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_search {
+  padding-bottom: 5px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_search input {
+  width: 91.5%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_ci {
+  text-align: center;
+  padding: 15px;
+  display: none;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_ci i {
+  font-size: 30px !important;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_container .ch_teacher_block_ci .msg {
+  font-weight: bold;
+  padding-top:20px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_wrap {
+  width: 69%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_wrap .ch_teacher_chat_block_ci {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  display: none;
+}
+.chat_history_wrap .ch_teacher_content .ch_chat_block_search {
+  padding-bottom:5px;
+}
+.chat_history_wrap .ch_teacher_content .ch_chat_block_search input{
+  width:96.5%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat {
+  width: 99.5%;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  overflow-y: auto;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat .ch_teacher_dynamic_chat_content .ch_teacher_dynamic_node {
+  margin: 10px;
+  padding: 10px 0px 10px 0px;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat .ch_teacher_dynamic_chat_content .ch_teacher_dynamic_node .time {
+  width: 26%;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat .ch_teacher_dynamic_chat_content .ch_teacher_dynamic_node .message {
+  word-wrap:break-word; 
+  line-height:17px;
+  width: 73%;
+}
+
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat .ch_teacher_dynamic_chat_content .system-chat {
+  color: #b3b3b3;
+}
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_chat .ch_teacher_dynamic_chat_content .teacher-chat {
+  color: red;
+}
+/*Teacher Header Chat*/
+.chat_history_wrap .ch_teacher_content .ch_teacher_dynamic_wrap .ch_teacher_header {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+}
+.ch_teacher_header .ch_teacher_header_node .ch_teacher_node_desc .name {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+.ch_teacher_dynamic_loader {
+  text-align:center;
+  font-size:14px;
+  opacity:0.8;
+  background:#FFFFFF;
+  padding: 5px;
+  margin-top: -10px;
+  display: none;
+}
+table.ch_teacher_header_node {
+  clear:both;
+  cursor: pointer;
+  border:0px;
+  /*border-bottom:2px solid #f6f6f6;*/
+  padding: 10px 3px 10px 3px;
+  width: 100% !important;
+}
+table.ch_teacher_header_node td.name {
+  vertical-align: middle;
+  font-weight:bold;
+}
+table.ch_teacher_header_node td.desc {
+  height: auto;
+  vertical-align: middle;
+  padding-top: 10px;
+  text-align: right;
+  color: #c7c7c7;
+  width: 60%;
+  padding-right: 10px;
+}
+table.ch_teacher_header_node .ch_teacher_node_header_image {
+  padding: 10px;
+}
+table.ch_teacher_header_node .ch_teacher_node_header_image .ch_node_image {
+  background: #ccc;
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  margin: auto auto;
+  border: 2px solid #ccc;
+  background-color: #ccc !important;
+}
+div.ch_teacher_chat_search_btn {
+  border-radius:5px;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  position: relative;
+}
+div.ch_teacher_chat_search_input {
+  width: 89%;
+}
+i.fa-search{
+  cursor: pointer;
+  padding: 10px 20px 10px 20px !important;
+}
+.chat_history_wrap .ch_teacher_chat_block_ci {
+  text-align: center;
+  padding: 15px;
+  display: none;
+}
+.chat_history_wrap .ch_teacher_chat_block_ci i {
+  font-size: 30px !important;
+}
+.chat_history_wrap .ch_teacher_chat_block_ci .msg {
+  font-weight: bold;
+  padding-top:20px;
+}

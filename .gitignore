@@ -1,47 +1,29 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+lib/Cake/
+app/config/
+app/tmp/*
+teacher/tmp/*
+user/tmp/*
+plugins/*
+vendors/*
+tmp/
+config/
 
-# Folder config file
-Desktop.ini
+# IDE and editor specific files #
+#################################
+/nbproject
+.idea
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# OS generated files #
+######################
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
+.DS_Store?
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+Icon?
+ehthumbs.db
+Thumbs.db
+teacher/tmp/cache/
+user/tmp/cache/
+user/tmp/cache/*
+teacher/tmp/cache/*

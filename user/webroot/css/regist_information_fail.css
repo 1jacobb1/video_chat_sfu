@@ -1,0 +1,215 @@
+
+/*-------------------------------------------------------*/
+/* campaign 1
+/*-------------------------------------------------------*/
+.page_wrap--regist_information .container{
+	padding: 30px;
+	/width: 900px;
+}
+
+.page_wrap--regist_information .container > .ttl{
+	margin-bottom: 15px;
+}
+
+.page_wrap--regist_information .sec_regist_information{
+	position: relative;
+	margin-bottom: 30px !important;
+}
+.page_wrap--regist_information .sec_regist_information .main_img_area{
+	position: relative;
+	margin: -30px -30px 30px;
+}
+.page_wrap--regist_information .sec_regist_information .main_img_area .main_img{
+	border-radius: 4px 4px 0 0;
+}
+.page_wrap--regist_information .sec_regist_information .desc_area{
+	position: relative;
+	padding: 0 0 30px;
+	padding-left: 130px;
+}
+.page_wrap--regist_information .sec_regist_information .ic_area{
+	position: absolute;
+	top: 0;
+	left: 15px;
+	font-size: 52px;
+	color: #fff;
+	background: #68B236;
+	padding: 15px;
+	width: 52px;
+	height: 52px;
+	text-align: center;
+	border-radius: 52px;
+}
+.page_wrap--regist_information .sec_regist_information .ic_area-red{
+	background: #F47A7A;
+}
+.page_wrap--regist_information .sec_regist_information .desc{
+	font-size: 22px;
+	font-size: 2.2rem;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+.page_wrap--regist_information .sec_regist_information .desc span{
+	font-size:18px;
+	font-size:1.8rem;
+}
+/* notice list */
+.page_wrap--regist_information .sec_regist_information .notice_list li{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	margin-top: 5px;
+}
+.page_wrap--regist_information .sec_regist_information .notice_list li:first-child{
+	margin-top: 0;
+}
+/* notice_list_2 */
+.page_wrap--regist_information .sec_regist_information .notice_list_2_wrap{
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	padding: 30px 0 30px 120px;
+}
+.page_wrap--regist_information .sec_regist_information .notice_list_2 li{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding-left: 1.2em;
+	text-indent: -1.2em;
+}
+.page_wrap--regist_information .sec_regist_information .notice_list_2 li:before{
+	content: '※';
+	display: inline;
+	margin-right: 0.2em;
+}
+.page_wrap--regist_information .sec_regist_information .notice_list_2 li:first-child{
+	margin-top: 0;
+}
+/* data list */
+.page_wrap--regist_information .sec_regist_information .data_list dl{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	margin-top: 10px;
+	padding: 10px;
+	border: #68b236 solid 1px;
+	background: #fdfffb;
+}
+.page_wrap--regist_information .sec_regist_information .data_list dl:first-child{
+	margin-top: 0;
+}
+.page_wrap--regist_information .sec_regist_information .data_list dl dt{
+	font-weight: bold;
+	float: left;
+	min-width: 150px;
+	text-align: center;
+	padding-right: 10px;
+	margin-right: 15px;
+	border-right: 1px dotted #000;
+}
+/* data table */
+.page_wrap--regist_information .sec_regist_information .data_table{
+	margin-top: 10px;
+	max-width: 690px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table table{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table table tr{
+	border: #68b236 solid 1px;
+	background: #fdfffb;
+}
+.page_wrap--regist_information .sec_regist_information .data_table table tr th,
+.page_wrap--regist_information .sec_regist_information .data_table table tr td{
+	border-top: #68b236 solid 1px;
+	border-bottom: #68b236 solid 1px;
+	padding: 10px 15px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table table tr th{
+	border-left: #68b236 solid 1px;
+	border-right: #68b236 dotted 1px;
+	width: 180px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table table tr td{
+	border-right: #68b236 solid 1px;
+}
+/* data table comparison */
+.page_wrap--regist_information .sec_regist_information .data_table_comparison{
+	margin-top: 10px;
+	max-width: 690px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	width: 100%;
+	border-collapse: separate;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr{
+	background: #fdfffb;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr th{
+	padding: 10px 15px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr:first-child th{
+color: #fff;
+  background-color: #F08815;
+  width: 170px;
+  font-size: 20px;
+	font-size:2.0rem;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr td{
+	padding:10px 15px;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr:first-child td{
+	background-color:#FFF0E0;
+	border: solid 2px #F08815;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr:first-child td strong{
+	font-size:18px;
+	font-size:1.8rem;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr:last-child td{
+	background-color:#F6F6F6;
+	border:#D9D9D9 solid 2px;
+	border-top:none;
+}
+.page_wrap--regist_information .sec_regist_information .data_table_comparison table tr:last-child th{
+	background-color:#D9D9D9;
+}
+
+/* dat_att */
+.page_wrap--regist_information .sec_regist_information .data_att{
+	max-width: 690px;
+	margin: 0 auto;
+	line-height: 1.4;
+}
+
+.page_wrap--regist_information .sec_regist_information h3{
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+.page_wrap--regist_information .sec_regist_information h3 span{
+	padding-right:10px;
+
+}
+
+.page_wrap--regist_information .sec_regist_information .data_att h3{
+	margin: 30px 0 10px;
+}
+
+.page_wrap--regist_information .sec_regist_information .data_att p{
+	margin: 0 0 9px;
+}
+
+.page_wrap--regist_information .sec_regist_information .data_att p a{
+	text-decoration:underline;
+	color: #00ACEE;
+}

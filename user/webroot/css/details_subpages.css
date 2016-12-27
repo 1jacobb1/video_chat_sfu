@@ -1,0 +1,92 @@
+@charset "shift_jis";
+/* CSS Document */
+/*************************************************************/
+/*  common                                                    */
+/*************************************************************/
+.subpages_wrap .subpages_inner{
+	padding:20px 40px 30px 40px;
+}
+.tos_wrap p.tos_desc{
+	line-height: 150%;
+    font-size: 1.5rem;
+	padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+dl.subpages dt{
+	margin-top:20px;
+	font-size:130%;
+}
+dl.subpages dd{
+	line-height:150%;
+	font-size:1.5rem;
+	margin-bottom:30px !important;
+	padding-bottom:30px;
+	border-bottom: 1px solid #eee;
+}
+dl.subpages dt h3{
+	border-left:5px solid #0DB9B1;
+	padding-left:5px;
+	margin-bottom: 20px;
+}
+dl.subpages h4{
+	
+	margin:20px auto 10px auto;
+}
+dl.subpages ul{
+	padding:10px;
+	margin:0 30px;
+}
+dl.subpages li{
+	list-style:decimal;
+	padding-bottom:10px;
+}
+dl.subpages li ul li{
+	list-style:none;
+	font-size:90%;
+}
+
+/*************************************************************/
+/*  law_page                                                 */
+/*************************************************************/
+.law{}
+
+dl.law{
+	padding:20px 40px 40px 40px;
+	width:98%;
+	margin:0 auto;
+	vertical-align:top;
+	display:block;
+}
+
+dl.law dt{
+	margin:2px 0;
+	font-size:1.5rem;
+	background:#ECECEC;
+	border:1px dotted #E5E5E5;
+	padding:1%;
+	line-height:150%;
+	display:inline-block;
+	width:25%;
+	font-weight:bold;
+	vertical-align:top;
+}
+
+dl.law dd{
+	line-height:150%;
+	font-size:1.5rem;
+	margin-bottom:30px;
+	border:1px dotted #E5E5E5;
+	padding:1%;
+	display:inline-block;
+	width:65%;
+	margin:2px 0;
+}
+
+/*************************************************************/
+/*  privacy_page                                             */
+/*************************************************************/
+.tos_wrap .tos_wrap_inner{
+	padding:20px 40px 30px 40px;
+}

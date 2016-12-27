@@ -1,0 +1,532 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------*/
+/* signup page
+/*-------------------------------------------------------*/
+.signup_wrap .sec_wrap{
+	border-top:none;
+}
+.signup_wrap .container{
+	/width: 900px;
+	padding: 30px 30px;
+}
+.signup_wrap .signup_container{
+	width:800px;
+	margin:0 auto;
+}
+
+/*------------------------------------*/
+/* border
+/*------------------------------------*/
+.signup_wrap .bdr-top{
+	border-top:solid 1px #ededed;
+}
+.signup_wrap .bdr-bottom{
+	border-bottom:solid 1px #ededed;
+}
+
+/*------------------------------------*/
+/* box gray
+/*------------------------------------*/
+.signup_wrap .box-gray{
+	background:#f5f5f5;
+	border:solid 1px #eee;
+	border-radius: 6px;
+	padding:15px 20px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+/*------------------------------------*/
+/* box dotted
+/*------------------------------------*/
+.signup_wrap .box-dotted{
+	border:dotted 1px #999;
+	border-radius: 6px;
+	padding:15px 20px;
+}
+
+/*------------------------------------*/
+/* flow_signup
+/*------------------------------------*/
+.signup_wrap .flow_signup{
+	margin-bottom:30px;
+}
+.signup_wrap .flow_signup ul{
+	text-align: center;
+	letter-spacing: -0.4em;
+}
+.signup_wrap .flow_signup li{
+	position: relative;
+	display: inline-block;
+	min-width: 260px;
+	height: 44px;
+	line-height: 44px;
+	margin-left: 0px;
+	background: #F9F6EE;
+	text-align: left;
+	text-indent: 55px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	letter-spacing: normal;
+	margin: 0 3px;
+}
+.signup_wrap .flow_signup li .num{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 24px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 26px;
+	margin: auto;
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-indent: 0;
+	background: #ABABAB;
+	color: #fff;
+	border-radius: 30px;
+	text-align: center;
+}
+.signup_wrap .flow_signup li:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 20px solid #fff;
+	z-index: 2;
+}
+.signup_wrap .flow_signup li:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 260px;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 20px solid #F9F6EE;
+	z-index: 3;
+}
+.signup_wrap .flow_signup li:first-child{
+	text-indent: 45px;
+}
+.signup_wrap .flow_signup li:first-child .num{
+	left: 15px;
+}
+.signup_wrap .flow_signup li:first-child:before{
+	display: none;
+}
+.signup_wrap .flow_signup li:last-child:after{
+	display: none;
+}
+.signup_wrap .flow_signup li.on{
+	background: #16a9b2;
+	color: #fff;
+	font-weight: bold;
+}
+.signup_wrap .flow_signup li.on:after{
+	border-left-color: #16a9b2;
+}
+.signup_wrap .flow_signup li.on .num{
+	background: #29767B;
+}
+
+/* extension */
+.signup_wrap .flow_signup.col-3 li{
+	min-width: 260px;
+}
+.signup_wrap .flow_signup.col-3 li:after{
+	left: 260px;
+}
+.signup_wrap .flow_signup.col-4 li{
+	min-width: 200px;
+}
+.signup_wrap .flow_signup.col-4 li:after{
+	left: 200px;
+}
+
+/*------------------------------------*/
+/* signup form
+/*------------------------------------*/
+.signup_form table{
+	width:750px;
+	margin:0 auto;
+}
+.signup_form table tr{
+	border-bottom:solid 1px #ededed;
+}
+.signup_form table tr:last-child{
+	border-bottom: none;
+}
+.signup_form table th{
+	width:200px;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	vertical-align:middle;
+	line-height:1.5;
+	padding: 25px 0;
+}
+.signup_form table td{
+	padding: 25px 0 25px 20px;
+}
+.signup_form table td.col_mark{
+	padding: 25px 0 25px 0;
+	text-align: center;
+	border-bottom: none;
+}
+.signup_form table .small{
+	font-size:12px;
+	font-size:1.2rem;
+	font-weight:normal;
+}
+.signup_form input[type='text'],
+.signup_form input[type='email'],
+.signup_form input[type='password']{
+	background: #fff;
+	font-family: inherit;
+}
+.signup_form select{
+	background: #fff;
+	font-family: inherit;
+}
+
+/* extension */
+.signup_form.w-600 table{
+	width: 600px;
+}
+.signup_form table th.w-140{
+	width: 140px;
+}
+
+/*------------------------------------*/
+/* mailinput
+/*------------------------------------*/
+/*------------------------------------*/
+/* mailsend
+/*------------------------------------*/
+/*------------------------------------*/
+/* userinfo
+/*------------------------------------*/
+/*------------------------------------*/
+/* questionnaire
+/*------------------------------------*/
+.signup_wrap .quest_form{
+	border: solid 1px #ededed;
+	border-radius: 5px 5px 0 0;
+}
+.signup_wrap .quest_form .quest_form_ttl{
+	background:#EDEDED;
+	padding:20px 0;
+	margin-bottom: 5px;
+	text-align:center;
+	border-radius:5px 5px 0 0;
+	font-size:18px;
+	font-size:1.8rem;
+}
+.signup_wrap.signup_wrap--quest.quest_item_ttl{
+	font-size:16px;
+	font-size:1.6rem;
+	border-bottom:solid 1px #ededed;
+}
+.signup_wrap .quest_form .quest_form_item{
+	padding: 25px;
+}
+.signup_wrap .quest_form .quest_form_item + .quest_form_item{
+	padding-top: 15px;
+}
+.signup_wrap .quest_form .quest_form_item .quest_form_item_ttl{
+	font-size:16px;
+	font-size:1.6rem;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom:solid 1px #ededed;
+}
+.signup_wrap .quest_form .questant_list{
+	font-size:0;
+}
+.signup_wrap .quest_form .questant_list > li{
+	padding: 12px 0;
+	width:50%;
+	display:inline-block;
+	vertical-align:top;
+}
+.signup_wrap .quest_form .questant_list > li label{
+	font-size:14px;
+	font-size:1.4rem;
+	cursor:pointer;
+}
+.signup_wrap .quest_form .questant_list > li input[type='text']{
+	background:#fff;
+	padding: 5px 5px;
+	margin-left:10px;
+}
+.signup_wrap .quest_form textarea{
+	background: #fff;
+}
+.signup_wrap .quest_form textarea:disabled{
+	background: #eee;
+}
+.signup_wrap .quest_form textarea.h_auto{
+	min-height: inherit !important;
+}
+
+/*------------------------------------*/
+/* complete
+/*------------------------------------*/
+/*------------------------------------*/
+/* signup credit
+/*------------------------------------*/
+.signup-credit-header{
+	display: table;
+	width: 100%;
+}
+.signup-credit-header .cell{
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.signup-credit-header .cell figure{
+	float: right;
+}
+.signup_wrap .signup_price_table table{
+	width: 790px;
+	margin: 0 auto;
+	border: solid 2px #092846;
+	border-collapse: collapse;
+	color: #092846;
+}
+.signup_wrap .signup_price_table table th{
+	width: 150px;
+	background: #092846;
+	color: #fff;
+	padding: 25px 20px;
+	height: 96px;
+	box-sizing: border-box;
+	border-bottom: solid 2px #fff;
+}
+.signup_wrap .signup_price_table table tr:last-child th {
+	border: none;
+}
+.signup_wrap .signup_price_table table td {
+	padding: 20px 30px;
+	font-weight: normal;
+	box-sizing: border-box;
+	border-bottom: solid 2px #092846;
+}
+.signup_wrap .signup_price_table table td li + li{
+	margin-top: 10px;
+}
+.signup_wrap .title_box{
+	background: #F9F6EE;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.trigger_sub_contents{
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+.trigger_sub_contents:after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	height: 24px;
+	line-height: 1;
+	margin: auto;
+	font-family: 'fontAwesome';
+	content: '\f107';
+	margin-right: 5px;
+	line-height: 1;
+	vertical-align: middle;
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+.trigger_sub_contents.on:after{
+	content: '\f106';
+}
+.trigger_sub_contents:hover{
+	background: #fffcee;
+}
+.signup_wrap .plan_info .merit_list_wrap{
+	margin: -15px;
+}
+.signup_wrap .plan_info .merit_list{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 15px;
+}
+.signup_wrap .plan_info .merit_list .merit_item{
+	display: table-cell;
+	width: 250px;
+}
+.signup_wrap .plan_info .merit_list .merit_item + .merit_item{
+	margin-left: 20px;
+}
+.signup_wrap .plan_info .merit_list .merit_item img{
+	display: block;
+	width: 100%;
+}
+.signup_wrap .plan_info .merit_list .merit_item .ttl{
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.signup_wrap .plan_info .merit_list .merit_item .desc{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	text-align: left;
+	margin-top: 10px;
+}
+
+/*
+.signup_wrap .compare_table table{
+	width: 100%;
+	table-layout: fixed;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.25;
+}
+.signup_wrap .compare_table table th,
+.signup_wrap .compare_table table td{
+	border: #999 solid 1px;
+}
+.signup_wrap .compare_table table th{
+	height: 100px;
+	background: #3588b0;
+	color: #fff;
+}
+.signup_wrap .compare_table table td{
+	height: 80px;
+	text-align: center;
+	font-weight: bold;
+}
+.signup_wrap .compare_table table th:nth-child(2){
+	background: #f15544;
+}
+.signup_wrap .compare_table table td:nth-child(2){
+	color: #f15544;
+}
+.signup_wrap .compare_table table .t_small{
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.signup_wrap .compare_table .research{
+	text-align: right;
+	margin-top: 15px;
+}
+*/
+
+.signup_wrap .compare_table-2 table{
+	width: 100%;
+	margin: 0 auto;
+	table-layout: fixed;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.25;
+}
+.signup_wrap .compare_table-2 table th,
+.signup_wrap .compare_table-2 table td{
+	border: #999 solid 1px;
+}
+.signup_wrap .compare_table-2 table td{
+	height: 80px;
+	text-align: center;
+	font-weight: bold;
+	color: #555;
+}
+.signup_wrap .compare_table-2 table tr td:first-child{
+	width: 230px;
+}
+.signup_wrap .compare_table-2 table tr td.bg-blue{
+	background: #3588b0;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.signup_wrap .compare_table-2 table td.bg-red{
+	background: #f15544;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.signup_wrap .compare_table-2 table td.c-red{
+	color: #f15544;
+}
+.signup_wrap .compare_table-2 table .t_small{
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.signup_wrap .compare_table-2 .research{
+	text-align: right;
+	margin-top: 15px;
+}
+
+.signup_wrap .review_area {
+	padding: 0 60px 50px;
+}
+.signup_wrap .review_area .content_wrap {
+	width: 100%;
+	display: table;
+	padding: 50px 0 0;
+}
+.signup_wrap .review_area .content_wrap .left_box {
+	display: table-cell;
+	text-align: center;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.signup_wrap .review_area .content_wrap .left_box img {
+	padding-top: 20px;
+}
+.signup_wrap .review_area .content_wrap .right_box {
+	display: table-cell;
+	padding-left: 40px;
+}
+.signup_wrap .review_area .content_wrap .right_box h4 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.signup_wrap .review_area .content_wrap .right_box p {
+	padding-top: 40px;
+	line-height: 1.5;
+}
+
+/*------------------------------------*/
+/* signup faq
+/*------------------------------------*/
+.signup_wrap .signup_faq{
+	line-height: 1.5;
+}
+.signup_wrap .signup_faq dt{
+	margin-top: 15px;
+	font-weight: bold;
+}
+.signup_wrap .signup_faq dt:before{
+	font-family: 'fontAwesome';
+	content: '\f0da';
+	margin-right: 5px;
+}
+.signup_wrap .signup_faq dt:first-child{
+	margin-top: 0;
+}
+.signup_wrap .signup_faq dd{
+	margin-top: 15px;
+	padding: 0 0 0 10px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}

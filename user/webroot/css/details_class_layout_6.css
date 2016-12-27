@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*------------------------------------------*/
+/* layout 6
+/*------------------------------------------*/
+/*.page_wrap--class .pane_wrap--middle .main_table .main_left,
+.page_wrap--class .pane_wrap--middle .main_table .main_right{
+	width: 50%;
+}*/
+.page_wrap--class .pane_wrap--middle .main_table .main_right{
+	width: 400px;
+}
+.page_wrap--class .pane_wrap--middle .chat_area_box--screen{
+	display: none;
+}

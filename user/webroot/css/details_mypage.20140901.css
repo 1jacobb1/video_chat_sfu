@@ -1,0 +1,390 @@
+
+/*-------------------------------------------------------*/
+/* mypage style
+/*-------------------------------------------------------*/
+.mypage_wrap .container{
+	padding: 20px 30px;
+	/width: 900px;
+}
+.mypage_wrap .container > .ttl{
+	margin: 7px 10px 25px 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+.mypage_wrap .container > .ttl.indent{
+	text-indent: 100px;
+}
+
+/*----------------------------------------------*/
+/* layout
+/*----------------------------------------------*/
+.mypage_wrap .contents_wrap{
+	border-top: 1px solid #ccc;
+}
+.mypage_wrap .contents_wrap .col_sub{
+	float: left;
+	width: 174px;
+}
+.mypage_wrap .contents_wrap .col_main{
+	float: right;
+	width: 678px;
+}
+
+/*----------------------------------------------*/
+/* cnt point
+/*----------------------------------------------*/
+.mypage_wrap .cnt_point{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #00acee;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+.mypage_wrap .cnt_point dt,
+.mypage_wrap .cnt_point dd{
+	float: left;
+}
+.mypage_wrap .cnt_point dt{
+	position: relative;
+	bottom: -2px;
+}
+.mypage_wrap .cnt_point dd em{
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-right: 0.2em;
+}
+
+/*----------------------------------------------*/
+/* col_sub user info
+/*----------------------------------------------*/
+.mypage_wrap .col_sub .user_info{
+	position: relative;
+	padding: 15px;
+}
+.mypage_wrap .col_sub .user_info .thumb{
+	margin-bottom: 10px;
+}
+.mypage_wrap .col_sub .user_info .thumb img{
+	display: block;
+	border: #ccc 1px solid;
+	margin-bottom: 10px;
+}
+.mypage_wrap .col_sub .user_info .btn_change_pic{
+	display: block;
+	width: 140px;
+	height: 28px;
+	line-height: 28px;
+	background: #f4f4f4;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #6a6a6a;
+}
+.mypage_wrap .col_sub .user_info .data{
+	color: #999;
+	margin-bottom: 15px;
+}
+.mypage_wrap .col_sub .user_info .data p{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+.mypage_wrap .col_sub .user_info .data dl{
+	line-height: 1.5;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+.mypage_wrap .col_sub .user_info .data dl dt{
+	float: left;
+}
+.mypage_wrap .col_sub .user_info .data dl dd{
+	clear: all;
+}
+
+/*----------------------------------------------*/
+/* common section
+/*----------------------------------------------*/
+.mypage_wrap .section{
+	padding: 15px 15px 15px 0;
+	border-bottom: #ccc 1px solid;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.mypage_wrap .section > .t_1{
+	margin-bottom: 0;
+}
+.mypage_wrap .section .links{
+	float: right;
+	margin-top: 15px;
+}
+.mypage_wrap .section .links li{
+	margin-top: 10px;
+}
+.mypage_wrap .section .links li:first-child{
+	margin-top: 0;
+}
+
+/*----------------------------------------------*/
+/* sec_course
+/*----------------------------------------------*/
+.mypage_wrap .sec_course dl{
+	margin-right: 30px;
+	float: left;
+}
+.mypage_wrap .sec_course dt,
+.mypage_wrap .sec_course dd{
+	float: left;
+}
+.mypage_wrap .sec_course dt{
+	position: relative;
+	bottom: -2px;
+}
+.mypage_wrap .sec_course dd{
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/*----------------------------------------------*/
+/* sec_reserve
+/*----------------------------------------------*/
+.mypage_wrap .sec_reserve .reserve_list li{
+	position: relative;
+	border: #ccc solid 2px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 4px;
+}
+.mypage_wrap .sec_reserve .reserve_list li:first-child{
+	margin-top: 0;
+}
+.mypage_wrap .sec_reserve .reserve_list li p{
+	float: left;
+	padding: 0 15px;
+}
+.mypage_wrap .sec_reserve .reserve_list li .date{
+	min-width: 28%;
+	border-right: #ccc solid 2px;
+	background: #f4feff;
+	font-weight: bold;
+	text-align: center;
+}
+.mypage_wrap .sec_reserve .reserve_list li .date a{
+	color: #555;
+}
+.mypage_wrap .sec_reserve .reserve_list li .date .time{
+	margin-left: 10px;
+	font-weight: normal;
+}
+.mypage_wrap .sec_reserve .reserve_list li .teacher_name{
+	color: #a0a0a0;
+}
+.mypage_wrap .sec_reserve .reserve_list li .time_diff{
+	display: block;
+	float: right;
+	font-weight: bold;
+}
+.mypage_wrap .sec_reserve .reserve_list li .status{
+	position: absolute;
+	top: -2px;
+	right: -74px;
+	display: block;
+	width: 60px;
+	background: #ccc;
+	border-radius: 2px;
+	padding: 2px 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-align: center;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.2);
+}
+.mypage_wrap .sec_reserve .reserve_list li .status:after{
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(22, 169, 178, 0);
+	border-right-color: #ccc;
+	border-width: 6px;
+	margin-top: -6px;
+}
+/* wait status */
+.mypage_wrap .sec_reserve .reserve_list li.wait{
+	border-color: #ed1515;
+}
+.mypage_wrap .sec_reserve .reserve_list li.wait .date{
+	background: #ed1515;
+	border-right: #ed1515 2px solid;
+	color: #fff;
+}
+.mypage_wrap .sec_reserve .reserve_list li.wait .date a{
+	color: #fff;
+}
+.mypage_wrap .sec_reserve .reserve_list li.wait .time_diff{
+	color: #ed1515;
+}
+/* today */
+.mypage_wrap .sec_reserve .reserve_list li.today{
+	border-color: #16a9b2;
+}
+.mypage_wrap .sec_reserve .reserve_list li.today .date{
+	background: #16a9b2;
+	border-right: #16a9b2 2px solid;
+	color: #fff;
+}
+.mypage_wrap .sec_reserve .reserve_list li.today .date a{
+	color: #fff;
+}
+.mypage_wrap .sec_reserve .reserve_list li.today .time_diff{
+	color: #16a9b2;
+}
+.mypage_wrap .sec_reserve .reserve_list li .status.wait{
+	background: #ed1515;
+}
+.mypage_wrap .sec_reserve .reserve_list li .status.wait:after{
+	border-color: rgba(22, 169, 178, 0);
+	border-right-color: #ed1515;
+}
+.mypage_wrap .sec_reserve .reserve_list li .status.today{
+	background: #16a9b2;
+}
+.mypage_wrap .sec_reserve .reserve_list li .status.today:after{
+	border-color: rgba(22, 169, 178, 0);
+	border-right-color: #16a9b2;
+}
+
+/*----------------------------------------------*/
+/* sec_message
+/*----------------------------------------------*/
+.mypage_wrap .sec_message .t_1{
+	position: relative;
+	display: inline;
+	padding-right: 30px;
+}
+.mypage_wrap .sec_message .t_1:after{
+	position: absolute;
+	top: 2px;
+	right: 0;
+	display: block;
+	content: url('../images/icon/mail_s.png');
+	z-index: 0;
+}
+.mypage_wrap .sec_message .t_1 .cnt_unread{
+	position: absolute;
+	top: -12px;
+	right: -20px;
+	background: #ed1515;
+	color: #fff;
+	padding: 2px 5px;
+	border-radius: 14px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	z-index: 1;
+	/top: 0;
+	/right: -5px;
+}
+.mypage_wrap .sec_message .message_list li{
+	background: #fffff8;
+	border: #ccc solid 2px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 4px;
+}
+sec_message .message_list li:first-child{
+	margin-top: 0;
+}
+.mypage_wrap .sec_message .message_list li p{
+	float: left;
+	padding: 0 15px;
+}
+.mypage_wrap .sec_message .message_list li .date{
+	color: #999;
+	text-align: center;
+	width: 24%;
+}
+.mypage_wrap .sec_message .message_list li .name.from:before{
+	content: 'from：';
+	display: inline;
+	color: #999;
+}
+.mypage_wrap .sec_message .message_list li .name.to:before{
+	content: 'to：';
+	display: inline;
+	color: #999;
+}
+
+/*----------------------------------------------*/
+/* sec_profile
+/*----------------------------------------------*/
+.mypage_wrap .sec_profile .profile_edit dl dt{
+	margin-bottom: 5px;
+}
+.mypage_wrap .sec_profile .profile_edit dl dd{
+	margin-bottom: 15px;
+}
+.mypage_wrap .profile_edit dl dd.birth .easy-select-box .esb-displayer{
+	width: 80px;
+}
+.mypage_wrap .sec_profile .profile_edit .requests ul{
+	margin: 10px 0 0;
+}
+.mypage_wrap .sec_profile .profile_edit .requests li{
+	margin-bottom: 5px;
+}
+.mypage_wrap .sec_profile .profile_edit .requests li label{
+	cursor: pointer;
+}
+
+/*----------------------------------------------*/
+/* sec_account
+/*----------------------------------------------*/
+.mypage_wrap .sec_account .notice{
+	margin-bottom: 20px;
+}
+.mypage_wrap .sec_account .notice li{
+	color: #999;
+	line-height: 1.5;
+}
+.mypage_wrap .sec_account .notice li:before{
+	content: '※';
+	display: inline;
+	margin-left: -1em;
+}
+.mypage_wrap .sec_account .account_info dl{
+	line-height: 1.5;
+}
+.mypage_wrap .sec_account .account_info dl dd{
+	margin-bottom: 15px;
+}
+
+/*----------------------------------------------*/
+/* sec_point
+/*----------------------------------------------*/
+.mypage_wrap .sec_point .point_info dl{
+	line-height: 1.5;
+	margin: 10px 0 10px;
+}
+.mypage_wrap .sec_point .point_info dd{
+	margin-bottom: 15px;
+}
+.mypage_wrap .sec_point .point_info dd em{
+	font-weight: bold;
+}
+
+/*----------------------------------------------*/
+/* sec_withdraw
+/*----------------------------------------------*/
+.mypage_wrap .sec_withdraw{
+	padding: 20px 0 20px;
+	border-bottom: 0;
+}

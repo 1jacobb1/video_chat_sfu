@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.page_wrap--receipt .pager_header{
+	max-width:900px;
+	padding:0 0 10px;
+	margin:0 auto 30px;
+	border-bottom:#eee solid 2px;
+}
+
+.page_wrap--receipt .receipt_name{
+	margin-left:25px;
+}
+
+.page_wrap--receipt li:last-child{
+	font-size:1.8rem;
+	font-weight:bold;
+}
+
+.page_wrap--receipt li .page_sub_txt{
+	font-size:1.2rem;
+	font-weight:normal;
+	color:#999;
+	margin-left:10px;
+}
+
+.page_wrap--receipt .receipt_main{
+	width:800px;
+	margin:0 auto;
+}
+
+.page_wrap--receipt .receipt_main table{
+	width: 100%;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.page_wrap--receipt .page_num{
+	margin:40px 0;
+}
+
+.page_wrap--receipt .receipt_main table th{
+	font-size:1.7rem;
+	font-weight:bold;
+	padding:10px 0;
+	text-align:center;
+	border:#d6d6d6 solid 2px;
+	background-color:#eee;
+}
+
+.page_wrap--receipt .receipt_main table td{
+	text-align:center;
+	padding:20px 0;
+	border:#d6d6d6 solid 2px;	
+}
+
+.page_wrap--receipt .receipt_main table td a{
+	display:inline-block;
+	margin-top:15px;
+	text-decoration:underline;
+}

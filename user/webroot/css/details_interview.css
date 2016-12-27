@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_wrap.interview{
+	padding:0;
+}
+.page_wrap.interview .top_area_wrap{
+	width:100%;
+	height:392px;
+	background-color:#F8D456;
+	background-image:url(../images/interview/fujita/1/main_bg_left.png),
+					url(../images/interview/fujita/1/main_bg_right.png),
+					url(../images/interview/fujita/1/main_bg_left_figure.png),
+					url(../images/interview/fujita/1/main_bg_right_figure.png);
+	background-repeat:no-repeat,
+					no-repeat,
+					no-repeat,
+					no-repeat;
+	background-position:left center,
+						right center,
+						170px center,
+						right center;
+}
+.page_wrap.interview .top_area_wrap .top_area_content{
+	width:960px;
+	height:100%;
+	margin:0 auto;
+	padding:15px 0 0;
+	background-image:url(../images/interview/fujita/1/main_bg_conversation.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	box-sizing:border-box;
+}
+.page_wrap.interview .contents_area_wrap{
+	width:960px;
+	margin:0 auto;
+	padding:30px 0 0;
+}
+.page_wrap.interview .content_box{
+	margin-bottom:50px;
+}
+.page_wrap.interview .content_box .section_inner{
+	width:960px;
+	margin:0 auto;
+}
+.page_wrap.interview .content_box.section_4{
+	background:#fff4cf;
+	box-sizing:border-box;
+	background-image:url(../images/interview/fujita/1/section_4_bg_left.png),
+					url(../images/interview/fujita/1/section_4_bg_right.png);
+	background-repeat:repeat-x,
+					repeat-x;
+	height:390px;
+	box-sizing:border-box;
+}
+.page_wrap.interview .content_box.section_4 .content_ttl{
+	color: #342904;
+	border-left: solid 10px #342904;
+}
+.page_wrap.interview .content_box.section_4 .section_4_figure_fix{
+	position:absolute;
+	top:0;
+	right:-150px;
+}
+.page_wrap.interview .content_box.section_4 .section_inner{
+	padding-top:30px;
+	position:relative;
+}
+.page_wrap.interview .content_box.section_4 .section_inner .d_cell:first-child{
+	width:600px;
+}
+.page_wrap.interview .content_box.section_4 .d_table .d_cell dl dt{
+	color:#7b6827;
+	border-left: solid 2px #7b6827;
+}
+.page_wrap.interview .contents_area_head{
+	text-align:center;
+	margin-bottom:30px;
+}
+.page_wrap.interview .contents_area_head h2{
+	font-size:30px;
+	font-size:3.0rem;
+	font-weight:bold;
+	margin-bottom:15px;
+	color:#342904;
+}
+.page_wrap.interview .contents_area_head p{
+	font-size:18px;
+	font-size:1.8rem;
+}
+
+
+.page_wrap.interview .content_box .content_ttl{
+	font-size:30px;
+	font-size:3.0rem;
+	font-weight:normal;
+	color:#907417;
+	padding-left:15px;
+	border-left:solid 10px #907417;
+	padding-top:5px;
+	margin-bottom:30px;
+}
+.page_wrap.interview .content_box .d_table{
+	width:-webkit-calc(100% + 80px);
+	width:calc(100% + 80px);
+	border-spacing:40px 0;
+	margin:0px 0 0px -40px;
+}
+.page_wrap.interview .content_box .d_table .d_cell{
+	vertical-align:top;
+	line-height:2;
+}
+.page_wrap.interview .content_box .d_table .d_cell img{
+	display:block;
+}
+
+.page_wrap.interview .content_box .d_table .d_cell dl dt{
+	font-size:18px;
+	font-size:1.8rem;
+	font-weight:bold;
+	color:#B99622;
+	border-left:solid 2px #B99622;
+	padding-left:10px;
+	padding-top:2px;
+	margin-bottom:10px;
+	line-height:1;
+}
+.page_wrap.interview .content_box .d_table .d_cell dl dd{
+	font-size:16px;
+	font-size:1.6rem;
+	color:#342904;
+	margin-bottom:30px;
+}
+
+.page_wrap.interview .content_box .reporter_comment{
+	text-align:center;
+	line-height:1.5;
+}
+.page_wrap.interview .content_box .reporter_comment h3{
+	font-size:30px;
+	font-size:3.0rem;
+	font-weight:normal;
+	color:#342904;
+	margin-bottom:20px;
+}
+.page_wrap.interview .content_box .reporter_comment p{
+	font-size:16px;
+	font-size:1.6rem;
+	color:#342904;
+}
+
+.page_wrap.interview_profile{
+	border-top: 1px solid #dddddd;
+	box-shadow: 0px 1px 0px #999;
+}
+.page_wrap.interview_profile .contents_area_wrap{
+	padding: 40px 0 0;
+}
+.page_wrap.interview .adviser_profile{
+	position:relative;
+	margin-bottom:60px;
+}
+.page_wrap.interview .adviser_profile .profile_header{
+	border-radius:5px 5px 0 0;
+}
+.page_wrap.interview .adviser_profile .profile_header .profile_header_bg{
+	height:110px;
+	border-radius:5px 5px 0 0;
+	background-image:url(../images/interview/fujita/1/profile_header_bg.png);
+	position:relative;
+	z-index:5;
+	box-shadow: -3px 0px 3px 0px #CCC,3px 0px 3px 0px #CCC;
+}
+.page_wrap.interview .adviser_profile .profile_header .profile_header_record{
+	height:75px;
+	box-shadow: 0px 3px 3px 0px #ccc,3px 0 3px 0px #ccc,-3px 0 3px 0px #ccc;
+	background:#F5F5F5;
+	position:relative;
+}
+.page_wrap.interview .adviser_profile .d_table{
+	position:absolute;
+	top:20px;
+	left:0;
+	z-index:10;
+	
+}
+.page_wrap.interview .adviser_profile .d_table .d_cell{
+	line-height:1.5;
+}
+
+.page_wrap.interview .adviser_profile .d_table .d_cell h4{
+	font-size:38px;
+	font-size:3.8rem;
+	font-weight:bold;
+	color:#fff;
+	margin:20px 0;
+}
+.page_wrap.interview .adviser_profile .d_table .d_cell h4 span{
+	font-size:18px;
+	font-size:1.8rem;
+	font-weight:normal;
+	margin-left:30px;
+	
+}
+.page_wrap.interview .adviser_profile .d_table .d_cell p{
+	font-size:16px;
+	font-size:1.6rem;
+	color:#342904;
+}
+
+.page_wrap.interview .adviser_profile .profile_content{
+	line-height:1.5;
+	background:#FFF;
+	border-radius:0 0 5px 5px;
+	box-shadow: 0 0px 3px 3px #ccc;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner{
+	color:#342904;
+	font-size:16px;
+	padding:30px 40px ;
+	border-bottom:solid 1px #eeeeee;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner:last-child{
+	border:none;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table{
+	width:940px;
+	width:-webkit-calc(100% + 60px);
+	width:calc(100% + 60px);
+	border-spacing:30px;
+	border-collapse: separate;
+	margin:-30px 0 -30px -30px;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table th,
+.page_wrap.interview .adviser_profile .profile_content .inner > table td{
+	vertical-align:top;
+}
+
+.page_wrap.interview .adviser_profile .profile_content .inner > table th{
+	color:#999999;
+	font-size:16px;
+	text-align:left;
+	font-weight:normal;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table td{
+	color:#342904;
+	font-size:16px;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table td > table{
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table td > table th{
+	font-weight:normal;
+	color:#342904;
+	min-width:0;
+}
+.page_wrap.interview .adviser_profile .profile_content .inner > table td > table td{
+	max-width: 630px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	padding-bottom:5px;
+}
+
+/* btn style */
+.page_wrap.interview .btn_signup_wrap .btn_signup{
+	width: 560px;
+    height: 88px;
+    background: #f1890e;
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 88px;
+    border-radius: 6px;
+    box-shadow: 0 -4px 0 0 rgba(0,0,0,0.2) inset;
+}
+.page_wrap.interview .btn_signup_wrap .btn_signup:hover{
+	opacity: 0.8;
+}

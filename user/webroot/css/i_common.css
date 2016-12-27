@@ -1,0 +1,157 @@
+/* common css style for instructor pages */
+
+@charset "utf-8";
+
+body{
+	background: #ff8626;
+}
+
+/*----------------------------------------------*/
+/* i_header
+/*----------------------------------------------*/
+.i_header{
+	box-shadow: 0 3px 0 0 #fa9444;
+}
+.i_header .btns .btn_mypage{
+	background: #ff8626;
+}
+.i_header .btns .btn_mypage:hover{
+	background: #fe9643;
+}
+.header .gnavi ul li .nav_mypage{
+	width: 94px;
+	background: url('../images/instructor/gnavi/mypage.png') no-repeat 0 0;
+}
+.header .gnavi ul li .nav_message{
+	width: 98px;
+	background: url('../images/instructor/gnavi/message.png') no-repeat 0 0;
+}
+.header .gnavi ul li .nav_student_search{
+	width: 159px;
+	background: url('../images/instructor/gnavi/student_search.png') no-repeat 0 0;
+}
+.header .gnavi ul li .nav_lesson_list{
+	width: 117px;
+	background: url('../images/instructor/gnavi/lesson_list.png') no-repeat 0 0;
+}
+.header .gnavi ul li .nav_faq_inquiry{
+	width: 177px;
+	background: url('../images/instructor/gnavi/faq_inquiry.png') no-repeat 0 0;
+}
+.header .gnavi ul li a:hover,
+.header .gnavi ul li.on a{
+	background-position: 0 -50px;
+}
+
+/*----------------------------------------------*/
+/* header_2 for チャット画面etc
+/*----------------------------------------------*/
+.header_2{
+	background: #ff8626;
+	border-bottom: #ec6328;
+	box-shadow: 0 1px 0 0 #ffab68;
+}
+
+/*----------------------------------------------*/
+/* header_renew
+/*----------------------------------------------*/
+.header_renew{
+	box-shadow: 0 3px 0 0 #fa9444;
+}
+.header_renew .gnavi ul li a.on{
+	background: #ff8626;
+}
+.header_renew .btn_stand_by{
+	position: relative;
+	background: #ff8626 !important;
+}
+.header_renew .btn_stand_by:hover{
+	background: #fe9643 !important;
+}
+.header_renew .btn_stand_by:before{
+	display: inline-block;
+	content: '';
+	width: 22px;
+	height: 22px;
+	background: url('../images/chat/ic_camera_small_on.png') no-repeat center center;
+	vertical-align: middle;
+	margin-right: 0.3em;
+}
+
+/*----------------------------------------------*/
+/* i_footer
+/*----------------------------------------------*/
+.i_footer{
+	background: #ff8626;
+}
+
+/*----------------------------------------------*/
+/* title bar
+/*----------------------------------------------*/
+.i_page_wrap .ttl_bar .ttl_page{
+	color: #ff8626;
+}
+
+.ttl_bar .ttl_page.ttl_ic_lock{
+	background: url('../images/instructor/ttl_bar/ic_lock.png') no-repeat 0 12px;
+	text-indent: 40px;
+}
+.ttl_bar .ttl_page.ttl_ic_user{
+	background: url('../images/instructor/ttl_bar/ic_user.png') no-repeat 0 14px;
+	text-indent: 38px;
+}
+.ttl_bar .ttl_page.ttl_ic_profile{
+	background: url('../images/instructor/ttl_bar/ic_profile.png') no-repeat 0 12px;
+	text-indent: 74px;
+}
+.ttl_bar .ttl_page.ttl_ic_pay{
+	background: url('../images/instructor/ttl_bar/ic_pay.png') no-repeat 0 16px;
+	text-indent: 37px;
+}
+.ttl_bar .ttl_page.ttl_ic_point{
+	background: url('../images/instructor/ttl_bar/ic_point.png') no-repeat 0 16px;
+	text-indent: 37px;
+}
+.ttl_bar .ttl_page.ttl_ic_calendar{
+	background: url('../images/instructor/ttl_bar/ic_calendar.png') no-repeat 0 14px;
+	text-indent: 42px;
+}
+.ttl_bar .ttl_page.ttl_ic_reserved{
+	background: url('../images/instructor/ttl_bar/ic_reserved.png') no-repeat 0 14px;
+	text-indent: 46px;
+}
+.ttl_bar .ttl_page.ttl_ic_mail{
+	background: url('../images/instructor/ttl_bar/ic_mail.png') no-repeat 0 21px;
+	text-indent: 40px;
+}
+.ttl_bar .ttl_page.ttl_ic_history{
+	background: url('../images/instructor/ttl_bar/ic_history.png') no-repeat 0 16px;
+	text-indent: 42px;
+}
+.ttl_bar .ttl_page.ttl_ic_notebook{
+	background: url('../images/instructor/ttl_bar/ic_notebook.png') no-repeat 0 16px;
+	text-indent: 40px;
+}
+.ttl_bar .ttl_page.ttl_ic_textbook{
+	background: url('../images/instructor/ttl_bar/ic_textbook.png?') no-repeat 0 16px;
+	text-indent: 40px;
+}
+.ttl_bar .ttl_page.ttl_ic_settings{
+	background: url('../images/instructor/ttl_bar/ic_settings.png') no-repeat 0 16px;
+	text-indent: 44px;
+}
+.ttl_bar .ttl_page.ttl_ic_news{
+	background: url('../images/instructor/ttl_bar/ic_loud_speaker.png') no-repeat 0 16px;
+	text-indent: 43px;
+}
+.ttl_bar .ttl_page.ttl_ic_vocabulary{
+	background: url('../images/instructor/ttl_bar/ic_vocabulary.png') no-repeat 0 17px;
+	text-indent: 44px;
+}
+
+/*----------------------------------------------*/
+/* common tab style
+/*----------------------------------------------*/
+.tab_menu ul li.active a{
+	color: #ff8626;
+}

@@ -1,0 +1,860 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------*/
+/* textbook desc callan style
+/*--------------------------------------------------------*/
+.textbook_desc_callan.page_wrap{
+	padding: 0;
+}
+
+.textbook_desc_callan .page_inner{
+	width: 100%;
+	background: #fff;
+}
+
+.textbook_desc_callan .page_inner p{
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.6;
+}
+.textbook_desc_callan .page_inner .content_box p span{
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+
+.textbook_desc_callan .content_box{
+	width:960px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.textbook_desc_callan .content_box .d_cell{
+	vertical-align: top;
+}
+.textbook_desc_callan .content_box .d_cell:nth-child(2){
+	padding-left: 50px;
+}
+
+.textbook_desc_callan .section_header{
+	text-align: center;
+}
+
+.textbook_desc_callan .content_box.section_1 dl dt,
+.textbook_desc_callan .content_box.section_2 dl dt,
+.textbook_desc_callan .content_box.section_3 dl dt,
+.textbook_desc_callan .content_box.section_4 dl dt,
+.textbook_desc_callan .content_box.section_6 dl dt{
+	font-size: 50px;
+	font-size: 5.0rem;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+/*--------------------------------------------------------*/
+/* top area content
+/*--------------------------------------------------------*/
+.textbook_desc_callan .top_area_content{
+	background: url('../images/callan_flow/index/main_bg.png') no-repeat center;
+	background-size: cover;
+	padding:30px 0;
+	position: relative;
+}
+
+.textbook_desc_callan .top_area_content .uk_flag{
+	position: absolute;
+    top: -5px;
+    left: 57%;
+}
+
+/*--------------------------------------------------------*/
+/* section header
+/*--------------------------------------------------------*/
+.textbook_desc_callan .section_header{	
+	background: url('../images/callan_flow/index/main_bg.png') no-repeat center;
+	background-size: cover;
+	padding:35px 0;
+	color: #fff;
+	height: 110px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.textbook_desc_callan .section_header p.p_single{
+	line-height: 110px;
+}
+
+.textbook_desc_callan .section_header.p_double{
+	padding: 30px 0 40px;
+}
+
+.textbook_desc_callan .section_header img.nc_logo{
+	vertical-align: middle;
+	padding-bottom: 4px;
+}
+
+/*--------------------------------------------------------*/
+/* section callan methods feature
+/*--------------------------------------------------------*/
+.textbook_desc_callan .section_6 .d_table{
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: #ddd 2px solid;
+}
+.textbook_desc_callan .callan_circle{
+	background: #f1890e;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	
+}
+.textbook_desc_callan .section_9 .d_cell .callan_flow_img{
+	border: 1px #ccc solid;
+}
+
+/*--------------------------------------------------------*/
+/* section desc_link_wrap
+/*--------------------------------------------------------*/
+.textbook_desc_callan .desc_link_wrap{
+	padding: 60px 0 75px; 
+}
+
+.textbook_desc_callan .desc_link_wrap .btn_style{
+	width: 430px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-size: 1.6rem;
+	border-radius: 5px;
+}
+
+.textbook_desc_callan .desc_link_wrap .btn_blue{
+	background: #62a0f9;
+}
+
+.textbook_desc_callan .desc_link_wrap .btn_style i{
+	border: #fff 3px solid;
+	border-radius: 50%;
+	padding: 2px 8px 3px;
+	margin-left: 2px;
+	font-weight: bold;
+}
+
+/*
+.textbook_desc_callan .desc_link_wrap .btn_style:after{
+	content: '\f105';
+	border: #fff 2px solid;
+	border-radius: 50%;
+	font-size: 14px;
+	padding: 2px 6px;
+	margin-left: 6px;
+}
+*/
+
+.textbook_desc_callan .desc_link_wrap ul{
+	margin-bottom: 20px;
+}
+
+.textbook_desc_callan .desc_link_wrap li:nth-child(2n){
+	padding-left: 25px;
+}
+.textbook_desc_callan .desc_link_wrap li p.btn_notice{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+/* color style */
+.textbook_desc_callan .c_orange{
+	color: #f1890e;
+}
+.textbook_desc_callan .c_white-gray{
+	color: #f5f5f5;
+}
+
+.textbook_desc_callan .bgc_white-gray{
+	background-color: #f5f5f5;
+}
+
+.textbook_desc_callan .bgc_orange{
+	background-color:  #f1890e;
+}
+
+/*--- scroll_nav start ---*/
+.callan_wrap .scroll_nav_wrap{
+	position:absolute;
+	top:108px;
+	left:0;
+	background:#747474;
+	z-index: 100;
+}
+.callan_wrap .scroll_nav_wrap.scrolling{
+	position:fixed;
+	top:0px;
+}
+.callan_wrap .scroll_nav_wrap li{
+	border-right:solid 5px #ccc;
+	box-sizing:border-box;
+	line-height:1.5;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.callan_wrap .scroll_nav_wrap li i{
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	line-height: 35px;
+}
+
+.callan_wrap .scroll_nav_wrap li.active,
+.callan_wrap .scroll_nav_wrap li:hover{
+	background:#434343;
+}
+.callan_wrap .scroll_nav_wrap li:first-child a{
+	border-top:none !important;
+}
+.callan_wrap .scroll_nav_wrap li:last-child a{
+	border-bottom:none !important;
+}
+.callan_wrap .scroll_nav_wrap li a{
+	color:#fff;
+	display:block;
+	padding:5px 20px;
+	border-top:solid 1px #898989;
+	border-bottom:solid 1px #898989;
+}
+.callan_wrap .scroll_nav_wrap li.nav_question{
+	border-right-color:#6EC550;
+	line-height:40px;
+}
+.callan_wrap .scroll_nav_wrap li.nav_attendance{
+	border-right-color:#f84f63;
+}
+.callan_wrap .scroll_nav_wrap li.nav_buy{
+	border-right-color:#f3ae4c;
+}
+.callan_wrap li.nav_install{
+	border-right-color:#0bcafa;
+}
+
+@media screen and (max-width: 1300px){
+	#scroll_nav_wrap .trigger_callan_index span{
+		display:none;
+	}
+	
+	#scroll_nav_wrap .trigger_callan_index i{
+		display: inline-block;	
+	}
+	
+	#scroll_nav_wrap .trigger_callan_usage span{
+		display:none;
+	}
+	
+	#scroll_nav_wrap .trigger_callan_purchase span{
+		display:none;
+	}
+	#scroll_nav_wrap .trigger_callan_viewer span{
+		display:none;
+	}
+	
+}
+@media screen and (min-width: 1300px){
+	#scroll_nav_wrap .trigger_callan_index i{
+		display: none;	
+	}
+	#scroll_nav_wrap .trigger_callan_usage i{
+		display: none;	
+	}
+	#scroll_nav_wrap .trigger_callan_purchase i{
+		display: none;	
+	}
+	#scroll_nav_wrap .trigger_callan_viewer i{
+		display: none;	
+	}
+}
+
+/*--------------------------------------------------------*/
+/* callan flow styles */
+/*--------------------------------------------------------*/
+
+/*----------------------- common style ---------------------*/
+.page_callan_flow .no_border{
+	border:none !important;
+}
+
+/*--- default ---*/
+
+.page_callan_flow .callan_flow_content_wrap{
+	font-size:16px;
+	font-size:1.6rem;
+	padding:0 10px;
+}
+.page_callan_flow .callan_flow_content_wrap .callan_flow_header_intro {
+	line-height:1.5;
+}
+.page_callan_flow .callan_flow_content_wrap .callan_flow_header h2{
+	font-size:16px;
+	font-size:1.6rem;
+}
+
+.page_callan_flow .callan_flow_content{
+	border-radius:5px;
+	background:#f4f4f4;
+	padding:35px 30px 45px;
+}
+.page_callan_flow .callan_flow_content .callan_flow_content_inner{
+	border-radius:5px;
+	padding:35px 30px;
+	background:#fff;
+}
+.page_callan_flow .callan_flow_content .callan_flow_content_inner h3{
+	border-left:solid 5px #ccc;
+	padding-left:10px;
+	margin-bottom:25px;
+	font-size:21px;
+	font-size:2.1rem;
+
+}
+/* students step_nav */
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content_inner h3{
+	border-color:#f84f63 !important;
+}
+/* buy step_nav */
+.page_callan_flow .sec_callan_flow_purchase .callan_flow_content_inner h3{
+	border-color:#f3ae4c !important;
+}
+/* install step_nav */
+.page_callan_flow .sec_callan_flow_viewer .callan_flow_content_inner h3{
+	border-color:#0bcafa !important;
+}
+
+.page_callan_flow .callan_flow_content .callan_flow_content_inner dl{
+	margin-bottom:20px;
+}
+.page_callan_flow .callan_flow_content .callan_flow_content_inner dl dt{
+	font-size:16px;
+	font-size:1.6rem;
+	line-height:1.5;
+	padding-left: 2em;
+	text-indent: -2em;
+}
+.page_callan_flow .callan_flow_content .callan_flow_content_inner dl dt strong{
+	font-weight:bold;
+	margin-right:1em;
+}
+.page_callan_flow .callan_flow_content .callan_flow_content_inner dl dd{
+	line-height:1.5;
+}
+
+
+
+
+.page_callan_flow .callan_flow_content .callan_flow_notice{
+	width:680px;
+	margin:0 auto;
+	font-size:13px;
+	font-size:1.3rem;
+}
+
+
+/* color style */
+.page_callan_flow .c_red{
+	color:#fe0101;
+}
+.page_callan_flow .c_green{
+	color:#1d981d !important;
+}
+
+
+
+/*--- scroll_nav start ---*/
+.page_callan_flow .scroll_nav_wrap{
+	position:absolute;
+	top:108px;
+	left:0;
+	background:#747474;
+}
+.page_callan_flow .scroll_nav_wrap.scrolling{
+	position:fixed;
+	top:0px;
+}
+.page_callan_flow .scroll_nav_wrap li{
+	border-right:solid 5px #ccc;
+	box-sizing:border-box;
+	line-height:1.5;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.page_callan_flow .scroll_nav_wrap li.on,
+.page_callan_flow .scroll_nav_wrap li:hover{
+	background:#434343;
+}
+.page_callan_flow .scroll_nav_wrap li:first-child a{
+	border-top:none !important;
+}
+.page_callan_flow .scroll_nav_wrap li:last-child a{
+	border-bottom:none !important;
+}
+.page_callan_flow .scroll_nav_wrap li a{
+	color:#fff;
+	display:block;
+	padding:5px 20px;
+	border-top:solid 1px #898989;
+	border-bottom:solid 1px #898989;
+}
+.page_callan_flow .scroll_nav_wrap li.nav_question{
+	border-right-color:#6EC550;
+	line-height:40px;
+}
+.page_callan_flow .scroll_nav_wrap li.nav_attendance{
+	border-right-color:#f84f63;
+}
+.page_callan_flow .scroll_nav_wrap li.nav_buy{
+	border-right-color:#f3ae4c;
+}
+.page_callan_flow .scroll_nav_wrap li.nav_install{
+	border-right-color:#0bcafa;
+    line-height: 40px;
+}
+.page_callan_flow .scroll_nav_wrap li ul{
+}
+.page_callan_flow .scroll_nav_wrap li ul li{
+	list-style: disc inside;
+	border:none;
+	color:#fff;
+}
+.page_callan_flow .scroll_nav_wrap li ul li a:hover{
+	text-decoration:underline;
+}
+.page_callan_flow .scroll_nav_wrap li p{
+	color:#fff;
+	padding: 5px 20px;
+}
+.page_callan_flow .scroll_nav_wrap li ul li a{
+	border:none;
+}
+
+/*@media (max-width: 1280px) {
+	.page_callan_flow .scroll_nav_wrap li{
+		line-height: 35px; !important;
+	}
+}*/
+
+.page_callan_flow .scroll_nav_wrap.mini li{
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	line-height: 35px;
+}
+/*--- step_nav start ---*/
+.page_callan_flow .callan_flow_header .step_nav{
+	font-size:0;
+	line-height:2;
+	white-space: nowrap;
+}
+.page_callan_flow .callan_flow_header .step_nav li{
+	font-size:16px;
+	display:inline-block;
+}
+.page_callan_flow .callan_flow_header .step_nav li span{
+	border-left:solid 4px #ccc;
+	padding-left:10px;
+}
+.page_callan_flow .callan_flow_header .step_nav li + li:before{
+	content:"\f0da";
+	font-family:FontAwesome;
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 16px;
+}
+/* students step_nav */
+.page_callan_flow .sec_callan_flow_usage .callan_flow_header .step_nav li span{
+	border-left:solid 4px #f84f63;
+}
+/* buy step_nav */
+.page_callan_flow .sec_callan_flow_purchase .callan_flow_header .step_nav li span{
+	border-left:solid 4px #f3ae4c;
+}
+/* install step_nav */
+.page_callan_flow .sec_callan_flow_viewer .callan_flow_header .step_nav li span{
+	border-left:solid 4px #0bcafa;
+}
+
+
+/*--- callan_flow_transition start ---*/
+
+.page_callan_flow .callan_flow_transition{
+	float:right;
+	font-size:0;
+	padding:15px 0 0;
+}
+.page_callan_flow .callan_flow_transition li{
+	font-size:15px;
+	display:inline-block;
+}
+.page_callan_flow .callan_flow_transition li + li:before{
+	content:"|";
+	margin:0 10px;
+	display:inline-block;
+}
+
+
+/*----------------------- callan_flow_usage style ---------------------*/
+.page_callan_flow .sec_callan_flow_usage {
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content{
+	padding:0;
+	width:900px;
+	margin:0 auto;
+	background:#fff;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .callan_flow_content_inner{
+	margin:0;
+	padding:0;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .callan_flow_content_inner .content_step_desc{
+	padding:0 15px;
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .callan_flow_content_inner .content_step_desc p{
+	margin-bottom:30px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table{
+	width:832px;
+	margin:0 auto;
+	border-top:solid 2px #f0f0f0;
+	padding:30px 0 10px;
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table{
+	width:100%;
+	width:calc(100% + 30px);
+	width:-webkit-calc(100% + 30px);	
+	border-spacing: 15px 0;
+	border-collapse: separate;
+	margin: 0 0 0 -15px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table th{
+	vertical-align:top;
+	color:#f84f63;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table th span{
+	margin-bottom:15px;
+	
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table th span.question{
+	display:inline-block;
+	width:100%;
+	line-height:40px;
+	border-radius:5px;
+	background:#f84f63;
+	color:#FFF;
+	font-weight:bold;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table th span.answer{
+	display:inline-block;
+	width:100%;
+	line-height:40px;
+	border-radius:5px;
+	color:#f84f63;
+	border:solid 2px #f84f63;
+	font-weight:bold;
+	box-sizing:border-box;
+
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table td{
+	text-align:left;
+	vertical-align:top;
+	padding-bottom: 20px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table td table,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table td table th,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table > table td table td{
+	margin:0;
+	padding:0;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_table table td  table th{
+	
+}
+
+
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_2 .content_step_2_h{
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .flow_image_wrap{
+	font-size:0;
+	text-align:center;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .flow_image_wrap dt{
+	font-size:24px;
+	margin-bottom:10px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .flow_image_wrap li{
+	font-size:16px;
+	display:inline-block;
+	vertical-align:middle;
+	position:relative;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .flow_image_wrap li + li{
+	margin-left:50px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .flow_image_wrap li + li:before{
+	content:"\f0da ";
+	font-family:FontAwesome;
+	display:inline-block;
+	margin:0 5px;
+	vertical-align:middle;
+	font-size:50px;
+	position:absolute;
+	top:50%;
+	margin-top:-25px;
+	left:-35px;
+	line-height:1;
+}
+/* for not need allow */
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .image_wrap{
+	font-size:0;
+	text-align:center;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .image_wrap li{
+	font-size:16px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_step_4 .content_step_4_h{
+	font-size:24px;
+	font-size:2.4rem;
+	text-align:center;
+	font-weight:bold;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1{
+	border-top:solid 1px #f0f0f0;
+	padding-top:40px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .content_block_1_desc{
+	text-align:center;
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .content_block_1_h{
+	font-size:28px;
+	font-weight:bold;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .callan_resson_breakdown{
+	margin-bottom:30px;
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .callan_resson_breakdown table{
+	width:100%;
+	table-layout:fixed;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .callan_resson_breakdown table td{
+	padding:20px;
+	vertical-align: top;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .callan_resson_breakdown table td + td{
+	border-left:solid 2px #f0f0f0;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .callan_resson_breakdown table tr + tr td{
+	border-top:solid 2px #f0f0f0;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item + p{
+	font-size:16px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl {
+	display:inline-block;
+	font-size:16px;
+	line-height:1.2;
+	vertical-align:top;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl.breakdown_revision{
+	color:#6ec550;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl.breakdown_new_work {
+	color:#f84f63;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl.breakdown_reading {
+	color:#e1ae26;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl.breakdown_dictation {
+	color:#08b7e3;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_ttl strong{
+	font-size:28px;
+	font-weight:bold;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_percent{
+	display:inline-block;
+	font-size:12px;
+	vertical-align:top;
+	float:right;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_percent strong{
+	font-size:50px;
+	font-weight: normal;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .breakdown_item_percent span{
+	font-size:24px;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .content_block_1_h{
+	font-size:28px;
+	font-weight:normal;
+	text-align:center;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .content_block_1_h strong{
+	font-size:28px;
+	font-weight:bold;
+	margin:0 20px;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_1 .content_block_1_h + p{
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_2 table td p{
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_3 table{
+	width:100%;
+	table-layout:fixed;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_3 table td{
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_4 .content_blobk_4_h{
+	font-size:24px;
+	text-align:center;
+	font-weight:normal;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_5 table,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_7 table{
+	table-layout:fixed;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_5 table td,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_7 table td{
+	line-height:1.5;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_7 .content_block_7_ttl{
+	font-size:24px;
+	text-align:center;
+	font-weight:normal;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_8 table{
+	width:100%;
+	table-layout:fixed;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_9 table{
+	width:100%;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_9 table td{
+	line-height:1.5;
+	padding-bottom:20px;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_9 .content_block_9_h,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_10 .content_block_10_h{
+	font-size:24px;
+	text-align:center;
+	font-weight:normal;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_11 .content_block_11_h{
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+}
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_10 table td,
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content .content_block_11 table td{
+	line-height:1.5;
+}
+
+.page_callan_flow .sec_callan_flow_usage .content_step_sup{
+	width:832px;
+	margin:0 auto;
+	background:#fff;
+	border-radius:5px;
+	border:3px solid #e4e4e4;
+	line-height:1.5;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+.page_callan_flow .sec_callan_flow_usage .content_step_sup li{
+	text-indent:-1.5rem;
+	padding-left:1rem;
+}
+.page_callan_flow .sec_callan_flow_usage .content_step_sup li + li{
+	margin-top:10px;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content_inner dl dd > figure{
+	padding:20px 0 20px 0px;
+	text-align:center;
+}
+
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content_inner .section .section_header{
+	border-left: 4px solid #f84f63;
+	font-size: 2.0rem;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content_inner .section dd{
+	padding:10px;
+}
+
+.page_callan_flow .sec_callan_flow_usage .callan_flow_content_inner .section dd p{
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/*----------------------- callan_flow_purchase style ---------------------*/
+
+.page_callan_flow .sec_callan_flow_purchase dl .d_table{
+	border-spacing:15px;
+	margin:-15px 0 -15px -15px;
+	padding:20px 0;
+}
+.page_callan_flow .sec_callan_flow_purchase dl .d_table .d_cell{
+	font-size:14px;
+	font-size:1.4rem;
+	line-height:1.7;
+	vertical-align:top;
+}
+.page_callan_flow .sec_callan_flow_purchase dl .d_table .d_cell figure{
+	padding-left:60px;
+}
+
+.page_callan_flow .sec_callan_flow_purchase .callan_flow_content .callan_flow_content_inner dl dd > figure{
+	padding:20px 0 20px 55px;
+}
+
+.page_callan_flow .sec_callan_flow_purchase .callan_flow_content .content_step_3 dl .link {
+ 	padding-left: 5em;
+}
+.page_callan_flow .sec_callan_flow_purchase .callan_flow_content .content_step_3 dl .link li {
+	list-style-type: disc;
+}
+
+/*----------------------- callan_flow_viewer style ---------------------*/
+.page_callan_flow .sec_callan_flow_viewer .callan_flow_content_inner dl dt .fa{
+	text-align:right;
+}
+.page_callan_flow .sec_callan_flow_viewer .callan_flow_content_inner dl dd > figure{
+	padding:20px 0 20px 0px;
+	text-align:center;
+}
+.page_callan_flow .sec_callan_flow_viewer .callan_flow_content_inner dl dd > figure img{
+	border: 1px solid #777;
+	border-radius:5px;
+}
+

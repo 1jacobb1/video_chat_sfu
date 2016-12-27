@@ -1,0 +1,872 @@
+
+/*-------------------------------------------------------*/
+/* reservation page
+/*-------------------------------------------------------*/
+.reservation_wrap .container{
+	padding: 30px;
+	/width: 900px;
+}
+.reservation_wrap .ttl_bar .ttl_bar_ui{
+	/*width: 340px;*/
+	margin-left: -500px;
+}
+.reservation_wrap .ttl_bar .ttl_bar_ui .select{
+	display: inline;
+}
+.reservation_wrap .ttl_bar .ttl_bar_ui .btn_s{
+	display: inline-block;
+	/display: inline;
+	/width: 56px;
+}
+.reservation_wrap .about_reservation{
+	display: table;
+	width: 100%;
+}
+.reservation_wrap .about_reservation > div{
+	display: table-cell;
+	vertical-align: top;
+}
+.reservation_wrap .about_reservation > div.col_1{
+}
+.reservation_wrap .about_reservation > div.col_1 h3{
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.reservation_wrap .about_reservation > div.col_1 p{
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.reservation_wrap .about_reservation > div h3:before{
+	content: '■';
+	display: inline;
+}
+.reservation_wrap .about_reservation > div h3{
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.reservation_wrap .about_reservation > div.col_2{
+}
+.reservation_wrap .about_reservation > div li{
+	margin-bottom: 5px;
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+.reservation_wrap .about_reservation > div li img{
+	vertical-align: middle;
+	margin-right: 2px;
+}
+.reservation_wrap .about_reservation > div.col_3{
+}
+.reservation_wrap .about_reservation > div.col_3 li img{
+	display: block;
+	float: left;
+	vertical-align: top;
+	margin: 0 2px 0 0;	
+}
+.reservation_wrap .about_reservation > div.col_3 li span{
+	display: block;
+	float: left;
+	padding-top: 0;
+	line-height: 1.5;
+}
+/*----------------------------------------------*/
+/* sec schedule
+/*----------------------------------------------*/
+.reservation_wrap .sec_schedule_wrap{
+	margin-bottom: 20px;
+}
+.reservation_wrap .sec_schedule{
+	border-top: #ccc dotted 1px;
+	padding-top: 30px;
+	margin-top: 30px;
+}
+.reservation_wrap .sec_schedule:first-child{
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+/*----------------------------------------------*/
+/* schedule nav
+/*----------------------------------------------*/
+.schedule_nav{
+	margin-bottom: 20px;
+}
+.schedule_nav ul{
+	letter-spacing: -.40em;
+	text-align: center;
+	margin: 0 -20px;
+}
+.schedule_nav li{
+	display: inline-block;
+	letter-spacing: normal;
+	width: 103px;
+	margin: 0 7px;
+	text-align: center;
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.4;
+	background: #f5f5f5;
+	color: #999;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	/float: left;
+	/margin: 0 6px;
+}
+.schedule_nav li:first-child{
+	/margin-left: 0;
+}
+.schedule_nav li a{
+	display: block;
+	padding: 16px 0;
+	color: #999;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.schedule_nav li:hover{
+	background: #e0e0e0;	
+}
+.schedule_nav li:hover a{
+	color: #555;
+}
+.schedule_nav li em{
+	font-size: 30px;
+	font-size: 3.0rem;
+	font-weight: bold;
+}
+.schedule_nav li.on{
+	padding: 16px 0;
+	background: #16a9b2;
+	color: #fff;
+}
+.schedule_nav li.on a{
+	color: #fff;
+}
+
+/*----------------------------------------------*/
+/* pager
+/*----------------------------------------------*/
+.reservation_wrap .pager{
+	text-align: center;
+}
+
+/*----------------------------------------------*/
+/* reserve buttons
+/*----------------------------------------------*/
+.btn_schedule{
+	display: block;
+	width: 90px;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	border-radius: 4px;
+	color: #fff;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.btn_schedule.reserve{
+	background: #ed1543;
+	box-shadow: 2px 2px 0 0 #900d28;
+}
+.btn_schedule.reserve:hover{
+	background: #ff1749;
+}
+.btn_schedule.reserved{
+	background: #b9b9b9;
+	box-shadow: 2px 2px 0 0 #767474;
+}
+.btn_schedule.cancel{
+	background: #f8aabb;
+	/*background: #ed1543;*/
+	
+}
+.btn_schedule.cancel:hover{
+	background: #ff8ca5;
+	/*background: #ff1749;*/
+}
+.btn_schedule.finished,
+.btn_schedule.cancel.disable,
+.btn_schedule.reserve.disable{
+	width: 84px;
+	height: 30px;
+	line-height: 30px;
+	color: #ccc;
+	border: #ccc solid 3px;
+	background: #fff;
+	background: #f5f5f5;
+	box-shadow: none;
+	cursor: default;
+}
+
+/*----------------------------------------------*/
+/* schedule table
+/*----------------------------------------------*/
+.schedule_table_wrap{
+	position: relative;
+	/*min-height: 400px;*/
+}
+.schedule_table_wrap .loader{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.schedule_table_wrap .loader i{
+	font-size: 30px;
+	font-size: 3.0rem;
+	color: #CCCCCC;
+	text-align: center;
+	margin-top: -50px; /* adjust position */
+}
+.schedule_table{
+	width: 100%;
+	border: #ccc solid 1px;
+}
+.schedule_table tr{
+	height: 58px;
+}
+.schedule_table td:first-child{
+	width: 50px;
+	color: #999;
+	background: #f4f4f4;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.schedule_table td{
+	padding: 10px 5px;
+	border: #ccc solid 1px;
+	text-align: center;
+}
+.schedule_table .thumb{
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+.schedule_table .thumb img{
+	display: block;
+	margin:  0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+}
+.schedule_table .name{
+	width: 120px;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 5px;
+	word-break: break-all;
+}
+.schedule_table .kana,
+.schedule_table .comment{
+	width: 120px;
+	height: 3em;
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	color: #999;
+	line-height: 1.5;
+}
+
+/*----------------------------------------------*/
+/* schedule table min (for mypage)
+/*----------------------------------------------*/
+.schedule_table--min thead,
+.schedule_table--min tbody{
+	display: block;
+}
+.schedule_table--min thead{
+	padding-right: 17px;
+	background: #eee;
+}
+.schedule_table--min thead td{
+	width: 16%;
+	background: #fff;
+	border-top: none;
+	border-left: none;
+}
+.schedule_table--min thead td:first-child{
+	min-width: 50px;
+}
+.schedule_table--min tbody{
+	max-height: 464px;
+	overflow-y: scroll;
+}
+.schedule_table--min tbody td{
+	width: 16%;
+	border-left: none;
+}
+.schedule_table--min tbody tr:first-child td{
+	border-top: none;
+	min-width: 50px;
+}
+.schedule_table--min tbody tr:last-child td{
+	border-bottom: none;
+}
+
+/*----------------------------------------------*/
+/* schedule table detail
+/*----------------------------------------------*/
+.schedule_table_2{
+	max-width: 100%;
+	width: 100%;
+	border: #ccc solid 1px;
+	table-layout: fixed;
+}
+.schedule_table_2 tr{
+	height: 58px;
+}
+.schedule_table_2 tr:first-child td{
+	background: #f5f5f5;
+	color: #999;
+}
+.schedule_table_2 tr:first-child td.date{
+	height: 60px;
+}
+.schedule_table_2 tr:first-child td.date.on{
+	background: #16a9b2;
+	color: #fff;
+}
+.schedule_table_2 tr:first-child td.date .weekday{
+	display: block;
+	margin-bottom: 5px;
+}
+.schedule_table_2 tr:first-child td.date .month{
+	font-weight: bold;
+}
+.schedule_table_2 tr:first-child td.date .day{
+	font-weight: bold;
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+.schedule_table_2 td.past{
+	background: #ececec;
+}
+.schedule_table_2 td{
+	padding: 10px;
+	border: #ccc solid 1px;
+	text-align: center;
+}
+.schedule_table_2 td.date{
+	background: #ff8626;
+}
+.schedule_table_2 td.date.on{
+	background: #ff8626;
+}
+.schedule_table_2 td:first-child{
+	width: 8%; /* fix for safari */
+	color: #999;
+	background: #f4f4f4;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.schedule_table_2 .user .thumb{
+	margin-bottom: 5px;
+}
+.schedule_table_2 .user .thumb img{
+	display: block;
+	width: 68px;
+	margin:  0 auto;
+	border: #ccc 1px solid;
+}
+.schedule_table_2 .user .name{
+	font-size: 11px;
+	font-size: 1.1rem;
+	font-weight: normal;
+	color: #999;
+}
+
+/*----------------------------------------------*/
+/* schedule table 2 reserve status buttons
+/*----------------------------------------------*/
+/* adjust reserve button size >>> */
+.schedule_table_2 .btn_schedule{
+	display: block;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+}
+.schedule_table_2 .btn_schedule.finished,
+.schedule_table_2 .btn_schedule.reserve.disable,
+.schedule_table_2 .btn_schedule.cancel.disable{
+	width: 72px;
+	height: 24px;
+	line-height: 24px;
+	border: 2px solid #ccc;
+}
+/* <<< */
+
+/* status for instructor page >>> */
+.schedule_table_2 .status{
+	display: block;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	border-radius: 4px;
+	color: #fff;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	cursor: default;
+}
+.schedule_table_2 .status.reserved{
+	background: #ed1543;
+	/*box-shadow: 2px 2px 0 0 #900d28;*/
+}
+.schedule_table_2 .status.accept{
+	background: #16a9b2;
+	cursor: pointer;
+	box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
+}
+.schedule_table_2 .status.reserved.disable,
+.schedule_table_2 .status.accept.disable{
+	width: 72px;
+	height: 24px;
+	line-height: 24px;
+	background: #f5f5f5;
+	color: #ccc;
+	border: 2px solid #ccc;
+	box-shadow: none;
+	cursor: default;
+}
+/* <<< */
+
+/*----------------------------------------------*/
+/* menu_time_range
+/*----------------------------------------------*/
+.menu_time_range{
+	margin-bottom: 25px;
+}
+.menu_time_range ul{
+	margin-right: -50px;
+}
+.menu_time_range li{
+	float: left;
+	text-align: center;
+	width: 179px;
+}
+.menu_time_range li a{
+	display: block;
+	padding: 10px 0;
+	border: solid 1px #ccc;
+	border-left: none;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 rgba(255,255,255,1);
+	color: #999;
+	background: #f5f5f5;
+	background: -webkit-linear-gradient(#fefefe, #d7d7d7);
+	background: -o-linear-gradient(#fefefe, #d7d7d7);
+	background: -moz-linear-gradient(#fefefe, #d7d7d7);
+	background: linear-gradient(#fefefe, #d7d7d7);
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.menu_time_range li:first-child a{
+	border-left: solid 1px #ccc;
+	border-radius: 4px 0 0 4px;
+}
+.menu_time_range li:last-child a{
+	border-radius: 0 4px 4px 0;
+}
+.menu_time_range li a:active,
+.menu_time_range li a.on{
+	background: #16a9b2;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1) inset;
+}
+
+/*-------------------------------------*/
+/* search schedule
+/*-------------------------------------*/
+.search_schedule{
+	background: #fff;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+}
+.search_schedule .conditions input[type='text']{
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1) inset;
+	font: inherit;
+	line-height: 36px;
+	padding: 2px 10px 0;
+}
+.search_schedule .conditions input[type='text'],
+.search_schedule .conditions select{
+	background: #fff;
+}
+.search_schedule .conditions select{
+	min-width: 180px;
+}
+.search_schedule .conditions input[type='radio']{
+	position: relative;
+	top: -2px;
+	margin-right: 5px;
+}
+.search_schedule .conditions span.ex{
+	color: #999;
+	margin-left: 10px;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+.search_schedule .conditions dl{
+	border-bottom: 1px solid #eee;
+	padding: 15px 20px;
+}
+.search_schedule .conditions dl:nth-child(even){
+	background: #F9F6EE;
+}
+.search_schedule .conditions dl dt,
+.search_schedule .conditions dl dd{
+	float: left;
+}
+.search_schedule .conditions dl dt{
+	line-height: 38px;
+	min-width: 50px;
+	text-align: center;
+}
+.search_schedule .conditions dl dt{
+	margin-left: 30px;
+	padding-left: 20px;
+	border-left: rgba(0,0,0,0.2) solid 1px;
+	box-shadow: 1px 0 0 0 rgba(255,255,255,1) inset;
+}
+.search_schedule .conditions dl dt:first-child{
+	margin-left: 0;
+	padding-left: 0;
+	border-left: none;
+	box-shadow: none;
+}
+.search_schedule .conditions dl dd{
+	margin-left: 20px;
+}
+.search_schedule .conditions dl dd ul li{
+	float: left;
+	line-height: 38px;
+	margin-left: 30px;
+}
+.search_schedule .conditions dl dd ul li label{
+	cursor: pointer;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.search_schedule .conditions dl dd ul li:first-child{
+	margin-left: 0;
+}
+.search_schedule .conditions dl .dd_freeword input[type='text']{
+	width: 300px;
+}
+.search_schedule .btn_wrap{
+	text-align: center;
+	padding: 20px 0;
+}
+.search_schedule .btn_wrap button,
+.search_schedule .btn_wrap input[type='submit']{
+	font: inherit;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	outline: none;
+	margin: 0 auto;
+}
+
+/*-------------------------------------------------------*/
+/* JQuery ui
+/*-------------------------------------------------------*/
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 0px;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next{
+	top:8px;
+}
+div.ui-datepicker {
+	width: 250px;
+}
+th.ui-datepicker-week-end {
+	color: #00f;
+}
+th.ui-datepicker-week-end:first-child {
+	color: #f00;
+}
+.ui-widget-header {
+	background:#f7ae36;
+	color:#fff;
+	margin: 1% 0;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 2em;
+  text-align: center;
+	font-size:1.5em;
+}
+.ui-datepicker table{
+	background-color:#EDEDED;
+}
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  line-height: 1em;
+  font-size:1.5em;
+}
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+  line-height: 2em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	color:#1C94C4;
+	font-size:1.5em;
+	background:#fff;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #fed22f;
+	background: #fff1a5;
+	font-weight: normal;
+	color: #000;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	background:#fed22f;
+	border:solid 1px #1C94C4;
+}
+
+
+/*-------------------------------------------------------*/
+/* reservation detail page
+/*-------------------------------------------------------*/
+.reservation_detail_wrap .container{
+	padding: 30px;
+	/width: 900px;
+}
+.lesson_detail_item_wrap{
+	position: relative;
+	padding: 25px 25px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+}
+.lesson_detail_item_wrap .sec_ttl{
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+/*--------------------------------*/
+/* lesson info
+/*--------------------------------*/
+.lesson_detail_item_wrap .lesson_info{
+	padding: 0 0 10px;
+}
+.lesson_detail_item_wrap .lesson_info .col_wrap{
+	display: table;
+	width: 100%;
+}
+.lesson_detail_item_wrap .lesson_info .col_left,
+.lesson_detail_item_wrap .lesson_info .col_right{
+	display: table-cell;
+	vertical-align: top;
+}
+.lesson_detail_item_wrap .lesson_info .col_left{
+	width: 180px;
+}
+.lesson_detail_item_wrap .lesson_info .col_left .lesson_status{
+	margin-bottom: 15px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right{
+	padding-left: 30px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data dl{
+	margin-bottom: 10px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data dt{
+	display: inline-block;
+	background: #F9F6EE;
+	padding: 10px;
+	border-radius: 4px;
+	float: left;
+	min-width: 100px;
+	text-align: center;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data dd{
+	float: left;
+	line-height: 40px;
+	margin-left: 20px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data .dd_datetime .time{
+	margin-left: 15px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data .dd_reserved_time .time{
+	margin-left: 15px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data .dd_canceled_time .time{
+	margin-left: 15px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data .dt_comment{
+	text-align: center;
+	float: none;
+	margin-bottom: 10px;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .lesson_data .dd_comment{
+	float: none;
+	line-height: 1.5;
+	margin-left: 0;
+	word-wrap: break-word;
+}
+.lesson_detail_item_wrap .lesson_info .col_right .func{
+	text-align: center;
+}
+/*--------------------------------*/
+/* user info
+/*--------------------------------*/
+.lesson_detail_item_wrap .user_info{
+	border-top: 1px dotted #ccc;
+	padding: 20px 0;
+}
+.lesson_detail_item_wrap .user_info .col_wrap{
+	display: table;
+	width: 100%;
+}
+.lesson_detail_item_wrap .user_info .col_left,
+.lesson_detail_item_wrap .user_info .col_right{
+	display: table-cell;
+	vertical-align: top;
+}
+.lesson_detail_item_wrap .user_info .col_left{
+	width: 180px;
+}
+.lesson_detail_item_wrap .user_info .col_right{
+	padding-left: 30px;
+}
+.lesson_detail_item_wrap .user_info .user_thumb{
+	 text-align: center;
+}
+.lesson_detail_item_wrap .user_info .user_thumb .kana{
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #999;
+	text-align: center;
+}
+.lesson_detail_item_wrap .user_info .user_thumb a{
+	color: inherit;
+}
+.lesson_detail_item_wrap .user_info .user_thumb img{
+	margin-bottom: 5px;
+}
+.lesson_detail_item_wrap .user_info .user_thumb .name{
+	margin-bottom: 5px;
+}
+.lesson_detail_item_wrap .user_info .data{
+	position: relative;
+	line-height: 1.5;
+	background: #fff;
+	padding: 20px;
+	border: #ccc solid 1px;
+}
+.lesson_detail_item_wrap .user_info .data:after,
+.lesson_detail_item_wrap .user_info .data:before{
+	right: 100%;
+	top: 34px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.lesson_detail_item_wrap .user_info .data:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 15px;
+	margin-top: 1px;
+}
+.lesson_detail_item_wrap .user_info .data:before{
+	border-color: rgba(204, 204, 204, 0);
+	border-right-color: #ccc;
+	border-width: 16px;
+}
+.lesson_detail_item_wrap .user_info .data table{
+	width: 100%;
+	background: #fff;
+}
+.lesson_detail_item_wrap .user_info .data table th,
+.lesson_detail_item_wrap .user_info .data table td{
+	text-align: left;
+	vertical-align: top;
+	padding: 10px;
+	border: 1px solid #eee;
+}
+.lesson_detail_item_wrap .user_info .data table th{
+	width: 200px;
+	font-size: 13px;
+	background: #F9F6EE;
+	border-color: #fff;
+	border-left-color: #eee;
+}
+.lesson_detail_item_wrap .user_info .data table tr:first-child th{
+	border-top-color: #eee;
+}
+.lesson_detail_item_wrap .user_info .data table tr:last-child th{
+	border-bottom-color: #eee;
+}
+.lesson_detail_item_wrap .user_info .data dt{
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: left;
+}
+.lesson_detail_item_wrap .user_info .data dt:first-child{
+	margin-top: 0;
+}
+.lesson_detail_item_wrap .used_textbook_area{
+	border-top: 1px dotted #ccc;
+	padding: 20px 0;
+}
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li:nth-child(odd){
+	background: #F9F6EE;
+}
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li a{
+	display: block;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 60px;
+	color: inherit;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li a:hover{
+	background: #fffcee;
+}
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li .level{
+	font-weight: bold;
+}
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li .lesson_name,
+.lesson_detail_item_wrap .used_textbook_area .used_textbook_list li .lesson_desc{
+	margin-left: 15px;
+}

@@ -1,0 +1,397 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+
+/* Home page CSS start */
+#home-nav {
+  float: right;
+}
+#home-nav button {
+  padding: 5px;
+}
+#home-intro {
+  border: 1px dotted #B3B3B3;
+  margin: 20px 0;
+  height: 200px;
+  text-align: center;
+}
+#home-intro p{
+  margin-top: 95px;
+}
+
+.teachers-block-container {
+  margin: 10px 0 70px;
+}
+.teachers-block {
+  background: none repeat scroll 0 0 #F2F2F2;
+  border: 1px solid #D9D9D9;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+}
+.teachers-photo a img {
+    height: 100px;
+}
+.teachers-avail{
+  padding: 2px;
+}
+.teachers-name, .teachers-country{
+  padding: 2px 0;
+}
+.teachers-name { 
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+.teachers-country {
+  text-align: right;
+  float: right;
+}
+#user-teacher-form div{
+  display: inline-block;
+}
+#user-home-info img {
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* Home page CSS end */
+
+/* paging */
+.paging {
+  text-align: center;
+}
+.paging a{
+  background: none repeat scroll 0 0 #CCCCCC;
+  border: 1px solid #B3B3B3;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+/* paging */
+
+
+/* Chat page CSS
+-------------------------------------------------- */
+#chat-nav {
+  text-align: right;
+}
+#teacher-memo-form textarea, #user-memo-form textarea, #lesson-memo-form textarea{
+  border: 1px solid #E6E6E6;
+  display: block;
+  height: 227px;
+  overflow: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+#teacher-class-note {
+  border: 1px solid #B3B3B3;
+  padding: 10px;
+  min-height: 250px;
+}
+
+#user-class-note {
+  border: 1px solid #B3B3B3;
+  padding: 20px;
+  min-height: 250px;
+}
+
+#lesson-class-note {
+  border: 1px solid #B3B3B3;
+  padding: 10px;
+  min-height: 250px;
+}
+#lesson-memo-form .submit {
+  text-align: center;
+}
+#save-lesson-memo {
+  margin: 10px auto;
+}
+
+#class-detail-confirm{
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+
+/* Waitng page start */
+#wait-flash {
+  border: 1px dotted #B3B3B3;
+  margin: 20px auto;
+  height: 300px;
+  text-align: center;
+}
+#wait-flash p{
+  margin-top: 135px;
+}
+#wait-action {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#wait-info {
+  text-align: center;
+}
+
+#wait-info div {
+  background: #E6E6E6;
+  display: inline-block;
+  min-height: 250px;
+  padding: 1%;
+  width: 49%;
+  text-align: left;
+  vertical-align: top;
+}
+#wait-info-basic {
+  margin-right: 1%;
+}
+
+/* waiting calendar */
+#waiting-weekly-sched {
+  margin: auto;
+}
+#waiting-weekly-sched table{
+  width: 100%;
+  text-align: left;
+}
+#waiting-weekly-sched table th{
+  background: #D9D9D9;
+  padding: 5px;
+  border: 1px solid #F2F2F2;
+}
+#waiting-weekly-sched table td{
+  background: #F2F2F2;
+  padding: 5px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+#waiting-weekly-sched table th:first-child, #waiting-weekly-sched table td:first-child{
+  background: #E6E6E6;
+  cursor: default;
+}
+
+#waiting-weekly-sched td.book:hover, #waiting-weekly-sched td.unreserve:hover {
+   background: #FFFFE5;
+}
+
+#waiting-weekly-sched .flash {
+  display: block;
+  height: 30px;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+}
+
+#waiting-weekly-sched .flash p{
+  background: none repeat scroll 0 0 #D6E0FF;
+  border: 1px solid #FFFFFF;
+}
+
+.font-normal{ font-weight:normal !important; }
+.font-normal label{ font-weight:normal !important; }
+input[type="radio"]{ margin-left:5px; margin-right:5px; }
+
+.error .error-message{
+  display:none;
+}
+
+
+/* Membership page CSS
+-------------------------------------------------- */
+#user_course_list {
+  margin-top: 20px;
+}
+
+#course-detail-confirm{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#payment-confirm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+/* Appointment page CSS
+-------------------------------------------------- */
+#weekly-calendar {
+  height: 20px;
+  padding: 5px;
+  color: red;
+}
+#weekly-calendar-schedule{
+  margin-top:20px; 
+}
+#weekly-calendar-schedule  .teachers-info, #weekly-calendar-schedule table td {
+  text-align: center;
+}
+#weekly-calendar-schedule table th:nth-child(even){
+  border-radius: 10px 10px 0 0;
+  padding-top: 30px;
+  background: #f2f2f2;
+}
+#weekly-calendar-schedule table td.book, #weekly-calendar-schedule table td.reserved{
+  cursor: pointer;
+}
+#weekly-calendar-schedule table td{
+  border: 2px solid #f2f2f2;
+}
+
+#weekly-calendar-schedule table td.book:hover, #weekly-calendar-schedule table td.reserved.unreserve:hover {
+  background: #D9D9D9;
+}
+#weekly-calendar-schedule table th.empty, #weekly-calendar-schedule table td.empty {
+  border: none;
+  background: none;
+  visibility:collapse;
+}
+#weekly-calendar-schedule table th {
+  width: 19%;
+}
+#weekly-calendar-schedule table th:nth-child(1) {
+  width: 5%;
+}
+#weekly-calendar-schedule  .teachers-info img {
+  display: block;
+  margin: auto;
+}
+#weekly-calendar-schedule  .teachers-info span {
+  display: block;
+  margin: auto;
+}
+
+/* Point, Membership, Course pages CSS
+-------------------------------------------------- */
+
+#user_course_list a.disabled {
+  background: #f5f5f5;
+  cursor: default;
+}
+.pdg15{padding: 15px;}
+.pb10 {padding-bottom: 10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+
+.tal{text-align:left !important;}
+.tac{text-align:center !important;}
+.tar{text-align:right !important;}
+
+.mw50{max-width:50px;}
+.mh50{max-height:50px;}
+
+.expandable img {
+	height:10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.users-block {
+  background: none repeat scroll 0 0 #E6E6E6;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 200px;
+	min-height: 175px;
+}
+.photo-container img {
+    height: 160px;
+    width: 180px;
+}
+#instructor .logHistory td{
+	text-align: left !important;
+	padding:10px;
+	min-width: 100px !important;
+}
+#instructor .logHistory-user {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+}
+.logHistoryBgTd {	
+	background: none repeat scroll 0 0 #E6E6E6;
+}
+.borderedTd {
+	border: 1px solid #ddd;
+}
+.logHistoryContent{
+	width: 350px;
+}
+.logHistory span {
+	float: right;
+}
+ .toggleTd{
+	width:300px;
+}
+.users-photo img{
+	width:100px;
+	margin: auto;
+	display: block;
+}

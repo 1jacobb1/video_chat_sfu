@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+.page_wrap.fund_raising_wrap .container .main {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.page_wrap.fund_raising_wrap .container .main img {
+	width: 84px;
+}
+.page_wrap.fund_raising_wrap .container .page_breadcrumbs_2 {
+	text-align: center;
+}
+.page_wrap.fund_raising_wrap .container .page_breadcrumbs_2 .page_ttl {
+	font-size: 28px;
+}
+.page_wrap.fund_raising_wrap .container .sec {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+.page_wrap.fund_raising_wrap .container .sec + .sec {
+	margin-top: 30px;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap {
+	margin-bottom: 30px;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box, .page_wrap.fund_raising_wrap .container .box_wrap .right_box {
+	display: inline-block;
+	vertical-align: top;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box {
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+	width: 470px;
+	text-align: left;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box .content_ttl {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box .content_desc {
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box .notice {
+	text-align: left;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .left_box .notice li:before {
+	content: "※";
+	display: inline-block;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .right_box {
+	width: 430px;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: left;
+	float: right;
+	border: solid 1px #ccc;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .right_box table {
+	width: 100%;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .right_box th {
+	text-align:left;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .right_box th i {
+	margin: 0 10px 0 0;
+	width: 15px;
+    text-align: center;
+}
+.page_wrap.fund_raising_wrap .container .box_wrap .right_box td {
+	text-align: right;
+	font-size: 24px;
+}
+.page_wrap.fund_raising_wrap .container .fund_raising_use{
+	background: #FFF4F4;
+}
+.page_wrap.fund_raising_wrap .container .fund_raising_system{
+	padding: 16px;
+	border: 2px solid #eee;
+	border-radius: 4px;
+}
+.page_wrap.fund_raising_wrap .container .fund_raising_use{
+	border: 1px solid #FFF4F4 ;
+	padding: 16px;
+	border-radius: 4px;
+}
+.page_wrap.fund_raising_wrap .container .fund_raising_use dt,
+.page_wrap.fund_raising_wrap .container .fund_raising_system dt {
+	font-weight: bold;
+	margin-bottom:5px;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 {
+	padding: 30px;
+	box-sizing: border-box;
+}
+.page_wrap.fund_raising_wrap .container .error{
+	
+}
+.page_wrap.fund_raising_wrap .container .content_box {
+	margin-bottom: 50px;
+}
+.page_wrap.fund_raising_wrap .container .content_box .left_box, .page_wrap.fund_raising_wrap .container .content_box .right_box {
+	display: inline-block;
+}
+.page_wrap.fund_raising_wrap .container .content_box .left_box {
+	min-width: 270px;
+}
+.page_wrap.fund_raising_wrap .container .content_box .left_box select {
+	background: #fff;
+}
+.page_wrap.fund_raising_wrap .container .content_box .card_brand{
+	font-size:0;
+}
+.page_wrap.fund_raising_wrap .container .content_box .card_brand li{
+	display:inline-block;
+	font-size:15px;
+	font-size:1.5rem;
+	margin:0 5px;
+	height:40px;
+}
+.page_wrap.fund_raising_wrap .container .content_box .card_brand li img{
+	height:100%;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .sec_header {
+	text-align: center;
+	border-bottom: #eee solid 2px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .content_ttl {
+	margin-bottom: 20px;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .content_desc {
+	margin-bottom: 10px;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .caution {
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	padding: 20px 20px 15px;
+	box-sizing: border-box;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .caution h3 {
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	margin-bottom:10px;
+}
+.page_wrap.fund_raising_wrap .container .sec_2 .caution ul li {
+	font-size: 14px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+/* complete */
+.page_wrap.fund_raising_wrap .sec_fund_raising_complete {
+	text-align: center;
+}
+.page_wrap.fund_raising_wrap .sec_fund_raising_complete .support_member {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}

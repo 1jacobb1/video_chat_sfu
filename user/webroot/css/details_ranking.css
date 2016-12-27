@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_wrap--ranking .main_img_area {
+	margin: -30px -10px 10px;
+}
+.ranking_tabs {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 0;
+	padding: 0 20px;
+}
+.ranking_tabs ul {
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+.ranking_tabs ul li {
+	color: #555555;
+	min-width: 80px;
+	display: table-cell;
+	font-size: 15px;
+	font-size: 1.5rem;
+	position: relative;
+	padding: 0 6px;
+}
+.ranking_tabs ul li.on{
+	font-weight:bold;
+}
+.ranking_tabs ul li a {
+	color: #555555;
+	display: block;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	padding: 20px 0 20px;
+}
+
+.ranking_tabs ul li:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	background: #000;
+	-ms-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.ranking_tabs ul li.tab_1.on a,
+.ranking_tabs ul li.tab_1:hover a {
+	color: #F00;
+}
+.ranking_tabs ul li.tab_1:hover:after,
+.ranking_tabs ul li.tab_1.on:after {
+	height: 4px;
+	background:#FF0000;
+}
+
+.ranking_tabs ul li.tab_2.on a,
+.ranking_tabs ul li.tab_2:hover a {
+	color: #FFA500;
+}
+.ranking_tabs ul li.tab_2.on:after,
+.ranking_tabs ul li.tab_2:hover:after{
+	height: 4px;
+	background: #FFA500;
+}
+
+.ranking_tabs ul li.tab_3.on a,
+.ranking_tabs ul li.tab_3:hover a {
+	color: #4c9a04;
+}
+.ranking_tabs ul li.tab_3:hover:after,
+.ranking_tabs ul li.tab_3.on:after {
+	height: 4px;
+	background:#4c9a04;
+}
+.ranking_tabs ul li.tab_4.on a,
+.ranking_tabs ul li.tab_4:hover a {
+	color: #3f77f5;
+}
+.ranking_tabs ul li.tab_4:hover:after,
+.ranking_tabs ul li.tab_4.on:after {
+	height: 4px;
+	background:#3f77f5;
+}
+.ranking_tabs ul li.tab_5.on a,
+.ranking_tabs ul li.tab_5:hover a {
+	color: #5e4ee4;
+}
+.ranking_tabs ul li.tab_5:hover:after,
+.ranking_tabs ul li.tab_5.on:after {
+	height: 4px;
+	background:#5e4ee4;
+}
+.ranking_tabs ul li.tab_6.on a,
+.ranking_tabs ul li.tab_6:hover a {
+	color: #af2caf;
+}
+.ranking_tabs ul li.tab_6:hover:after,
+.ranking_tabs ul li.tab_6.on:after {
+	height: 4px;
+	background:#af2caf;
+}
+.ranking_tabs ul li.tab_7.on a,
+.ranking_tabs ul li.tab_7:hover a {
+	color: #e459a6;
+}
+.ranking_tabs ul li.tab_7:hover:after,
+.ranking_tabs ul li.tab_7.on:after {
+	height: 4px;
+	background:#e459a6;
+
+}
+.ranking_tabs ul li.tab_8.on a,
+.ranking_tabs ul li.tab_8:hover a {
+	color: #f7644c;
+}
+.ranking_tabs ul li.tab_8:hover:after,
+.ranking_tabs ul li.tab_8.on:after {
+	height: 4px;
+	background:#f7644c;
+}
+.ranking_tabs ul li:before {
+	content: "";
+	border-left: solid 1px #ccc;
+	position: absolute;
+	left: 0;
+	top: -5px;
+	bottom: 0;
+	margin: auto;
+	height: 25px;
+}
+.ranking_summary {
+	margin: 0 auto 20px;
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+.summary_period {
+	display: inline-block;
+}
+.ranking_sort {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.ranking_sort li {
+	display: inline-block;
+}
+.ranking_sort li:first-child {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.ranking_sort li select {
+	min-width: 140px;
+	background: #fff;
+	height: 28px;
+	padding: 0 5px;
+	border-radius: 0;
+}
+.ranking_detail.first {
+	border-color: #FBC730;
+	background: #FFFBEA;
+}
+.ranking_detail.second {
+	border-color: #B8C4CF;
+	background: #EFF2F4;
+}
+.ranking_detail.third {
+	border-color: #CC8052;
+	background: #FCF2EC;
+}
+.ranking_detail {
+	border: solid 2px #CBCBCB;
+	padding: 20px 30px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.content_wrap.good_ranking_area {
+	padding: 0 20px;
+}
+.ranking_detail .teacher_rank {
+	text-align: center;
+	width: 90px;
+}
+.ranking_detail .teacher_rank .rank.crown {
+	margin-bottom: 10px;
+}
+.ranking_detail .teacher_rank .rank.place {
+	font-size: 20px;
+	font-size: 2rem;
+	color: #999999;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.ranking_detail .teacher_rank .rank.place strong {
+	font-size: 40px;
+	font-size: 4rem;
+	color: #555555;
+	margin: 0 5px;
+}
+.ranking_detail .teacher_rank .rank.good {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #999999;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+.ranking_detail .teacher_rank .rank.good em {
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: #555555;
+	margin: 0 5px;
+}
+.ranking_detail .teacher_rank .rank.arrow.up {
+	color: #F05444;
+}
+.ranking_detail .teacher_rank .rank.arrow.right {
+	color: #5AB168;
+}
+.ranking_detail .teacher_rank .rank.arrow.down {
+	color: #3587AF;
+}
+.ranking_detail .teacher_photo {
+	padding: 0 20px;
+}
+.ranking_detail .teacher_photo img {
+	border-radius: 50%;
+	border: solid 2px #CBCBCB;
+}
+.ranking_detail .teacher_status {
+	vertical-align: top;
+	width: 240px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+.ranking_detail .teacher_status .name_area {
+	height: 105px;
+}
+.ranking_detail .teacher_status .ranking_ttl_1 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin-bottom: 10px;
+	margin-left:20px;
+	word-break: break-all;
+}
+/*.ranking_detail .teacher_status .ranking_ttl_1 span {
+	font-size: 15px;
+	font-weight: normal;
+	margin-right: 5px;
+}
+*/
+.ranking_detail .teacher_rating {
+	vertical-align: top;
+	width: 290px;
+}
+
+/* lesson status */
+.ranking_detail .lesson_status_circle{
+	float:left;
+	margin-top:4px
+}

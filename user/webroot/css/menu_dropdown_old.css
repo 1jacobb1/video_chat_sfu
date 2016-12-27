@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+/*dropdown menu CSS*/
+
+.dropdown_menu{
+	position: relative;
+}
+.dropdown_menu .trigger{
+	width: 230px;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 10px;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.dropdown_menu .trigger.on{
+	border-radius: 5px 5px 0 0;
+}
+.dropdown_menu .content{
+	position: absolute;
+	top: 34px;
+	left: 0;
+	width: 250px;
+	border: 1px solid #ccc;
+	border-radius: 0 0 5px 5px;
+	background: #fff;
+	display: none;
+	z-index: 1000;
+}
+.dropdown_menu .content li{
+	border-top: 1px solid #ccc;
+	height: 34px;
+	line-height: 34px;
+}
+.dropdown_menu .content li:first-child{
+	border-top: none;
+}
+.dropdown_menu .content li a{
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #555;
+	transition: all 0.1s linear 0;
+}
+.dropdown_menu .content li a:hover{
+	color: #fff;
+	background: #555;
+}

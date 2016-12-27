@@ -1,0 +1,368 @@
+
+/*-------------------------------------------------------*/
+/* customer support style
+/*-------------------------------------------------------*/
+.cs_wrap{
+}
+.cs_wrap .container{
+	padding: 30px 20px 20px;
+	/width: 920px;
+}
+
+.cs_wrap .unsubscribe_link_wrap{
+	margin-top: 25px;
+}
+
+.cs_wrap .error_wrap{
+	padding: 15px 15px 10px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.cs_wrap .error_wrap .error{
+	font-weight: normal;
+	text-align: left;
+}
+
+/*-------------------------------------------------------*/
+/* customer support style (faq)
+/*-------------------------------------------------------*/
+
+/*---------------------------------------------*/
+/* nav faq
+/*---------------------------------------------*/
+.cs_wrap .nav_faq{
+	position: relative;
+	margin: 20px 0;
+}
+.cs_wrap .nav_faq ul{
+	display: table;
+	width: 100%;
+	/margin-left: -10px;
+}
+.cs_wrap .nav_faq li{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	text-align: center;
+	border-right: #ccc solid 1px;
+	border-left: #fff solid 1px;
+	/width: 146px;
+	/border: none;
+}
+.cs_wrap .nav_faq li:first-child{
+	border-left: none;
+}
+.cs_wrap .nav_faq li:last-child{
+	border-right: none;
+}
+*:first-child+html .cs_wrap .nav_faq li{
+	display: inline;
+	zoom: 1;
+}
+
+/*---------------------------------------------*/
+/* sec faq
+/*---------------------------------------------*/
+.cs_wrap .sec_faq h4{
+	color: #fff;
+	background: #555;
+	border: #999 solid 1px;
+	font-weight: bold;
+	padding: 8px 12px;
+	margin-bottom: 10px;
+}
+.cs_wrap .sec_faq h4:before{
+	content: '■';
+	display: inline;
+	margin-right: 0.2em;
+}
+
+/*---------------------------------------------*/
+/* faq list
+/*---------------------------------------------*/
+.cs_wrap .faq_list{
+	
+}
+.cs_wrap .faq_list dl{
+	border: #999 1px solid;
+	border-bottom: none;
+}
+.cs_wrap .faq_list dl dt{
+	padding: 15px;
+	background: #fff;
+	border-bottom: #999 1px solid;
+	font-weight: bold;
+	cursor: pointer;
+}
+.cs_wrap .faq_list dl dt:hover{
+	background: #fffcee;
+}
+.cs_wrap .faq_list dl dt:before{
+	content: 'Q.';
+	display: inline;
+	margin-right: 0.5em;
+	font-weight: bold;
+	color: #16a9b2;
+}
+.cs_wrap .faq_list dl dt:after{
+	font-family: 'FontAwesome';
+	content: '\f107';
+	display: inline;
+	float: right;
+}
+.cs_wrap .faq_list dl dt.on{
+	background: #fff6fc;
+}
+.cs_wrap .faq_list dl dt.on:after{
+	font-family: 'FontAwesome';
+	content: '\f106';
+	display: inline;
+	float: right;
+}
+.cs_wrap .faq_list dl dd{
+	display: none;
+	background: #fff6fc;
+	padding: 30px 30px 30px 50px;
+	line-height: 1.5;
+	border-bottom: #999 1px solid;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2) inset;
+}
+.cs_wrap .faq_list dl dd:before{
+	content: 'A.';
+	display: inline;
+	margin-right: 0.5em;
+	margin-left: -1.6em;
+	font-weight: bold;
+	color: #ed1515;
+}
+
+/*---------------------------------------------*/
+/* link pagetop
+/*---------------------------------------------*/
+.cs_wrap .link_pagetop{
+	float: right;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 15px 0;
+}
+.cs_wrap .link_pagetop:after{
+	content: '▲';
+	display: inline;
+}
+
+/*-------------------------------------------------------*/
+/* customer support style (inquiry)
+/*-------------------------------------------------------*/
+
+/*---------------------------------------------*/
+/* inquiry form
+/*---------------------------------------------*/
+.cs_wrap .txt_required{
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+.cs_wrap .txt_required .required{
+	color: #f00;
+	margin-right: 3px;
+	vertical-align: middle;
+}
+.cs_wrap .inquiry_form_wrap{
+	position: relative;
+	clear: both;
+}
+.cs_wrap .inquiry_form_wrap label{
+	display: block;
+	margin-bottom: 5px;
+}
+.cs_wrap .inquiry_form_wrap label.required:before{
+	content: '*';
+	color: #f00;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.cs_wrap .inquiry_form_wrap .sub_sec{
+	padding: 20px 0;
+}
+.cs_wrap .inquiry_form_wrap .sub_sec:first-child{
+	padding-top: 0;
+}
+.cs_wrap .inquiry_confirm_wrap .desc{
+	line-height: 1.5;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #999;
+	margin: 15px 0 25px;
+	padding: 0 1em;
+}
+
+.cs_wrap .inquiry_confirm_wrap p.m_replay{
+	text-align: center;
+	margin: 10px 0;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec{
+	width:800px;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table{
+	line-height:2;width:100%;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table tr{
+	border-bottom:solid 1px #e6e6e6
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table tr:last-child{
+	border-bottom:none;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table th{
+	padding-top:20px;
+	padding-bottom:20px;
+	width:15%;
+	text-align:left;
+	color:#999999;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table th:last-child{
+	vertical-align:top;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table td{
+	padding:20px 0;
+	color:#555555;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table td.cs_wrap_input_area input{
+	background:#fff;
+	border:none;
+	font-size:16px;
+	font-family: inherit;
+	color:#555555;
+	padding:0;
+}
+.cs_wrap .inquiry_confirm_wrap .sec_wrap .sub_sec table textarea{
+	background:#fff;
+	border:none;
+	font-size:16px;
+	color:#555555;
+	padding:0;
+	resize: none;
+	height:100%;
+	line-height:2;
+}
+
+/*---------------------------------------------*/
+/* inquiry list
+/*---------------------------------------------*/
+.cs_wrap .inquiry_list_wrap{
+	position: relative;
+	margin-top: 20px;
+}
+.cs_wrap .inquiry_list_wrap .btn_min{
+	float: right;
+	margin-top: -37px;
+}
+.cs_wrap .inquiry_list{
+	clear: both;
+	margin-top: 15px;
+}
+.cs_wrap .inquiry_list table{
+	width: 100%;
+	/*border: #999 solid 1px;*/
+	/* fix for firefox >>> */
+	background: #999;
+	border-collapse: separate;
+	border-spacing: 1px;
+	/* <<< */
+}
+.cs_wrap .inquiry_list table th{
+	background: #555;
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+}
+.cs_wrap .inquiry_list table th.col_datetime{
+	width: 134px;
+}
+.cs_wrap .inquiry_list table th.col_category{
+	width: 150px;
+}
+.cs_wrap .inquiry_list table tr td{
+	position: relative;
+	background: #f4f4f4;
+	padding: 10px;
+	line-height: 1.5;
+}
+.cs_wrap .inquiry_list table td a{
+	color: #555;
+}
+.cs_wrap .inquiry_list table tr.unread td{
+	background: #fff;
+}
+.cs_wrap .inquiry_list table tr.unread td:first-child:before{
+	/*
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	*/
+	position: relative;
+	margin-right: 5px;
+	vertical-align: middle;
+	content: 'NEW';
+	display: inline-block;
+	background: #ed1515;
+	color: #fff;
+	font-size: 10px;
+	font-size: 1.0rem;
+	font-weight: bold;
+	padding: 1px 3px;
+	border-radius: 2px;
+}
+.cs_wrap .inquiry_list table tr:hover td{
+	background: #fffcee !important;
+}
+
+/*---------------------------------------------*/
+/* inquiry detail
+/*---------------------------------------------*/
+.cs_wrap .inquiry_detail_wrap{
+	margin-bottom: 20px;
+}
+.cs_wrap .inquiry_detail_wrap .top{
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.cs_wrap .inquiry_detail{
+	padding: 0;
+	margin-bottom: 15px;
+	/width: 875px;
+}
+.cs_wrap .inquiry_detail dt{
+	color: #ccc;
+	font-weight: bold;
+	border-bottom: #ccc solid 1px;
+	padding: 7px 15px 5px;
+}
+.cs_wrap .inquiry_detail dd{
+	border-bottom: #ccc solid 1px;
+	padding: 7px 25px 5px;
+}
+.cs_wrap .inquiry_detail .category{
+	padding: 15px 25px;
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.cs_wrap .inquiry_detail .inquiry_detail_history li{
+	padding: 25px 0;
+	border-top: 1px dotted #000;
+}
+.cs_wrap .inquiry_detail .inquiry_detail_history li:first-child{
+	border-top: none;
+}
+.cs_wrap .inquiry_detail .inquiry_detail_history li.sent{
+	color: #999;
+	padding-left: 2em;
+}
+.cs_wrap .inquiry_detail .inquiry_detail_history li .ttl{
+	margin: 0 0 25px -0.5em;
+}
+.cs_wrap .inquiry_detail .inquiry_detail_history li .contents{
+	line-height: 1.5;
+}

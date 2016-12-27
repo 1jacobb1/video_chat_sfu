@@ -1,0 +1,330 @@
+
+/*-------------------------------------------------------*/
+/* message style
+/*-------------------------------------------------------*/
+.messages_wrap{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	height: 100%;
+}
+.messages_wrap .container{
+	padding: 15px 0 0;
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	/width: 960px;
+}
+
+.messages_wrap .container .pane_wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.messages_wrap .container .pane_wrap .pane_left{
+	position: relative;
+	width: 295px;
+	overflow: hidden;
+	float: left;
+	border-right: 1px solid #ccc;
+	margin-right: -100px; /* fix for browser zoom out */
+}
+.messages_wrap .container .pane_wrap .pane_right{
+	position: relative;
+	width: 662px;
+	float: right;
+}
+.messages_wrap .container .pane_wrap .pane_right{
+	overflow: hidden;
+}
+.messages_wrap .container .pane_wrap .pane_right_bottom{
+	width: 662px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #000;
+}
+
+/*----------------------------------------------*/
+/* top area
+/*----------------------------------------------*/
+.messages_wrap .page_top_area_wrap{
+	margin: 0 10px 10px;
+	/*padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;*/
+}
+.messages_wrap .page_top_area_wrap .ttl_area{
+	width: 185px;
+}
+.messages_wrap .page_top_area_wrap .sub_ttl_area{
+	width: 430px;
+	height: 30px;
+	padding: 0 0 0 15px;
+	border-left: 1px solid #ccc;
+	float: left;
+}
+.messages_wrap .page_top_area_wrap .btn_create_msg_area{
+	float: right;
+}
+
+/*----------------------------------------------*/
+/* btn create message
+/*----------------------------------------------*/
+.messages_wrap .btn_create_msg{
+	display: inline-block;
+	color: #fff;
+	background: #ed1515;
+	border: #ed1515 1px solid;
+	width: 170px;
+	height: 28px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	cursor: pointer;
+	/display: inline;
+	/padding: 10px 20px;
+}
+.messages_wrap .btn_create_msg:hover{
+	color: #fff;
+	background: #ff1717;
+	border: #ff1717 1px solid;
+}
+.messages_wrap .btn_create_msg.disable{
+	background: #ccc;
+	border: #ccc solid 1px;
+	color: #fff;
+	cursor: default;
+}
+
+/*----------------------------------------------*/
+/* inbox list
+/*----------------------------------------------*/
+.messages_wrap .inbox_list li{
+	border-top: 1px solid #ccc;
+	padding: 10px 10px;
+	background: #f4f4f4;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	/margin-bottom: -10px;
+}
+.messages_wrap .inbox_list li:first-child{
+	/*border-top: none;*/
+}
+.messages_wrap .inbox_list li .thumb{
+	width: 72px;
+	float: left;
+}
+.messages_wrap .inbox_list li .thumb img{
+	width: 72px;
+}
+.messages_wrap .inbox_list li .data{
+	position: relative;
+	width: 192px;
+	float: right;
+	color: #999;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.messages_wrap .inbox_list li .data .datetime{
+	margin-bottom: 10px;
+}
+.messages_wrap .inbox_list li .data .name{
+	margin-bottom: 10px;
+}
+
+/* unread item */
+.messages_wrap .inbox_list li.unread{
+	background: #fff;
+}
+
+/* select item */
+.messages_wrap .inbox_list li:hover,
+.messages_wrap .inbox_list li.on{
+	background: #16a9b2;
+	cursor: pointer;
+}
+.messages_wrap .inbox_list li:hover .data,
+.messages_wrap .inbox_list li.on .data{
+	color: #fff;
+}
+
+/*----------------------------------------------*/
+/* timeline list
+/*----------------------------------------------*/
+.messages_wrap .timeline_list{
+	/*margin-bottom: 80px;*/
+}
+.messages_wrap .timeline_list > ul{
+	margin-top: 5px;
+}
+.messages_wrap .timeline_list .timeline_item{
+	position: relative;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 20px;
+	margin: 0 20px;
+}
+.messages_wrap .timeline_list .timeline_item .date{
+	display: block;
+	position: absolute;
+	top: -0.5em;
+	left: 50%;
+	width: 5em; /* fix for browser zoom */
+	margin-left: -2.5em; /* fix for browser zoom */
+	background: #fff;
+	color: #999;
+	text-align: center;
+	font-size: 13px;
+	font-size: 1.3rem;
+	font-weight: normal;
+	/position: relative;
+	/top: -0.5em;
+	/left: 0;
+	/line-height: 1;
+	/margin: 5px 0 0 0;
+	/width: auto;
+	/background: none;
+	/text-align: left;
+}
+.messages_wrap .timeline_list .timeline_item li{
+	position: relative;
+	padding: 10px 0;
+}
+.messages_wrap .timeline_list .timeline_item li .thumb{
+	width: 49px;
+	float: left;
+}
+.messages_wrap .timeline_list .timeline_item li .data{
+	width: 562px;
+	float: right;
+}
+.messages_wrap .timeline_list .timeline_item li .thumb img{
+	width: 49px;
+}
+.messages_wrap .timeline_list .timeline_item li .data{
+	position: relative;
+	color: #999;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.messages_wrap .timeline_list .timeline_item li .data .name{
+	color: #16a9b2;
+	font-weight: bold;
+	margin-bottom: 8px;
+	width: 40%; /* fix for browser zoom */
+}
+.messages_wrap .timeline_list .timeline_item li .data .datetime{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 40%; /* fix for browser zoom */
+	text-align: right; /* fix for browser zoom */
+}
+.messages_wrap .timeline_list .timeline_item li .data .message{
+	line-height: 1.5;
+}
+
+/*----------------------------------------------*/
+/* user select
+/*----------------------------------------------*/
+.messages_wrap .user_select_wrap{
+	/*margin-bottom: 80px;*/
+}
+.messages_wrap .user_select_wrap .pager{
+	padding: 15px 0 10px;
+}
+.messages_wrap .user_select_wrap .pager:first-child{
+	padding: 10px 0 15px;
+}
+.messages_wrap .user_list{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.messages_wrap .user_list li{
+	border-top: 1px solid #ccc;
+	padding: 10px 10px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	/margin-bottom: -7px;
+}
+.messages_wrap .user_list li:first-child{
+	border-top: none;
+}
+.messages_wrap .user_list li .thumb{
+	width: 72px;
+	float: left;
+}
+.messages_wrap .user_list li .thumb img{
+	width: 72px;
+}
+.messages_wrap .user_list li .data{
+	position: relative;
+	width: 550px;
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.messages_wrap .user_list li .data .name{
+	margin-bottom: 5px;
+	color: #555;
+	font-weight: bold;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+/* select item */
+.messages_wrap .user_list li:hover,
+.messages_wrap .user_list li.on{
+	background: #16a9b2;
+	cursor: pointer;
+}
+.messages_wrap .user_list li:hover .data,
+.messages_wrap .user_list li.on .data{
+	color: #fff;
+}
+.messages_wrap .user_list li:hover .data .name,
+.messages_wrap .user_list li.on .data .name{
+	color: #fff;
+}
+
+/*----------------------------------------------*/
+/* submit message
+/*----------------------------------------------*/
+.messages_wrap .submit_msg_area{
+	padding: 15px 15px;
+	border-top: #ccc 2px solid;
+	background: #fff;
+}
+.messages_wrap .submit_msg_area input[type='text']{
+	width: 536px;
+	margin-right: -50px; /* fix for browser zoom out */
+	float: left;
+}
+.messages_wrap .submit_msg_area .btn_submit_msg{
+	display: block;
+	width: 60px;
+	height: 38px;
+	line-height: 38px;
+	float: right;
+	background: #16a9b2;
+	color: #fff;
+	border: #000 solid 1px;
+	text-align: center;
+	margin: 1px 0;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.messages_wrap .submit_msg_area .btn_submit_msg:hover{
+	background: #18c3cc;
+}
+.messages_wrap .submit_msg_area .btn_submit_msg.disable{
+	border-color: #ccc !important;
+	color: #ccc !important;
+	background: #f4f4f4 !important;
+	cursor: default;
+}

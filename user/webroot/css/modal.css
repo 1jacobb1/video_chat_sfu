@@ -1,0 +1,1796 @@
+@charset "utf-8";
+
+/*-----------------------------------*/
+/* modal window common style
+/*-----------------------------------*/
+#modal_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.modal_window{
+	padding: 30px;
+	background: #fff;
+	border: solid 4px #555;
+	border-radius: 10px;
+	max-width: 960px;
+	/width: 960px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.modal_window--flex{
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin: auto !important;
+	box-sizing: border-box;
+}
+.modal_window .btn_close{
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	background: url('../images/icon/modal_close.png') no-repeat 0 0;
+	cursor: pointer
+}
+.modal_window .btn_close--inner{
+	top: 4px;
+	right: 4px;
+}
+.modal_window .btn_close--inner_2{
+	top: -1px;
+	right: -2px;
+}
+/* disable overlay click */
+.modal_window.static_overlay:after{
+	display: block;
+	content: '';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: transparent;
+	z-index: -1;
+}
+
+/*-----------------------------------*/
+/* modal dialog common style
+/*-----------------------------------*/
+.modal_window.dialog h3{
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+	line-height: 1.5;
+}
+.modal_window.dialog p{
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+.modal_window.dialog input[type='text'],
+.modal_window.dialog input[type='password'],
+.modal_window.dialog input[type='tel'],
+.modal_window.dialog select{
+	background: #fff;
+}
+.modal_window.dialog .dialog_inner{
+	margin-bottom: 20px;
+	border-bottom: #f4f4f4 solid 1px;
+}
+.modal_window.dialog .dialog_inner > div{
+	padding: 10px 30px;
+	margin: 0 -30px;
+}
+.modal_window.dialog .dialog_inner > div:nth-child(odd){
+	background: #f4f4f4;
+}
+.modal_window.dialog .dialog_inner > div:nth-child(even){
+	background: #fff;
+}
+.modal_window.dialog .dialog_inner .t_item{
+	min-width: 85px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	float: left;
+	line-height: 38px;
+	text-align: right;
+	margin-right: 10px;
+}
+.modal_window.dialog .dialog_inner > div.half > div{
+	width: 50%;
+	float: right;
+}
+.modal_window.dialog .dialog_inner > div.half > div:first-child{
+	float: left;
+}
+.modal_window.dialog .dialog_inner .radios li,
+.modal_window.dialog .dialog_inner .checkboxs li{
+	float: left;
+	margin-right: 10px;
+	line-height: 38px;
+}
+
+.modal_window.dialog .btn_wrap{
+	margin-top: 20px;
+}
+
+/* lesson data */
+.modal_window.dialog .lesson_data{
+	font-size: 15px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.modal_window.dialog .lesson_data .thumb{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 0;
+}
+.modal_window.dialog .lesson_data .thumb img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.modal_window.dialog .lesson_data .name_area .name{
+	display: block;
+	font-size: 1.6rem;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	text-align: center;
+}
+.modal_window.dialog .lesson_data .name_area .kana{
+	display: block;
+	color: #999;
+	font-size: 10px;
+	font-size: 1.0rem;
+	text-align: center;
+}
+.modal_window.dialog .lesson_data table{
+	width: auto;
+	min-width: 300px;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+.modal_window.dialog .lesson_data table th,
+.modal_window.dialog .lesson_data table td{
+	/*width: 50%;*/
+}
+.modal_window.dialog .lesson_data table th{
+	min-width: 90px;
+	text-align: center;
+	white-space: nowrap;
+	background: #eee;
+	border: #fff solid 1px;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+.modal_window.dialog .lesson_data table tr:first-child th{
+	border-top: #eee solid 1px;
+}
+.modal_window.dialog .lesson_data table tr:last-child th{
+	border-bottom: #eee solid 1px;
+}
+.modal_window.dialog .lesson_data table td{
+	text-align: left;
+	border: #eee solid 1px;
+	padding: 5px 10px;
+}
+
+/* notice */
+.modal_window.dialog .modal_notice{
+	width: 656px;
+}
+.modal_window.dialog .modal_notice li{
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.modal_window.dialog .modal_notice li:before{
+	content: '※';
+}
+.modal_window.dialog .modal_notice li:first-child{
+	margin-top: 0;
+}
+
+/* btn_table */
+.btn_table{
+	margin: 0 -10px;
+}
+.btn_table ul{
+	display: table;
+	table-layout: fixed;
+	min-width: 650px;
+	border-spacing: 10px;
+	margin: 0 auto;
+}
+.btn_table li{
+	display: table-cell;
+	vertical-align: top;
+}
+.btn_table li .btn_style{
+	width: 100%;
+	min-width: inherit;
+	box-sizing: border-box;
+}
+.btn_table-2 li{
+	width: 50%;
+}
+.btn_table-3 li{
+	width: 33.33%;
+}
+.btn_table-4 li{
+	width: 25%;
+}
+
+/* multiline button */
+.modal_window .btn_style .multiline{
+	display: inline-block;
+	padding-top: 4px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+.modal_window .btn_facebook{
+	background: #3c599f !important;
+	border: none !important;
+	text-shadow: none;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.modal_window .btn_facebook:hover{
+	background: #5877C3 !important;
+}
+.modal_window .btn_google{
+	background: #d94a38 !important;
+	border: none !important;
+	text-shadow: none;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.modal_window .btn_google:hover{
+	background: #F05946 !important;
+}
+
+/*-----------------------------------*/
+/* diaolog individual styles
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/* #dialog_message_search
+/*-----------------------------------*/
+#dialog_message_search .dialog_search_inner input[type='text']{
+	display: inline;
+	width: 550px;
+}
+#dialog_message_search .dialog_search_inner{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f6f6f6;
+}
+#dialog_message_search .dialog_search_inner .keyword{
+	text-align: center;
+}
+#dialog_message_search .dialog_search_inner .filter{
+	margin: 10px auto 10px;
+}
+#dialog_message_search .dialog_order_inner .order{
+	text-align: center;
+}
+#dialog_message_search .dialog_order_inner .order select{
+	width: auto;
+	background: #fff;
+}
+
+/*-----------------------------------*/
+/* #dialog_message_search_personal
+/*-----------------------------------*/
+#dialog_message_search_personal .dialog_search_inner input[type='text']{
+	display: inline;
+	width: 550px;
+}
+#dialog_message_search_personal .dialog_search_inner{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f6f6f6;
+}
+#dialog_message_search_personal .dialog_search_inner .keyword{
+	text-align: center;
+}
+#dialog_message_search_personal .dialog_search_inner .filter{
+	width: 480px;
+	margin: 10px auto 10px;
+}
+#dialog_message_search_personal .dialog_order_inner .order{
+	text-align: center;
+}
+#dialog_message_search .dialog_order_inner .order select{
+	width: auto;
+	background: #fff;
+}
+
+/*-----------------------------------*/
+/* #dialog_schedule_reserve_complete
+/*-----------------------------------*/
+#dialog_schedule_reserve_complete{
+}
+#dialog_schedule_reserve_complete .btn_facebook{
+	background: #3c599f !important;
+	border: none !important;
+	text-shadow: none;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_schedule_reserve_complete .btn_facebook:hover{
+	background: #5877C3 !important;
+}
+#dialog_schedule_reserve_complete .btn_google{
+	background: #d94a38 !important;
+	border: none !important;
+	text-shadow: none;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_schedule_reserve_complete .btn_google:hover{
+	background: #F05946 !important;
+}
+
+/*-----------------------------------*/
+/* #dialog_schedule_reserve_cancel
+/*-----------------------------------*/
+#dialog_schedule_cancel .reserve_content{
+	margin-top: 20px;
+}
+#dialog_schedule_cancel .reserve_content .time{
+	font-weight: bold;
+}
+#dialog_schedule_cancel .reserve_content .name{
+	color: #888;
+}
+/*-----------------------------------*/
+/* #dialog_schedule_reserve_cancel
+/*-----------------------------------*/
+#dialog_inquiry_search .esb-displayer{
+	width: 400px;
+}
+/*-----------------------------------*/
+/* #modal_user_profile
+/*-----------------------------------*/
+#modal_user_profile{
+	padding: 0;
+}
+#modal_user_profile .ttl{
+	padding: 15px;
+	background: #555;
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+#modal_user_profile .profile_data{
+	font-size: 14px;
+	font-size: 1.4rem;
+	text-align: left;
+	/* fix 20141022 >>> */
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	/* <<< */
+}
+#modal_user_profile .profile_data tr:first-child{
+	border-top: none;
+}
+#modal_user_profile .profile_data tr{
+	border-top: #ddd 1px solid;
+}
+#modal_user_profile .profile_data th,
+#modal_user_profile .profile_data td{
+	padding: 15px;
+}
+#modal_user_profile .profile_data th{
+	font-weight: bold;
+	color: #aaa;
+	width: 220px;
+}
+#modal_user_profile .profile_data td{
+	width: 260px;
+	padding-left: 0;
+}
+#modal_user_profile .profile_data td li{
+	line-height: 1.5;
+	margin-top: 5px;
+}
+#modal_user_profile .profile_data td li:first-child{
+	margin-top: 0;
+}
+
+/*-----------------------------------*/
+/* #dialog_select_text_lesson
+/*-----------------------------------*/
+#dialog_select_text_lesson .modal_window{
+	width:100% !important;
+	max-width:680px !important;
+	min-width:320px !important;
+}
+#dialog_select_text_lesson .modal_window .btn_close--inner_2{
+	top: 4px;
+	right: 25px;
+}
+#dialog_select_text_lesson .modal_window .lesson_text_content{
+	position:absolute;
+	width:100%;
+}
+#dialog_select_text_lesson .modal_window_inner{
+	position:relative;
+	height:100%;
+	width:100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#dialog_select_text_lesson{
+	width: 100% !important;
+	max-width: 680px !important;
+	min-width: 350px !important;
+	height:80%;
+	/*width: 680px;
+	min-height: 690px;  fix 20141017*/
+	padding: 0 0 25px;
+	margin:auto auto !important;
+	top:0 !important;
+	bottom:0 !important;
+	left:0 !important;
+	right:0 !important;
+}
+#dialog_select_text_lesson h3{
+	padding: 15px;
+	background: #555;
+	color: #fff;
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0;
+}
+#dialog_select_text_lesson .lesson_level_list_wrap{
+	padding: 15px 50px 40px;
+	box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.1) inset;
+}
+#dialog_select_text_lesson .lesson_level_list_wrap p{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#dialog_select_text_lesson .lesson_level_list ul{
+	margin-right: -100px;
+}
+#dialog_select_text_lesson .lesson_level_list li{
+	position: relative;
+	display: block;
+	min-width: 123px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	border-radius: 4px;
+	background: #e3e3e3;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #555;
+	float: left;
+	margin-right: 30px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_select_text_lesson .lesson_level_list li:before,
+#dialog_select_text_lesson .lesson_level_list li:after{
+	display: none;
+	bottom: -45px;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+	transition: all 0.2s ease;
+}
+/*
+#dialog_select_text_lesson .lesson_level_list li:before{
+	border-color: rgba(85, 85, 85, 0);
+	border-bottom-color: #555;
+	border-width: 26px;
+	margin-left: -26px;
+}
+#dialog_select_text_lesson .lesson_level_list li:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+#dialog_select_text_lesson .lesson_level_list li.on:before,
+#dialog_select_text_lesson .lesson_level_list li.on:after{
+	display: block;
+}
+*/
+#dialog_select_text_lesson .lesson_level_list li.on{
+	background: #ff194a;
+	color: #fff;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap{
+	position: relative;
+	border-top: solid 5px #555;
+	padding: 30px 30px 0;
+	box-sizing:border-box;
+	width:100%;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:before,
+#dialog_select_text_lesson .lesson_text_list_wrap:after{
+	left: 21%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:before{
+	top: -52px;
+	border-color: rgba(85, 85, 85, 0);
+	border-bottom-color: #555;
+	border-width: 26px;
+	margin-left: -26px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap:after{
+	top: -40px;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+#dialog_select_text_lesson .lesson_text_list{
+	position: relative;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	min-height: 352px;
+}
+#dialog_select_text_lesson .lesson_text_list ul{
+	border: solid 1px #555;
+}
+#dialog_select_text_lesson .lesson_text_list li{
+	position: relative;
+	padding: 10px;
+	border-top: solid 1px #555;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_select_text_lesson .lesson_text_list li .ic_clear{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 136px;
+	height: 36px;
+	background: url('../images/icon/ribbon_clear.png') no-repeat 0 0;
+	z-index: 1;
+}
+#dialog_select_text_lesson .lesson_text_list li:hover{
+	background: #ffe5eb;
+}
+#dialog_select_text_lesson .lesson_text_list li:first-child{
+	border-top: none;
+}
+#dialog_select_text_lesson .lesson_text_list li .lesson_name{
+	font-weight: bold;
+}
+#dialog_select_text_lesson .lesson_text_list li .lesson_name:after{
+	content: '：';
+	margin: 0 0.5em;
+}
+#dialog_select_text_lesson .lesson_text_list li.finished{
+	background: #fdfae3;
+	color: #bbb;
+}
+#dialog_select_text_lesson .lesson_text_list li.on{
+	background: #ff194a;
+	color: #fff;
+	font-weight: bold;
+}
+#dialog_select_text_lesson .lesson_text_list i{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	font-size: 28px;
+	font-size: 2.8rem;
+	width: 1em;
+	height: 1em;
+	margin: auto;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager{
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #333;
+}
+#dialog_select_text_lesson .btn_close--inner_2{
+	top:0px;
+	right:0px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager a{
+	color: inherit;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .disable{
+	color: #ccc !important;
+	cursor: default;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .prev{
+	float: left;
+	display: inline-block;
+	position: relative;
+	color: #555;
+	background: #fff;
+	border: #BEBEBE solid 2px;
+	padding: 5px 10px 2px;
+	border-radius: 4px;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 16px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	margin-left: 10px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .prev:before{
+	content: '＜';
+	margin-right: 0.2em;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .next{
+	float: right;
+	display: inline-block;
+	position: relative;
+	color: #555;
+	background: #fff;
+	border: #BEBEBE solid 2px;
+	padding: 5px 10px 2px;
+	border-radius: 4px;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 16px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	margin-left: 10px;
+}
+#dialog_select_text_lesson .lesson_text_list_wrap .pager .next:after{
+	content: '＞';
+	margin-left: 0.2em;
+}
+/*-----------------------------------*/
+/* #dialog_select_text_lesson
+/*-----------------------------------*/
+#dialog_rating .rating_data dl{
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin: 0 0 15px;
+}
+
+#dialog_rating .rating_data dd .time{
+    margin-left: 10px;
+}
+#dialog_rating .rating_notice{
+	width: 656px;
+}
+#dialog_rating .rating_notice li{
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding-left: 1em;
+	text-indent: -1em;
+	color: #999;
+}
+#dialog_rating .rating_notice li:before{
+	content: '※';
+}
+#dialog_rating .rating_notice li:first-child{
+	margin-top: 0;
+}
+#dialog_rating .rating_status_area{
+	margin: -52px 0 22px;
+}
+#dialog_rating .rating_status{
+	display: inline-block;
+	letter-spacing: normal;
+	padding: 8px;
+	width: 100px;
+	min-width: 100px;
+	background: #ccc;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 8px;
+	box-shadow: 2px 2px 0 0 rgba(0,0,0,0.2);
+}
+#dialog_rating .rating_status:before{
+	margin: auto;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #fff;
+	line-height: 1;
+	margin-right: 0.3em;
+}
+#dialog_rating .rating_status--good{
+	background: #7AC774;
+	box-shadow: 2px 2px 0 0 #609B5C;
+}
+#dialog_rating .rating_status--bad{
+	background: #8280A9;
+	box-shadow: 2px 2px 0 0 #676583;
+}
+#dialog_rating .rating_status--good:before{
+	content: '\f164';
+}
+#dialog_rating .rating_status--bad:before{
+	content: '\f165';
+}
+
+/*-----------------------------------*/
+/* #dialog_rating
+/*-----------------------------------*/
+#dialog_rating{
+	width:700px;
+	height:90%;
+	padding:0px 0px;
+}
+#dialog_rating .rating_data_form_wrap{
+	position: relative;
+	height: 100%;
+}
+#dialog_rating .rating_data_inner{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#dialog_rating .rating_data{
+	padding:0 75px;
+}
+#dialog_rating h3{
+	margin: 20px 0 10px;
+}
+#dialog_rating p{
+	font-size:14px;
+	font-size:1.4rem;
+}
+#dialog_rating .rating_data_inner > p{
+	text-align:center;
+}
+#dialog_rating .rating_data dl{
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin: 30px 0 30px;
+	width:100%;
+}
+#dialog_rating .rating_data dl:last-child{
+	margin-bottom:20px;
+}
+#dialog_rating .rating_data dt{
+	font-weight: bold;
+	margin-bottom: 10px;
+	vertical-align:top;
+}
+#dialog_rating .rating_data dt span{
+	color:#16979F;
+	margin-right:10px;
+}
+#dialog_rating .rating_data dd{
+	padding-left:27px;
+}
+
+#dialog_rating .rating_data dd ul li{
+	padding: 2px 0;
+}
+#dialog_rating .rating_data dd ul li label{
+	display: inline-block;
+	display: -moz-inline-box;
+}
+#dialog_rating .rating_data .point li{
+	display:inline-block;
+	margin-right:10px;
+}
+#dialog_rating .rating_data dd .date .time{
+	margin-left: 10px;
+}
+#dialog_rating .rating_data textarea{
+	width: 440px;
+	min-height: 50px;
+	font: inherit;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+#dialog_rating .rating_data .btn_rating_wrap input[type=radio]{
+	margin-right:10px;
+}
+#dialog_rating .thanks{
+	font-size: 13px;
+	font-size: 1.3rem;
+	margin:20px 0 30px;
+}
+#dialog_rating .btn_rating_wrap ul{
+	text-align:left;
+}
+#dialog_rating .btn_rating_wrap li{
+	margin-right:30px;
+}
+#dialog_rating .rating_notice{
+	padding:0 100px;
+}
+#dialog_rating .rating_notice li{
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding-left: 1em;
+	text-indent: -1em;
+	color: #999;
+}
+
+#dialog_rating .rating {
+	text-align:left;
+}
+#dialog_rating .rating p{
+	display:inline-block;
+	direction:rtl;
+}
+#dialog_rating .rating p:first-child{
+	width: 110px;
+}
+#dialog_rating .rating input {
+	display:none;
+}
+#dialog_rating .rating > span {
+	float:left;
+	display:block;
+	width:230px
+}
+#dialog_rating .rating_rank{
+	font-size:13px;
+	font-size:1.3rem;
+	color:#999;
+}
+#dialog_rating textarea{
+	background-color:#fff;
+}
+#dialog_rating .rating .star {
+    display:inline-block;
+    background: url(/images/icon/star.png) no-repeat 0 0;
+    background-position: -24px 0;
+    -webkit-background-size:45px 20px;
+    background-size:45px 20px;
+    width:24px;
+    height:26px;
+    margin-right:5px;
+    vertical-align:middle;
+    cursor:pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+/* bug fix for android */
+#dialog_rating .rating input:checked + .wrap {
+	font-size:inherit;
+}
+#dialog_rating .rating input:checked ~ .wrap .star {
+    background-position: 0 0;
+}
+#dialog_rating .btn_wrap{
+	margin:0 0 20px 0;
+}
+#dialog_rating .btn_wrap li{
+	display:inline-block;
+	margin-right:10px;
+}
+#dialog_rating .btn_wrap .btn_style{
+	min-width:110px;
+}
+
+/*complate*/
+#dialog_rating_complete{
+	width:700px;
+	padding:0;
+	box-sizing:border-box;
+}
+#dialog_rating_complete h3{
+	margin: 20px 0 10px;
+}
+#dialog_rating_complete p{
+	padding:0px 55px;
+}
+#dialog_rating_complete p:first-child{
+	text-align:center;
+}
+#dialog_rating_complete .rating_complete_wrap{
+	position: relative;
+	height: 100%;
+}
+
+/*-----------------------------------*/
+/* modal_blackboard_style
+/*-----------------------------------*/
+.modal_blackboard_style{
+	min-width: 600px;
+	min-height: 120px;
+	padding: 60px 30px 60px;
+	background: #173119;
+	border-color: #452C17;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0 0 rgba(0,0,0,0.5) inset, 0 -1px 0 0 rgba(255,255,255,0.2) inset, 0 0 10px 0 rgba(0,0,0,0.2);
+	color: #fff;
+}
+.modal_blackboard_style:before{
+	position: absolute;
+	bottom: 1px;
+	left: 60px;
+	content: '';
+	width: 80px;
+	height: 26px;
+	background: url('../images/chat/fig_blackboard.png');
+}
+/*-----------------------------------*/
+/* #dialog_lesson_student_intro
+/*-----------------------------------*/
+#dialog_lesson_student_intro .btn_exit{
+	font-size: 13px;
+	font-size: 1.3rem;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: rgba(174, 74, 74, 0.8);
+	padding: 5px;
+	border-radius: 4px;
+	color: #FFF;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#dialog_lesson_student_intro .btn_exit:before{
+	content: '×';
+	display: inline-block;
+	margin-right: 2px;
+}
+#dialog_lesson_student_intro .btn_exit:hover{
+	background: rgba(207, 119, 119, 0.8);
+}
+/*-----------------------------------*/
+/* #dialog_lesson_instructor_ready
+/*-----------------------------------*/
+#dialog_lesson_instructor_ready .btn_wrap{
+	margin: 30px 0 15px;
+}
+/*-----------------------------------*/
+/* #dialog_lesson_student_ready
+/*-----------------------------------*/
+#dialog_lesson_student_ready .btn_wrap{
+	margin: 30px 0 15px;
+}
+
+/*-----------------------------------*/
+/* #dialog_credit_auth
+/*-----------------------------------*/
+#dialog_credit_auth h3,
+#dialog_credit_auth_required h3{
+	font-size: 22px;
+	font-size: 2.2rem;
+	line-height: 1.3;
+}
+#dialog_credit_auth p,
+#dialog_credit_auth_required p{
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/*-----------------------------------*/
+/* #dialog_sms_auth_required
+/*-----------------------------------*/
+#dialog_sms_auth_required{
+	width: 700px;
+}
+
+/*-----------------------------------*/
+/* .dialog_credit_auth
+/*-----------------------------------*/
+.dialog_credit_auth{
+	min-width: 820px;
+	text-align: center;
+	border: solid 4px #16A9B1;
+}
+.dialog_credit_auth p.p_1{
+	display: inline-block;
+	font-size: 20px !important;
+	font-size: 2.0rem !important;
+	font-weight: bold;
+	color: #fff;
+	background: #16a9b1;
+	padding: 4px 40px;
+	margin: 5px auto 20px;
+	text-align: center;
+}
+.dialog_credit_auth h3{
+	font-size: 46px !important;
+	font-size: 4.6rem !important;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #000;
+	margin-bottom: 5px;
+}
+.dialog_credit_auth p.p_2{
+	color: #16A9B1;
+	font-weight: bold;
+	font-size: 19px;
+	font-size: 1.9rem;
+}
+.dialog_credit_auth .btn_half{
+	width: 690px;
+}
+.dialog_credit_auth .notice{
+	border-top: 1px solid #d3d3d3;
+	padding: 28px 30px 0;
+}
+.dialog_credit_auth .notice li{
+	text-align: left;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	padding-left: 1em;
+	text-indent: -1.2em;
+	margin-top: 5px;
+}
+.dialog_credit_auth .notice li:first-child{
+	margin-top: 0;
+}
+.dialog_credit_auth .notice li:before{
+	content: '※';
+	margin-right: 0.2em;
+}
+
+/*-----------------------------------*/
+/* #dialog_credit_auth_required
+/*-----------------------------------*/
+#dialog_credit_auth_required h3{
+	font-size: 30px !important;
+	font-size: 3.0rem !important;
+	text-align: center;
+}
+#dialog_credit_auth_required .p_3{
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #555;
+}
+
+/*-----------------------------------*/
+/* #dialog_chat_exit
+/*-----------------------------------*/
+/*
+#dialog_chat_exit{
+	min-width: 600px;
+	max-height: 640px;
+	width:960px;
+	height: 98%;
+	height: 600px\9;
+	padding: 0;
+}
+#dialog_chat_exit .flex_table{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#dialog_chat_exit .flex_tr_1{
+	height: 100px;
+}
+#dialog_chat_exit .flex_td_1_1{
+	padding: 20px 30px 15px;
+}
+#dialog_chat_exit .flex_tr_2{
+	height: 100%;
+}
+#dialog_chat_exit .feedback_box_wrap{
+	width:100%;
+	height:100%;
+	height:455px\9;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#dialog_chat_exit .feedback_box{
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #eee;
+	box-sizing: border-box;
+	position:relative;
+}
+#dialog_chat_exit .feedback_table{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_table th{
+	width: 110px;
+	line-height: 1.5;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_chat_exit .feedback_table th.required:after{
+	content: '*';
+	color: #f00;
+	margin-left: 2px;
+}
+#dialog_chat_exit .feedback_table td{
+	padding: 20px;
+}
+#dialog_chat_exit .feedback_table td textarea{
+	min-height:100px;
+}
+#dialog_chat_exit .feedback_box_inner{
+	height: 100%;
+	margin: 20px 4%;
+	box-sizing: border-box;
+	position:absolute;
+	position:relative\9;
+	top:0;
+	bottom:0;
+}
+#dialog_chat_exit .feedback_box h4{
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+#dialog_chat_exit .feedback_box .btn_rating_wrap li{
+	margin-right: 50px;
+}
+#dialog_chat_exit .feedback_free_area textarea{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_select_area ul{
+	width: 100%;
+}
+#dialog_chat_exit .feedback_select_area li{
+	display: inline-block;
+	text-align: left;
+	margin: 0 20px 0 0;
+}
+#dialog_chat_exit .feedback_select_area li label{
+	font-size: 16px;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+#dialog_chat_exit .feedback_select_area li label input[type='radio']{
+	margin: 0 5px 0 0;
+}
+#dialog_chat_exit .notice_list li{
+	margin-top: 10px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#dialog_chat_exit .notice_list li:first-child{
+	margin-top: 0;
+}
+/*
+
+/*-----------------------------------*/
+/* delete rating confirm
+/*-----------------------------------*/
+#dialog_rating_delete .btn_wrap .btn_style {
+	min-width: 110px;
+}
+#dialog_rating_delete .btn_half{
+	width: 320px;
+}
+
+/*-----------------------------------*/
+/* #dialog_daily_bonus
+/*-----------------------------------*/
+#dialog_daily_bonus{
+	min-width: 440px;
+}
+#dialog_daily_bonus .t_yellow{
+	color: #FBFF63;
+}
+#dialog_daily_bonus .bonus_auth_coin_content{
+	width: 850px;
+	margin-top: 20px;
+}
+#dialog_daily_bonus .bonus_auth_coin_content .bonus_auth_coin_desc{
+	width: 80%;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+/*-----------------------------------*/
+/* #dialog_guide_warmup
+/*-----------------------------------*/
+#dialog_guide_warmup{
+	position: absolute !important;
+	top: 0 !important;
+	bottom: auto !important;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	border: none;
+	box-shadow: none;
+	counter-reset: step;
+}
+#dialog_guide_warmup h3{
+	font-size: 32px;
+	font-size: 3.2rem;
+	margin-bottom: 20px;
+}
+#dialog_guide_warmup .item + .item{
+	margin-top: 50px;
+}
+#dialog_guide_warmup .item .item_inner{
+	width: 808px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+#dialog_guide_warmup .item .ttl{
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #f1890e;
+	margin-bottom: 15px;
+}
+#dialog_guide_warmup .item .ttl .step{
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	background: #f1890e;
+	color: #fff;
+	border-radius: 4px;
+	padding: 5px 8px;
+	margin-right: 0.5em;
+	vertical-align: middle;
+	line-height: 1;
+}
+#dialog_guide_warmup .item .ttl .step:before{
+	counter-increment: step;
+	content: counter(step);
+	vertical-align: middle;
+	line-height: 1;
+	position: relative;
+	top: 2px;
+}
+#dialog_guide_warmup .item p{
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+#dialog_guide_warmup .item p em{
+	font-weight: bold;
+}
+#dialog_guide_warmup .item p.notice{
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-bottom: 0;
+}
+#dialog_guide_warmup .item figure img{
+	display: block;
+	margin: 0 auto;
+}
+#dialog_guide_warmup .modal_notice_wrap{
+	padding: 20px;
+	background: #eee;
+	border-radius: 4px;
+}
+#dialog_guide_warmup .modal_notice_wrap .modal_notice{
+	width: auto;
+}
+
+/*-----------------------------------*/
+/* #dialog_tutorial-device_settings
+/*-----------------------------------*/
+#dialog_tutorial-device_settings{
+	min-width: 720px;
+	max-width: 720px;
+	box-sizing: border-box;
+}
+#dialog_tutorial-device_settings .next_step_test_connect .fa-arrow-down,
+#dialog_tutorial-device_settings .next_step_test_connect h4,
+#dialog_tutorial-device_settings .next_step_test_connect p,
+#dialog_tutorial-device_settings .next_step_test_connect .ui_step-orange{
+	transition: color 0.2s linear;
+}
+
+#dialog_tutorial-device_settings .next_step_test_connect .fa-arrow-down{
+	color: #f1890e;
+}
+/* disabled style */
+#dialog_tutorial-device_settings .next_step_test_connect.disabled .fa-arrow-down{
+	color: #ccc !important;
+}
+#dialog_tutorial-device_settings .next_step_test_connect.disabled h4{
+	color: #ccc !important;
+}
+#dialog_tutorial-device_settings .next_step_test_connect.disabled p{
+	color: #ccc !important;
+}
+#dialog_tutorial-device_settings .next_step_test_connect.disabled .ui_step-orange{
+	background: #ccc !important;
+	color: #fff !important;
+}
+
+/*-----------------------------------*/
+/* #dialog_tutorial-teacher_choice
+/*-----------------------------------*/
+#dialog_tutorial-teacher_choice{
+	min-width: 720px;
+	box-sizing: border-box;
+}
+#dialog_tutorial-teacher_choice .tutorial_teacher_choice_area{
+	min-height: 360px;
+}
+#dialog_tutorial-teacher_choice .tutorial_teacher_choice_area .msg_box{
+	margin-bottom: 10px;
+}
+#dialog_tutorial-teacher_choice .msg_fail{
+	color: #F05444;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap{
+	display: table;
+	margin: 0 auto;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_inner{
+	display: table-cell;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2{
+	margin-right: 0;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2 .user_list_item{
+	width: 200px;
+	margin: 0 25px 0;
+	height: inherit;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2 .user_list_item:hover{
+	background: none;
+	height: inherit;	
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2 .user_list_item .thumb .pic{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2 .user_list_item .name_area .name{
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+#dialog_tutorial-teacher_choice .teacher_choice_wrap .user_list_style_2 .user_list_item .name_area .kana{
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+#dialog_tutorial-teacher_choice .tutorial_teacher_choice_area .loader, #dialog_tutorial-teacher_choice .loader_wrapper .loader {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 30px;
+	width: 30px;
+	height: 30px;
+	margin: auto;
+}
+
+/*-----------------------------------*/
+/* #dialog_campaign
+/*-----------------------------------*/
+#dialog_campaign{
+	border: none;
+	background: none;
+	color: #fff;
+	box-shadow: none;
+}
+#dialog_campaign:after{
+	display: block;
+	content: '';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: transparent;
+	z-index: -1;
+	background: rgba(0,0,0,0.5);
+}
+.modal_window .btn_close-fixed{
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.modal_window .btn_close-fixed:before{
+	width: 40px;
+	height: 40px;
+	font-family: 'fontAwesome';
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	content: '\f00d';
+}
+/*-----------------------------------*/
+/* .dialog_counseling_reserve
+/*-----------------------------------*/
+.dialog_counseling_reserve{
+	border: none;
+	box-shadow: none;
+	counter-reset: step;
+}
+.dialog_counseling_reserve input[type=text]{
+	min-width:200px;
+}
+.dialog_counseling_reserve .dialog_head{
+	text-align:center;
+}
+.dialog_counseling_reserve .dialog_head p{
+	font-size:14px;
+	font-size:1.4rem;
+	
+}
+.dialog_counseling_reserve .counseling_sheet_wrap{
+	
+}
+.dialog_counseling_reserve .counseling_sheet_wrap h4{
+	font-size:18px;
+	font-size:1.8rem;
+	font-weight:bold;
+	margin-top:30px;
+	padding-bottom:10px;
+	border-bottom:solid 1px #ccc;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item{
+	padding:0 20px;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl{
+	padding:15px 0;
+	border-bottom:solid 1px #ccc;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl dt{
+	position: relative;
+	display:inline-block;
+	vertical-align:middle;
+	width:210px;
+	box-sizing: border-box;
+	font-size:14px;
+	font-size:1.4rem;
+	font-weight:bold;
+	padding-right: 50px;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item-sub dl dt{
+	padding-left: 1em;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl dd{
+	position: relative;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:14px;
+	font-size:1.4rem;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item .ui_mark:after{
+	position: absolute;
+	right: 15px;
+	margin: auto;
+	top: -3px;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl dd textarea{
+	width: 410px;
+	background: #fff;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .list_inline li{
+	display: inline-block;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .list_inline li + li{
+	margin-left: 30px;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl dd .small{
+	font-size: smaller;
+}
+.dialog_counseling_reserve .counseling_sheet_wrap .item dl dd .color-gray{
+	color: #bbb;
+}
+/*-----------------------------------*/
+/* .dialog_lesson_settings
+/*-----------------------------------*/
+.dialog_lesson_settings{
+	width: 90%;
+	min-width: 850px;
+	max-width: 900px;
+}
+.dialog_lesson_settings .lesson_settings .frame_wrap{
+	display: table;
+	width: 100%;
+	height: 90%;
+	height: -webkit-calc(100% - 60px);
+	height: calc(100% - 60px);
+}
+.dialog_lesson_settings .frame_left,
+.dialog_lesson_settings .frame_right{
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+}
+.dialog_lesson_settings .frame_left{
+	width: 525px;
+	min-width: 525px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.dialog_lesson_settings .frame_left .msg_area{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+.dialog_lesson_settings .frame_left .msg{
+	text-align: center;
+	font-weight: bold;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap{
+	display: table;
+	margin: 0 auto;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_left,
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right{
+	display: table-cell;
+	vertical-align: middle;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_left{
+	width: 100px;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_left figure{
+	width: 110px;
+	height: 110px;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_left figure img{
+	display: block;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right{
+	padding-left: 30px;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right p{
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right p + p{
+	margin-top: 12px;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right p em{
+	font-weight: bold;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right p .kana{
+	margin-left: 10px;
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+.dialog_lesson_settings .lesson_settings_data .col_wrap .col_right p .date:after{
+	content: '～';
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap table{
+	width: 100%;
+	min-height: 60px;
+	table-layout: fixed;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .box-gray{
+	background: #f9f9f9;
+	border: #ccc solid 2px;
+	border-radius: 4px;
+	padding: 10px 15px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .item_ttl{
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_textbook table tr td{
+	padding-top: 6px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_textbook table tr:first-child td{
+	padding-top: 0;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .tb_custom_selector .options{
+	top: auto;
+	bottom: 100%;
+	max-height: 262px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge{
+	position: relative;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .current_coin{
+	position: absolute;
+	top: 5px;
+	right: 0;
+	font-size: 1.4rem;
+	font-size: 14px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .charge_coin .charge_coin_int{
+	font-weight: bold;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .charge_coin .charge_coin_details{
+	font-size: 13px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .charge_coin .charge_coin_details:before{
+	content: '(';
+	margin-right: 2px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .charge_coin .charge_coin_details:after{
+	content: ')';
+	margin-left: 2px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .charge_coin .charge_coin_details em{
+	font-weight: bold;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .box-orange{
+	background: #fffcee;
+	border: #FFB54A solid 2px;
+	border-radius: 4px;
+	padding: 10px 15px;
+}
+.dialog_lesson_settings .frame_left .lesson_settings_menu_wrap .lesson_settings_charge .tag{
+	display: inline-block;
+	background: #F38E44;
+	color: #fff;
+	padding: 5px;
+	border-radius: 2px;
+	line-height: 1;
+}
+
+.dialog_lesson_settings .frame_right{
+	position: relative;
+	background: #fff;
+}
+.dialog_lesson_settings .frame_right .iframe_textbook{
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.dialog_lesson_settings .notice_area{
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 5px;
+}
+.dialog_lesson_settings .notice_area .ui_notice_list ul li{
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+/* btn charge coin */
+.dialog_lesson_settings .btn_charge_coin{
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.dialog_lesson_settings .btn_charge_coin:before{
+	content: '(';
+	margin-right: 3px;
+}
+.dialog_lesson_settings .btn_charge_coin:after{
+	content: ')';
+	margin-left: 3px;
+}
+.dialog_lesson_settings .btn_charge_coin .charge_coin_int{
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+.dialog_lesson_settings .btn_charge_coin .charge_coin_int:before{
+	content: '\f1c0';
+	font-family: 'fontAwesome';
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: normal;
+	margin-right: 3px;
+}
+
+/*-----------------------------------*/
+/* .message_board_comment
+/*-----------------------------------*/
+.dialog_message_board_comment{
+	min-width:720px;
+}
+.dialog_message_board_comment .comment_area {
+	margin-bottom:10px;
+}
+.dialog_message_board_comment .comment_area textarea{
+	width:100%;
+	box-sizing:border-box;
+	background:#fff;
+}
+
+/*-----------------------------------*/
+/* .dialog_counseling_1stlesson
+/*-----------------------------------*/
+.dialog_counseling_1stlesson{
+	
+	background: url('../images/icon/question.png') 60px 70px no-repeat #fff;
+	background-size: 180px;
+}
+
+.dialog_counseling_1stlesson h3{
+	font-size: 28px;
+	font-size: 2.8rem;
+	letter-spacing: 1.2px;
+}
+
+.dialog_counseling_1stlesson .user_quest ul{
+	margin: 0 auto;
+	text-align: left;
+	margin-left: 270px;
+}
+
+.dialog_counseling_1stlesson .user_quest ul li{
+	list-style-type:disc;
+	margin-left: 10px;
+	font-size: 20px;
+	font-size: 2.0rem;
+	line-height: 1.5;
+}
+
+/*-----------------------------------*/
+/* .dialog_sms_auth
+/*-----------------------------------*/
+.dialog_sms_auth .input_phonenumber_area span,
+.dialog_sms_input_number .input_phonenumber_area span{
+	font-size: 18px;
+	font-size: 1.8rem;
+	vertical-align: middle;
+}
+.dialog_sms_auth select,
+.dialog_sms_auth input,
+.dialog_sms_input_number select,
+.dialog_sms_input_number input{
+	background: #fff;
+}
+.dialog_sms_input_number select{
+	width: 128px;
+}
+.dialog_sms_input_number input{
+	width: 210px;
+}
+
+.dialog_sms_auth select,
+.dialog_sms_auth input{
+	border: none;
+}
+
+.dialog_sms_auth select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+

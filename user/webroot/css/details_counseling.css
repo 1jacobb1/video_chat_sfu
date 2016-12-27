@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_wrap--counseling .sec_counseling .main_img_area {
+    position: relative;
+    margin: -30px -10px 0px;
+	/*background:#f5f5f5;*/
+	border-radius: 5px 5px 0 0;
+}
+
+.page_wrap--counseling .sec_counseling .content_area {
+	padding:50px 40px;
+
+}
+.page_wrap--counseling .sec_counseling h2.desc {
+	font-size:24px;
+	font-size:2.4rem;
+	font-weight:bold;
+}
+.page_wrap--counseling .sec_counseling .desc_area {
+	font-size:0;
+}
+.page_wrap--counseling .sec_counseling .desc_area p {
+	line-height:1.5;
+	margin-bottom:25px;
+	font-size:14px;
+	font-size:1.4rem;
+}
+.page_wrap--counseling .sec_counseling .desc_area p.small {
+	font-size:12px;
+	font-size:1.2rem;
+}
+
+.page_wrap--counseling .sec_counseling .counseling_form{
+	margin:0 -10px;
+	padding:40px 0;
+	background:#F5F5F5;
+	text-align:center;
+	box-shadow:0 8px 12px -10px #555 inset;
+}
+.page_wrap--counseling .sec_counseling .counseling_form h3 {
+	font-size:24px;
+	font-size:2.4rem;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+.page_wrap--counseling .sec_counseling .counseling_form p {
+	font-size:14px;
+	font-size:1.4rem;
+	margin-bottom:15px;
+}
+.page_wrap--counseling .sec_counseling .desc_area dl {
+	display:inline-block;
+}
+.page_wrap--counseling .sec_counseling .desc_area dl + dl{
+	margin-left:16px;
+}
+.page_wrap--counseling .sec_counseling .desc_area dl dt {
+	font-weight:bold;
+	font-size:16px;
+	font-size:1.6rem;
+	text-align:center;
+	line-height:1.5;
+	padding:30px 0 5px;
+}
+
+.page_wrap--counseling .sec_counseling .counseling_ask{
+	border:solid 1px #cccccc;
+	border-radius:5px;
+	background:#F5F5F5;
+	padding:30px 20px;
+}
+.page_wrap--counseling .sec_counseling .counseling_ask .ask_desc{
+	padding:5px 0px 0 10px;
+	line-height:1.5;
+	font-size:14px;
+	font-size:1.4rem;
+}
+.page_wrap--counseling .sec_counseling .data_att{
+	margin:40px 0 0 40px;
+	line-height:1.5;
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+.page_wrap--counseling .link_mypage{
+	float: right;
+}
+.page_wrap--counseling .link_mypage:after{
+	content: '▲';
+	display: inline;
+}

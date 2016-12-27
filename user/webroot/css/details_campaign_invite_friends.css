@@ -1,0 +1,244 @@
+/*-------------------------------------------------------*/
+/* invite friends
+/*-------------------------------------------------------*/
+.page_wrap--campaign_invite .container {
+    padding: 30px;
+}
+.page_wrap--campaign_invite .sec_campaign_1 {
+    position: relative;
+}
+.page_wrap--campaign_invite .sec_campaign_1 .main_img_area .main_img {
+    border-radius: 4px 4px 0 0;
+}
+.page_wrap--campaign_invite .sec_campaign_1 .main_img_area {
+    position: relative;
+    margin: -30px -30px -4px;
+}
+.page_wrap--campaign_invite .arrow_bar{
+	position: relative;
+	text-align: center;
+    padding: 20px 0;
+    background: #004986;
+	color: #fff;
+	margin:0 -30px;
+	border: solid 1px #004986;
+	font-size: 2.0rem;
+	margin-bottom: 50px;
+}
+
+.page_wrap--campaign_invite .arrow_bar:after{
+	position: absolute;
+    top: 100%;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #004986;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.page_wrap--campaign_invite .content_box .ttl{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.page_wrap--campaign_invite .content_box .desc{
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.page_wrap--campaign_invite .content_box.dashed_arrow{
+	position: relative;
+	border-right: dashed 1px #000;
+}
+.page_wrap--campaign_invite .content_box.dashed_arrow:after{
+	position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-top: 1px dashed #000;
+    border-right: 1px dashed #000;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	background: #fff;
+    top: 45%;
+	right: -4%;
+    margin: auto;
+}
+.page_wrap--campaign_invite .content_box:after{
+	border-left-color: #fff;
+}
+
+.page_wrap--campaign_invite .desc_area{
+	margin-bottom: 50px;
+}
+.page_wrap--campaign_invite .desc_area .content_box{
+	width: 250px;
+    vertical-align: top;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.page_wrap--campaign_invite .desc_area .content_box figure{
+	height: 170px;
+	text-align: center;
+}
+
+.page_wrap--campaign_invite .flow_inner{
+	margin: 30px 30px;
+}
+
+.page_wrap--campaign_invite .flow_inner dl{
+	border: 1px solid #000;
+	margin-bottom:60px;
+	width: 650px;
+    margin: 0 auto 60px;
+}
+.page_wrap--campaign_invite .flow_inner dl:last-child{
+	margin-bottom: 40px;
+}
+.page_wrap--campaign_invite .flow_inner dl dt,
+.page_wrap--campaign_invite .flow_inner dl dd{
+	display: table-cell;	
+	vertical-align: middle;
+}
+.page_wrap--campaign_invite .flow_inner dl dt{
+	width: 100px;
+	background: #333333;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+.page_wrap--campaign_invite .flow_inner dl dd{
+	text-align: center;
+	width: 545px;
+	padding: 25px 0;
+	font-size: 16px;
+}
+.page_wrap--campaign_invite .flow_inner dl dd h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom:25px;
+}
+.page_wrap--campaign_invite .flow_inner dl dd .step_desc{
+	margin: 0 45px;
+    text-align: left;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	font-size: 16px;
+}
+.page_wrap--campaign_invite .flow_inner dl dd .sns_btn_wrap li{
+	display: inline-block;
+}
+.page_wrap--campaign_invite .flow_inner dl dd .sns_btn_wrap li+li{
+	margin-left: 50px;
+}
+.page_wrap--campaign_invite .flow_inner dl.step_1 dd input{
+    width: 310px;
+    background: #fff;
+    border: #333 1px solid;
+}
+.page_wrap--campaign_invite .flow_inner dl.flow_arrow{
+	position: relative;
+}
+.page_wrap--campaign_invite .flow_inner dl.flow_arrow:after{
+	position: absolute;
+    bottom: -45px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 30px solid #737373;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* btn style */
+.page_wrap--campaign_invite .flow_inner .btn_pink{
+    min-width: 40px;
+    height: 42px;
+    line-height: 42px;
+    background: #e8716c;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/* solo step */
+.page_wrap--campaign_invite .flow_inner .flow_contents{
+	border: 1px solid #000;
+	margin-bottom:60px;
+	width: 650px;
+    margin: 0 auto 60px;
+	text-align: center;
+	padding: 35px 0;
+}
+.page_wrap--campaign_invite .flow_inner .flow_contents input{
+    width: 310px;
+    background: #fff;
+    border: #333 1px solid;
+	text-align: center;
+}
+.page_wrap--campaign_invite .sns_btn_wrap li{
+	display: inline-block;
+}
+.page_wrap--campaign_invite .sns_btn_wrap li+li{
+	margin-left: 50px;
+}
+
+
+
+/* invite_faq */
+.page_wrap--campaign_invite .sec_invite_faq{
+	width:898px;
+	margin:0 auto;
+}
+.page_wrap--campaign_invite .sec_invite_faq h3 {
+	    text-align: center;
+    padding: 12px 0;
+    background-color: #004986;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.page_wrap--campaign_invite .sec_invite_faq dl {
+    margin-bottom: 20px;
+}
+.page_wrap--campaign_invite .sec_invite_faq dl dt {
+    text-indent: -2rem;
+    padding-left: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.page_wrap--campaign_invite .sec_invite_faq dl dt:before {
+    content: 'Q. ';
+    display: inline;
+    color: #16A9B2;
+    font-weight: bold;
+}
+.page_wrap--campaign_invite .sec_invite_faq dl dd {
+    text-indent: -2rem;
+    padding-left: 2rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.page_wrap--campaign_invite .sec_invite_faq dl dd:before {
+    content: 'A. ';
+    display: inline;
+    color: #F14444;
+    font-weight: bold;
+}
+.page_wrap--campaign_invite .sec_invite_faq dl dd .fa{
+	text-indent:0;
+}

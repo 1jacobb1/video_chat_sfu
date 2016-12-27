@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------*/
+/* exam page
+/*-------------------------------------------------------*/
+
+/* top_area */
+.exam_wrap{
+	padding-top: 20px;
+}
+.exam_wrap .container{
+	padding: 15px 20px 30px;
+	margin: 0;
+	/width: 920px;
+}
+.exam_wrap .top_area{
+	color: #ccc;
+	padding-bottom: 5px;
+	border-bottom: #ccc 1px solid;
+}
+.exam_wrap .top_area div.t_left,
+.exam_wrap .top_area div.t_right{
+	width: 150px;
+}
+.exam_wrap .top_area .cnt_question em{
+	font-size: 26px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+.exam_wrap .top_area .ttl{
+	font-size: 26px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+
+/* top_area for IE7 */
+*:first-child+html .exam_wrap .top_area > div{
+	width: 33%;
+	min-height: 20px;
+	vertical-align: baseline;
+}
+
+.exam_wrap .sec_wrap > .btn_wrap{
+	padding: 0;
+}
+
+/* q_list */
+.exam_wrap .q_list{
+	margin: 0 20px;
+}
+.exam_wrap .q_list > ul > li{
+	padding: 20px 0 10px;
+	border-bottom: #ccc 1px solid;
+}
+.exam_wrap .q_list .question{
+	margin-bottom: 18px;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.exam_wrap .q_list .question .idx{
+	margin-right: 1em;
+}
+.exam_wrap .q_list .answer,
+.exam_wrap .q_list .answer label{
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.exam_wrap .q_list .answer li{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.exam_wrap .q_list .answer label span{
+	color: #999;
+	margin-right: 2px;
+}
+.exam_wrap .q_list .answer label input[type='radio']{
+	margin-right: 5px;	
+	vertical-align: top;
+}
+.exam_wrap .q_list .answer_style_2 li{
+	float: none;
+}
+
+/*-------------------------------------------------------*/
+/* exam complete page
+/*-------------------------------------------------------*/
+.exam_complete_wrap .top_area .status{
+	font-size: 26px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+.exam_complete_wrap .msg_wrap{
+	padding-top: 30px;
+}
+.exam_complete_wrap .sec_class{
+	text-align: center;
+}
+.exam_complete_wrap .sec_class em{
+	margin: 0 10px;
+	padding: 6px 20px;
+	border: 2px #ccc solid;
+	color: #16a9b2;
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+.exam_complete_wrap .correct_answer{
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.exam_complete_wrap .correct_answer .ttl{
+	color: #fff;
+	background: #555;
+	padding: 8px 20px;
+	fotn-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1;
+}
+.exam_complete_wrap .correct_answer ul{
+	padding: 20px 20px;
+	margin-left: 2.5em;
+}
+.exam_complete_wrap .correct_answer ul li{
+	margin-top: 16px;
+	line-height: 1.6;
+	text-indent: -2.5em;
+}
+.exam_complete_wrap .correct_answer ul li:first-child{
+	margin-top: 0;
+}
+.exam_complete_wrap .correct_answer ul li .idx{
+	margin-right: 0.5em;
+}
+.exam_complete_wrap .correct_answer ul li .answer:before{
+	content: '【';
+	display: inline;
+	margin-right: 0.5em;
+	margin-left: -0.5em;
+}
+.exam_complete_wrap .correct_answer ul li .answer:after{
+	content: '】';
+	display: inline;
+	margin-left: 0.5em;
+	margin-right: -0.5em;
+}
+.exam_complete_wrap .correct_answer ul li .answer span{
+	color: #ccc;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.exam_complete_wrap .correct_answer ul li .answer span{
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+.exam_complete_wrap .correct_answer ul li .answer em{
+	color: #ed1515;
+	font-weight: bold;
+}
+
